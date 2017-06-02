@@ -1,0 +1,4 @@
+".source.js, .source.jsx, .source.ts":
+  "JSON.parse":
+    "prefix": "jp"
+    "body": "JSON.parse(${1:obj});"

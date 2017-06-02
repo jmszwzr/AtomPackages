@@ -1,0 +1,6 @@
+".source.js, .source.jsx, .source.ts":
+  "getElementById":
+    "prefix": "gi"
+    "body": """
+    ${1:document}.getElementById('${2:id}');
+    """

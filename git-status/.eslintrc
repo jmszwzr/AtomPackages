@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "array-bracket-spacing": [2, "never"],
+    "block-spacing": [2, "always"],
+    "camelcase": [2, {"properties": "always"}],
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "linebreak-style": [2,"unix"],
+    "quotes": [2, "double"],
+    "semi": [2, "always"],
+    "space-after-keywords": [2, "always"],
+    "space-before-keywords": [2, "always"],
+    "space-before-blocks": [2, "always"],
+    "key-spacing": [2],
+    "arrow-parens": [2, "always"],
+    "arrow-spacing": [2],
+    "no-multiple-empty-lines": [2, {"max": 2}],
+    "no-var": [2]
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "destructuring": true,
+    "forOf": true,
+    "modules": true,
+    "objectLiteralShorthandMethods": true,
+    "templateStrings": true
+  }
+}

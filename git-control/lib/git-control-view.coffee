@@ -1,0 +1,280 @@
+{View, $, $$} = require 'atom-space-pen-views'
+
+child_process = require 'child_process'
+
+git = require './git'
+
+BranchView = require './views/branch-view'
+DiffView = require './views/diff-view'
+FileView = require './views/file-view'
+LogView = require './views/log-view'
+MenuView = require './views/menu-view'
+
+ProjectDialog = require './dialogs/project-dialog'
+BranchDialog = require './dialogs/branch-dialog'
+CommitDialog = require './dialogs/commit-dialog'
+ConfirmDialog = require './dialogs/confirm-dialog'
+CreateTagDialog = require './dialogs/create-tag-dialog'
+DeleteDialog = require './dialogs/delete-dialog'
+MergeDialog = require './dialogs/merge-dialog'
+FlowDialog = require './dialogs/flow-dialog'
+PushDialog = require './dialogs/push-dialog'
+PushTagsDialog = require './dialogs/push-tags-dialog'
+RebaseDialog = require './dialogs/rebase-dialog'
+MidrebaseDialog = require './dialogs/midrebase-dialog'
+
+runShell = (cmd, output) ->
+  shell = child_process.execSync(cmd, { encoding: 'utf8'}).trim()
+  if shell is output
+    return true
+  else if shell isnt output
+    return false
+
+gitWorkspaceTitle = ''
+
+module.exports =
+class GitControlView extends View
+  @content: ->
+    if git.isInitialised()
+      @div class: 'git-control', =>
+        @subview 'menuView', new MenuView()
+        @div class: 'content', outlet: 'contentView', =>
+          @div class: 'sidebar', =>
+            @subview 'filesView', new FileView()
+            @subview 'localBranchView', new BranchView(name: 'Local', local: true)
+            @subview 'remoteBranchView', new BranchView(name: 'Remote')
+          @div class: 'domain', =>
+            @subview 'diffView', new DiffView()
+          @subview 'projectDialog', new ProjectDialog()
+          @subview 'branchDialog', new BranchDialog()
+          @subview 'commitDialog', new CommitDialog()
+          @subview 'createtagDialog', new CreateTagDialog()
+          @subview 'mergeDialog', new MergeDialog()
+          @subview 'flowDialog', new FlowDialog()
+          @subview 'pushDialog', new PushDialog()
+          @subview 'pushtagDialog', new PushTagsDialog()
+          @subview 'rebaseDialog', new RebaseDialog()
+          @subview 'midrebaseDialog', new MidrebaseDialog()
+        @subview 'logView', new LogView()
+    else #This is so that no error messages can be created by pushing buttons that are unavailable.
+      @div class: 'git-control', =>
+        @subview 'logView', new LogView()
+
+  serialize: ->
+
+  initialize: ->
+    console.log 'GitControlView: initialize'
+
+    git.setLogger (log, iserror) => @logView.log(log, iserror)
+
+    @active = true
+    @branchSelected = null
+
+    if !git.isInitialised()
+      git.alert "> This project is not a git repository. Either open another project or create a repository."
+    else
+      @setWorkspaceTitle(git.getRepository().path.split('/').reverse()[1])
+    @update(true)
+
+    return
+
+  destroy: ->
+    console.log 'GitControlView: destroy'
+    @active = false
+    return
+
+  setWorkspaceTitle: (title) ->
+    gitWorkspaceTitle = title
+
+  getTitle: ->
+    return 'git:control'
+
+  update: (nofetch) ->
+    if git.isInitialised()
+      @loadBranches()
+      @showStatus()
+      @filesView.setWorkspaceTitle(gitWorkspaceTitle)
+      unless nofetch
+        @fetchMenuClick()
+        if @diffView
+          @diffView.clearAll()
+
+    return
+
+  loadLog: ->
+    git.log(@selectedBranch).then (logs) ->
+      console.log 'git.log', logs
+      return
+    return
+
+  checkoutBranch: (branch, remote) ->
+    git.checkout(branch, remote).then => @update()
+    return
+
+  branchCount: (count) ->
+    if git.isInitialised()
+      remotes = git.hasOrigin()
+
+      @menuView.activate('upstream', remotes and count.behind)
+      @menuView.activate('downstream', remotes and (count.ahead or !git.getRemoteBranch()))
+      @menuView.activate('remote', remotes)
+    return
+
+  loadBranches: ->
+    if git.isInitialised()
+      @selectedBranch = git.getLocalBranch()
+
+      git.getBranches().then (branches) =>
+        @branches = branches
+        @remoteBranchView.addAll(branches.remote)
+        @localBranchView.addAll(branches.local, true)
+        return
+
+    return
+
+  showSelectedFiles: ->
+    @menuView.activate('file', @filesView.hasSelected())
+    @menuView.activate('file.merging', @filesView.hasSelected() or git.isMerging())
+    return
+
+  showStatus: ->
+    git.status().then (files) =>
+      @filesView.addAll(files)
+      return
+    return
+
+  projectMenuClick: ->
+    @projectDialog.activate()
+    return
+
+  branchMenuClick: ->
+    @branchDialog.activate()
+    return
+
+  compareMenuClick: ->
+    git.diff(@filesView.getSelected().all.join(' ')).then (diffs) => @diffView.addAll(diffs)
+    return
+
+  commitMenuClick: ->
+    return unless @filesView.hasSelected() or git.isMerging()
+
+    @commitDialog.activate()
+    return
+
+  commit: ->
+    return unless @filesView.hasSelected()
+
+    msg = @commitDialog.getMessage()
+
+    files = @filesView.getSelected()
+    @filesView.unselectAll()
+
+    git.add(files.add)
+      .then -> git.remove(files.rem)
+      .then -> git.commit(msg)
+      .then => @update()
+    return
+
+  createBranch: (branch) ->
+    git.createBranch(branch).then => @update()
+    return
+
+  deleteBranch: (branch) ->
+    confirmCb = (params) =>
+      git.deleteBranch(params.branch).then => @update()
+      return
+
+    forceDeleteCallback = (params) =>
+      git.forceDeleteBranch(params.branch).then => @update()
+
+    @contentView.append new DeleteDialog
+      hdr: 'Delete Branch'
+      msg: "Are you sure you want to delete the local branch '#{branch}'?"
+      cb: confirmCb
+      fdCb: forceDeleteCallback
+      branch: branch
+    return
+
+  fetchMenuClick: ->
+    if git.isInitialised()
+      return unless git.hasOrigin()
+
+    git.fetch().then => @loadBranches()
+    return
+
+  mergeMenuClick: ->
+    @mergeDialog.activate(@branches.local)
+    return
+
+  merge: (branch,noff) =>
+    git.merge(branch,noff).then => @update()
+    return
+
+  flowMenuClick: ->
+    @flowDialog.activate(@branches.local)
+    return
+
+  flow: (type,action,branch) =>
+    git.flow(type,action,branch).then => @update()
+    return
+
+  ptagMenuClick: ->
+    @pushtagDialog.activate()
+    return
+
+  ptag: (remote) ->
+    git.ptag(remote).then => @update(true)
+    return
+
+  pullMenuClick: ->
+    git.pull().then => @update(true)
+    return
+
+  pullupMenuClick: ->
+    git.pullup().then => @update(true)
+    return
+
+  pushMenuClick: ->
+    git.getBranches().then (branches) =>  @pushDialog.activate(branches.remote)
+    return
+
+  push: (remote, branches, force) ->
+    git.push(remote,branches,force).then => @update()
+
+  rebaseMenuClick: ->
+    check = runShell('ls `git rev-parse --git-dir` | grep rebase || echo norebase','norebase')
+    if check is true
+      @rebaseDialog.activate(@branches.local)
+    else if check is false
+      @midrebaseDialog.activate()
+    return
+
+  rebase: (branch) =>
+    git.rebase(branch).then => @update()
+    return
+
+  midrebase: (contin, abort, skip) =>
+    git.midrebase(contin,abort,skip).then => @update()
+    return
+
+  resetMenuClick: ->
+    return unless @filesView.hasSelected()
+
+    files = @filesView.getSelected()
+
+    atom.confirm
+      message: "Reset will erase changes since the last commit in the selected files. Are you sure?"
+      buttons:
+        Cancel: =>
+          return
+        Reset: =>
+          git.reset(files.all).then => @update()
+          return
+
+  tagMenuClick: ->
+    @createtagDialog.activate()
+    return
+
+  tag: (name, href, msg) =>
+    git.tag(name, href, msg).then => @update()
+    return

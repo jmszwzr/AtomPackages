@@ -1,0 +1,67 @@
+@import "ui-variables";
+
+.git-control .files {
+  width: 100%;
+  margin-bottom: 15px;
+
+  .placeholder {
+    display: none;
+  }
+
+  &.none {
+    .placeholder {
+      display: block;
+      color: @text-color-subtle;
+    }
+  }
+
+  .file, .allfiles {
+    position: relative;
+    margin: 2px 0 2px @component-icon-size;
+    padding: 2px 5px;
+    border-radius: 4px;
+
+    .clickable.text {
+        width: 80%;
+        display: inline;
+        position: absolute;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 5px 0 0 45px;
+    }
+
+    &.deleted {
+      color: @text-color-subtle;
+    }
+
+    &.modified {
+      color: @text-color-warning;
+    }
+
+    &.new {
+      color: @text-color-success;
+    }
+
+    &.conflict {
+      color: @text-color-error;
+    }
+
+    .icon.check {
+      color: @text-color-subtle;
+      opacity: 0.5;
+    }
+
+    &.active {
+      //background: @button-background-color;
+
+      .icon.check {
+        color: @text-color-highlight;
+        opacity: 1.0;
+        &::before {
+          color: @text-color-success;
+        }
+      }
+    }
+  }
+}

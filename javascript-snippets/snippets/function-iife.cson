@@ -1,0 +1,8 @@
+".source.js, .source.jsx, .source.ts":
+  "immediately-invoked function expression":
+    "prefix": "iife"
+    "body": """
+    (function(${1:window}, ${2:document}) {
+    \t${0:// body...}
+    })(${1:window}, ${2:document});
+    """

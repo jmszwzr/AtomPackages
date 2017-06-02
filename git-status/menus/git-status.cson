@@ -1,0 +1,14 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Git Status'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'git-status:toggle'
+        }
+      ]
+    ]
+  }
+]

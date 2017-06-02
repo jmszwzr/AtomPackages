@@ -1,0 +1,6 @@
+".source.js, .source.jsx, .source.ts":
+  "debugger":
+    "prefix": "de"
+    "body": """
+    debugger;
+    """

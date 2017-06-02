@@ -1,0 +1,8 @@
+".source.js, .source.jsx, .source.ts":
+  "setTimeout":
+    "prefix": "st"
+    "body": """
+    setTimeout(function() {
+    \t${0:// body...}
+    }, ${1:delay});
+    """

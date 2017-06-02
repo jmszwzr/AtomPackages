@@ -1,0 +1,147 @@
+@import "ui-variables";
+
+.git-control {
+  // https://octicons.github.com/
+  .icon {
+    width: 100%;
+
+    &:before {
+      margin-right: 5px;
+      position: relative;
+      top: 1px;
+      font-family: 'Octicons Regular';
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: @text-color;
+      font-size: @component-icon-size;
+      line-height: @component-line-height;
+      height: @component-icon-size;
+      width: @component-icon-size;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &.large:before {
+      top: 0px;
+      font-size: 1.5*@component-icon-size;
+      line-height: 1.5*@component-icon-size;
+      height: 1.5*@component-icon-size;
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &.arrow-down:before {
+      content: '\f03f'
+    }
+
+    &.branch:before {
+      content: '\f020'
+    }
+
+    &.check:before {
+      content: '\f03a'
+    }
+
+    &.chevron-down:before {
+      content: '\f0a3'
+    }
+
+    &.chevron-right:before {
+      content: '\f078'
+    }
+
+    &.circuit-board:before {
+      content: '\f0d6'
+    }
+
+    &.clone:before {
+      content: '\f04c'
+    }
+
+    &.commit:before {
+      content: '\f01f'
+    }
+
+    &.compare:before {
+      content: '\f0ac'
+    }
+
+    &.cloud-download:before {
+      content: '\f00b'
+    }
+
+    &.cloud-upload:before {
+      content: '\f00c'
+    }
+
+    &.dash:before {
+      content: '\f0ca'
+    }
+
+    &.desktop-download:before {
+      content: '\f0dc'
+    }
+
+    &.flame:before {
+      content: '\f0d2'
+    }
+
+    &.forked:before {
+      content: '\f002'
+    }
+
+    &.merge:before {
+      content: '\f023'
+    }
+
+    &.flow:before {
+      content: '\f0c6'
+    }
+
+    &.plus:before {
+      content: '\f05d'
+    }
+
+    &.pull:before {
+      content: '\f006'
+    }
+
+    &.pulse:before, &.file-modified:before {
+      content: '\f085'
+    }
+
+    &.push:before {
+      content: '\f005'
+    }
+
+    &.question:before, &.file-new:before {
+      content: '\f02c'
+    }
+
+    &.square:before {
+      content: '\f053'
+    }
+
+    &.sync:before {
+      content: '\f087'
+    }
+
+    &.tag:before {
+      content: '\f015'
+    }
+
+    &.trash:before {
+      content: '\f0d0'
+    }
+
+    &.versions:before, &.file-conflict:before {
+      content: '\f064'
+    }
+
+    &.x:before, &.file-deleted:before {
+      content: '\f081'
+    }
+  }
+}

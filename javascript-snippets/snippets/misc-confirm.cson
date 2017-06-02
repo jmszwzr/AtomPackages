@@ -1,0 +1,6 @@
+".source.js, .source.jsx, .source.ts":
+  "confirm":
+    "prefix": "co"
+    "body": """
+    confirm('${1:msg}');
+    """

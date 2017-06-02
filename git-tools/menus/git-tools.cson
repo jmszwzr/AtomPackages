@@ -1,0 +1,50 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus
+# for more details
+'context-menu':
+  'atom-text-editor': [
+    'label': 'Git Tools'
+    'submenu':[
+      {
+        'label': 'Git Gui'
+        'command': 'git-tools:git-gui'
+      },
+      {
+        'label': 'Git Gui Blame'
+        'command': 'git-tools:git-gui-blame'
+      },
+      {
+        'label': 'Gitk'
+        'command': 'git-tools:gitk'
+      },
+      {
+        'label': 'Gitk Current File'
+        'command': 'git-tools:gitk-current-file'
+      }
+    ]
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Git Tools'
+      'submenu': [
+        {
+          'label': 'Git Gui'
+          'command': 'git-tools:git-gui'
+        },
+        {
+          'label': 'Git Gui Blame'
+          'command': 'git-tools:git-gui-blame'
+        },
+        {
+          'label': 'Gitk'
+          'command': 'git-tools:gitk'
+        },
+        {
+          'label': 'Gitk Current File'
+          'command': 'git-tools:gitk-current-file'
+        }
+      ]
+    ]
+  }
+]

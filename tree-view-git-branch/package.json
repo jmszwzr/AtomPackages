@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11752-2852-65q9yw.mxx1o1dcxr"
+    ]
+  ],
+  "_from": "..\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+  "_id": "tree-view-git-branch@0.1.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tree-view-git-branch",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+  "_shasum": "52ec65ba0c8feea6f452c39a0297e637e6c90a6c",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-2852-1ije01x.uqm7z257b9\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11752-2852-65q9yw.mxx1o1dcxr",
+  "bugs": {
+    "url": "https://github.com/olmokramer/atom-tree-view-git-branch/issues"
+  },
+  "dependencies": {
+    "array.from": "^0.2.0",
+    "object-assign-shim": "^1.0.0"
+  },
+  "description": "Quickly change git branches from the tree view",
+  "devDependencies": {
+    "eslint": "^2.5.3"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/olmokramer/atom-tree-view-git-branch#readme",
+  "keywords": [
+    "tree-view",
+    "git",
+    "branch",
+    "tag"
+  ],
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "name": "tree-view-git-branch",
+  "optionalDependencies": {},
+  "readme": "# tree-view-git-branch package\n\nQuickly switch git branches from the tree view.\n\n![screenshot](https://raw.githubusercontent.com/olmokramer/atom-tree-view-git-branch/master/screencast.gif)\n\n## Planned features\n\n* [ ] Better error messages, e.g. reason why checkout failed\n* [ ] Create/delete branches\n* [ ] Auto-update branches\n* [ ] Manage remote branches\n* [ ] Manage tags\n* [ ] Merge branches\n* [ ] Add/reset changed files\n* [ ] Commit/push/pull\n\nIf you can think of another feature, feel free to submit it in an issue over at the repo.\n\n[MIT](LICENSE.md) &copy; Olmo Kramer\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olmokramer/atom-tree-view-git-branch.git"
+  },
+  "version": "0.1.2",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "array.from",
+        "version": "0.2.0",
+        "path": "node_modules\\array.from\\array-from.js"
+      },
+      {
+        "name": "object-assign-shim",
+        "version": "1.0.0",
+        "path": "node_modules\\object-assign-shim\\index.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib\\main.js",
+        "lib\\tree-view-git-branch-list.js",
+        "lib\\tree-view-git-branch.js",
+        "lib\\tree-view-git-repository.js",
+        "lib\\utils.js",
+        "node_modules\\array.from\\array-from.js",
+        "node_modules\\object-assign-shim\\index.js"
+      ],
+      ".json": [
+        "node_modules\\array.from\\package.json",
+        "node_modules\\object-assign-shim\\.jscs.json",
+        "node_modules\\object-assign-shim\\package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "array.from": "^0.2.0",
+          "object-assign-shim": "^1.0.0"
+        }
+      }
+    ]
+  }
+}

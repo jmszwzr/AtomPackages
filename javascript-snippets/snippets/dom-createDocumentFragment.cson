@@ -1,0 +1,6 @@
+".source.js, .source.jsx, .source.ts":
+  "createDocumentFragment":
+    "prefix": "cdf"
+    "body": """
+    ${1:document}.createDocumentFragment();
+    """

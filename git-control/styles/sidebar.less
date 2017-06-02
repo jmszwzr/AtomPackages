@@ -1,0 +1,46 @@
+@import "ui-variables";
+
+.git-control .sidebar {
+  width: 30%;
+  height: 100%;
+  float: left;
+  border-right: 1px solid @base-border-color;
+  background: inherit;
+  padding: 10px 10px 80px 10px;
+  overflow-y: scroll;
+
+  .heading {
+    font-weight: bold;
+    color: @text-color-highlight;
+    margin-bottom: 5px;
+    position:relative;
+    -webkit-user-select: none;
+
+    .action {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      cursor: pointer;
+      color: @text-color;
+      -webkit-user-select: none;
+
+      &:hover {
+        color: @text-color-highlight;
+      }
+
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .none .heading .action {
+    color: @text-color-subtle;
+    cursor: default;
+
+    &:hover {
+      color: @text-color-subtle;
+    }
+  }
+}

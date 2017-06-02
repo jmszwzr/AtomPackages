@@ -1,0 +1,234 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11752-20740-1mdmzr4.j2hs9n3ik9"
+    ]
+  ],
+  "_from": "..\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+  "_id": "activate-power-mode@2.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/activate-power-mode",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+  "_shasum": "110ae7ebc57b77faff76ada411b825ae6c7845f4",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11752-20740-16npoup.vyimjkyb9\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11752-20740-1mdmzr4.j2hs9n3ik9",
+  "author": {
+    "name": "Joel Besada",
+    "email": "joel@joelb.me",
+    "url": "http://joelb.me"
+  },
+  "bugs": {
+    "url": "https://github.com/JoelBesada/activate-power-mode/issues"
+  },
+  "dependencies": {
+    "atom-select-list": "^0.2.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.defer": "^4.1.0",
+    "lodash.random": "^3.1.5",
+    "lodash.sample": "^4.2.1",
+    "lodash.throttle": "^4.0.1"
+  },
+  "description": "Activate POWER MODE to write your code in style.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.17.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JoelBesada/activate-power-mode#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/activate-power-mode",
+  "name": "activate-power-mode",
+  "optionalDependencies": {},
+  "providedServices": {
+    "activate-power-mode": {
+      "description": "Provide an API to add plugins, effects and flows.",
+      "versions": {
+        "1.0.0": "provideServiceV1"
+      }
+    }
+  },
+  "readme": "# Activate Power Mode\n\nA package for Atom to replicate the effects from [codeinthedark/editor](https://github.com/codeinthedark/editor).\n\n![activate-power-mode-0 4 0](https://cloud.githubusercontent.com/assets/688415/11615565/10f16456-9c65-11e5-8af4-265f01fc83a0.gif)\n\nNow with a COMBO MODE!!!\n\n![activate-power-mode-combo](https://cloud.githubusercontent.com/assets/10590799/18817237/876c2d84-8321-11e6-8324-f1540604c0bd.gif)\n\n**For a list of power mode packages to other editors, check out [codeinthedark/awesome-power-mode](https://github.com/codeinthedark/awesome-power-mode).**\n\n## Install\n\nWith the atom package manager:\n```bash\napm install activate-power-mode\n```\nOr Settings ➔ Packages ➔ Search for `activate-power-mode`\n\n## Usage\n\n- Activate with <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>O</kbd> or through the command panel with `Activate Power Mode: Toggle`. Use the command again to deactivate.\n\n**IMPORTANT: When `Combo Mode` is enabled, particles and other effects won't appear until you reach the activation threshold.**\n\n- Reset the max combo streak with the command `Activate Power Mode: Reset Max Combo`\n\n## Settings\n\n### Auto Toggle\nAuto enable power mode on atom start.\n\n### Combo Mode\n* **Enable/Disable**\n\n**When enabled effects won't appear until reach the activation threshold.**\n\n* Activation Threshold\n* Streak Timeout\n* Exclamation Every\n* Exclamation Texts\n\n### Screen Shake\n* **Enable/Disable**\n* Intensity\n\n### Play Audio\n* **Enable/Disable**\n* Volume\n* Audioclip (Gun, Typewriter, Custom)\n\n### Particles\n* **Enable/Disable**\n* Colour\n\nWith this option you can select if use the color at cursor position, random colors or a fixed one.\n\n* Total Count\n* Spawn Count\n* Size\n\n### Excluded File Types\n* Array of file types to exclude\n\n### Plugins\nHere you can Enable/Disable the registered plugins.\n\n## Customize\nYou can extend the basic functionality of this package by consuming the activate-power-mode service, with this you can register your own plugins, flows and canvas effects.\n\nCheck it out in the [wiki](https://github.com/JoelBesada/activate-power-mode/wiki).\n\nIf you only want to change the input logic, see the [user file flow](https://github.com/JoelBesada/activate-power-mode/wiki/Flow#user-file-flow) page.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelBesada/activate-power-mode.git"
+  },
+  "version": "2.0.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "atom-select-list",
+        "version": "0.2.0",
+        "path": "node_modules\\atom-select-list\\src\\select-list-view.js"
+      },
+      {
+        "name": "etch",
+        "version": "0.9.5",
+        "path": "node_modules\\etch\\lib\\index.js"
+      },
+      {
+        "name": "fuzzaldrin",
+        "version": "2.1.0",
+        "path": "node_modules\\fuzzaldrin\\lib\\fuzzaldrin.js"
+      },
+      {
+        "name": "lodash.debounce",
+        "version": "4.0.8",
+        "path": "node_modules\\lodash.debounce\\index.js"
+      },
+      {
+        "name": "lodash.defer",
+        "version": "4.1.0",
+        "path": "node_modules\\lodash.defer\\index.js"
+      },
+      {
+        "name": "lodash.random",
+        "version": "3.2.0",
+        "path": "node_modules\\lodash.random\\index.js"
+      },
+      {
+        "name": "lodash.sample",
+        "version": "4.2.1",
+        "path": "node_modules\\lodash.sample\\index.js"
+      },
+      {
+        "name": "lodash.throttle",
+        "version": "4.1.1",
+        "path": "node_modules\\lodash.throttle\\index.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib\\activate-power-mode.coffee",
+        "lib\\api.coffee",
+        "lib\\canvas-renderer.coffee",
+        "lib\\color-helper.coffee",
+        "lib\\combo-renderer.coffee",
+        "lib\\config-schema.coffee",
+        "lib\\effect\\default.coffee",
+        "lib\\effect\\particles.coffee",
+        "lib\\effect-list.coffee",
+        "lib\\effect-registry.coffee",
+        "lib\\flow\\default.coffee",
+        "lib\\flow\\user-file.coffee",
+        "lib\\flow-list.coffee",
+        "lib\\flow-registry.coffee",
+        "lib\\input-handler.coffee",
+        "lib\\plugin\\combo-mode.coffee",
+        "lib\\plugin\\play-audio.coffee",
+        "lib\\plugin\\power-canvas.coffee",
+        "lib\\plugin\\screen-shake.coffee",
+        "lib\\plugin-manager.coffee",
+        "lib\\plugin-registry.coffee",
+        "lib\\power-editor.coffee",
+        "lib\\service\\audio-player.coffee",
+        "lib\\service\\combo-api.coffee",
+        "lib\\service\\editor-registry.coffee",
+        "lib\\service\\screen-shaker.coffee",
+        "lib\\service.coffee",
+        "lib\\switcher.coffee"
+      ],
+      ".json": [
+        "node_modules\\atom-select-list\\package.json",
+        "node_modules\\etch\\package.json",
+        "node_modules\\fuzzaldrin\\package.json",
+        "node_modules\\lodash.debounce\\package.json",
+        "node_modules\\lodash.defer\\package.json",
+        "node_modules\\lodash.random\\package.json",
+        "node_modules\\lodash.sample\\package.json",
+        "node_modules\\lodash.throttle\\package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules\\atom-select-list\\src\\select-list-view.js",
+        "node_modules\\etch\\dist\\component-helpers.js",
+        "node_modules\\etch\\dist\\default-scheduler.js",
+        "node_modules\\etch\\dist\\dom.js",
+        "node_modules\\etch\\dist\\event-listener-props.js",
+        "node_modules\\etch\\dist\\index.js",
+        "node_modules\\etch\\dist\\patch.js",
+        "node_modules\\etch\\dist\\render.js",
+        "node_modules\\etch\\dist\\scheduler-assignment.js",
+        "node_modules\\etch\\dist\\svg-attribute-translations.js",
+        "node_modules\\etch\\dist\\svg-tags.js",
+        "node_modules\\etch\\dist\\update-props.js",
+        "node_modules\\etch\\lib\\component-helpers.js",
+        "node_modules\\etch\\lib\\default-scheduler.js",
+        "node_modules\\etch\\lib\\dom.js",
+        "node_modules\\etch\\lib\\event-listener-props.js",
+        "node_modules\\etch\\lib\\index.js",
+        "node_modules\\etch\\lib\\patch.js",
+        "node_modules\\etch\\lib\\render.js",
+        "node_modules\\etch\\lib\\scheduler-assignment.js",
+        "node_modules\\etch\\lib\\svg-attribute-translations.js",
+        "node_modules\\etch\\lib\\svg-tags.js",
+        "node_modules\\etch\\lib\\update-props.js",
+        "node_modules\\fuzzaldrin\\lib\\filter.js",
+        "node_modules\\fuzzaldrin\\lib\\fuzzaldrin.js",
+        "node_modules\\fuzzaldrin\\lib\\matcher.js",
+        "node_modules\\fuzzaldrin\\lib\\scorer.js",
+        "node_modules\\lodash.debounce\\index.js",
+        "node_modules\\lodash.defer\\index.js",
+        "node_modules\\lodash.random\\index.js",
+        "node_modules\\lodash.sample\\index.js",
+        "node_modules\\lodash.throttle\\index.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "lib\\effect",
+          "lib\\flow",
+          "lib\\plugin",
+          "lib\\service",
+          ""
+        ],
+        "dependencies": {
+          "atom-select-list": "^0.2.0",
+          "lodash.debounce": "^4.0.8",
+          "lodash.defer": "^4.1.0",
+          "lodash.random": "^3.1.5",
+          "lodash.sample": "^4.2.1",
+          "lodash.throttle": "^4.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\atom-select-list",
+          "node_modules\\atom-select-list\\src",
+          "node_modules\\atom-select-list\\test"
+        ],
+        "dependencies": {
+          "etch": "^0.9.5",
+          "fuzzaldrin": "^2.1.0"
+        }
+      }
+    ]
+  }
+}

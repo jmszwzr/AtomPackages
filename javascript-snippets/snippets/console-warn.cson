@@ -1,0 +1,4 @@
+".source.js, .source.jsx, .source.ts":
+  "console.warn":
+    "prefix": "cw"
+    "body": "console.warn(${1:obj});"

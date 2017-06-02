@@ -1,0 +1,367 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11751-14308-1140ei.ntey3w61or"
+    ]
+  ],
+  "_from": "..\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+  "_id": "tree-view-git-status@1.4.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tree-view-git-status",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+  "_shasum": "1a0874cdeff44d3eb337d7f92723c56feae05fa9",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11751-14308-t7ixjj.v6qcbu766r\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11751-14308-1140ei.ntey3w61or",
+  "bugs": {
+    "url": "https://github.com/subesokun/atom-tree-view-git-status/issues"
+  },
+  "dependencies": {
+    "fs-plus": "^3.0.0",
+    "temp": "^0.8.3"
+  },
+  "description": "Show the Git repository status in the Atom tree-view",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.7.0"
+  },
+  "homepage": "https://github.com/subesokun/atom-tree-view-git-status#readme",
+  "keywords": [
+    "tree-view",
+    "git",
+    "vcs",
+    "scm",
+    "productivity"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "tree-view-git-status",
+  "optionalDependencies": {},
+  "readme": "# Tree View Git Status package\n\n[![Version](https://img.shields.io/apm/v/tree-view-git-status.svg?style=flat-square)](https://atom.io/packages/tree-view-git-status)\n[![Downloads](https://img.shields.io/apm/dm/tree-view-git-status.svg?style=flat-square)](https://atom.io/packages/tree-view-git-status)\n[![Status Linux & OSX](https://img.shields.io/travis/subesokun/atom-tree-view-git-status.svg?style=flat-square&label=Linux%20%26%20OSX)](https://travis-ci.org/subesokun/atom-tree-view-git-status)\n[![Status Windows](https://img.shields.io/appveyor/ci/subesokun/atom-tree-view-git-status.svg?style=flat-square&label=Windows)](https://ci.appveyor.com/project/subesokun/atom-tree-view-git-status)\n[![Dependency Status](https://img.shields.io/david/subesokun/atom-tree-view-git-status.svg?style=flat-square)](https://david-dm.org/subesokun/atom-tree-view-git-status)\n\nShow the Git repository status in the Atom tree-view.\n\n\n### Screenshots\n\n![Screenshot](https://github.com/subesokun/atom-tree-view-git-status/blob/master/screenshot.png?raw=true)\n\n![Screenshot Settings](https://github.com/subesokun/atom-tree-view-git-status/blob/master/screenshot-settings.png?raw=true)\n\n### Installation\n\n```\napm install tree-view-git-status\n```\n\n### Features\n\n* Show the Git branch name and commits ahead/behind labels for each project folder.\n* Plays nice together with the Atom [project-view](https://github.com/subesokun/atom-project-view) package.\n* Customizable styling of the Tree View Git status labels depending on the current active branch.\n\n### CSS Branch Styling\n\n![Screenshot CSS Branch Styling](https://github.com/subesokun/atom-tree-view-git-status/blob/master/screenshot-css-branch-styling.png?raw=true)\n\nVia the user's custom Atom CSS stylesheet (Settings > Themes > \"Edit Stylesheet\") you can individually style the Tree View Git status labels as shown above. An example stylesheet can be found [here](https://gist.github.com/subesokun/04909f8ff45fbc28faad016559adc267).\n\n### Git Flow\n\n![Screenshot Git Flow](https://github.com/subesokun/atom-tree-view-git-status/blob/master/screenshot-gitflow.png?raw=true)\n\nThis plugin supports Git Flow if you've configured your repository to use\nit. By default Octicons are used to indicate the various states of the flow process but you can also choose to just show the colorized branch name.\n\n**Note**: Git Flow \"support\" branches are not yet supported and they're only available in the [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh) fork of Git Flow.\n\n#### Prerequisites\n\nIn order to use this feature you've to [install Git Flow](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation) and run `git flow init` on the repository you want to work on.\n\n### License\n\nMIT\n\n[gitflow-wiki-faq]: https://github.com/nvie/gitflow/wiki/FAQ\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subesokun/atom-tree-view-git-status.git"
+  },
+  "version": "1.4.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "async",
+        "version": "1.5.2",
+        "path": "node_modules\\async\\lib\\async.js"
+      },
+      {
+        "name": "balanced-match",
+        "version": "0.4.2",
+        "path": "node_modules\\balanced-match\\index.js"
+      },
+      {
+        "name": "brace-expansion",
+        "version": "1.1.7",
+        "path": "node_modules\\brace-expansion\\index.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules\\concat-map\\index.js"
+      },
+      {
+        "name": "fs-plus",
+        "version": "3.0.0",
+        "path": "node_modules\\fs-plus\\lib\\fs-plus.js"
+      },
+      {
+        "name": "fs.realpath",
+        "version": "1.0.0",
+        "path": "node_modules\\fs.realpath\\index.js"
+      },
+      {
+        "name": "glob",
+        "version": "7.1.2",
+        "path": "node_modules\\glob\\glob.js"
+      },
+      {
+        "name": "inflight",
+        "version": "1.0.6",
+        "path": "node_modules\\inflight\\inflight.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.3",
+        "path": "node_modules\\inherits\\inherits.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "3.0.4",
+        "path": "node_modules\\minimatch\\minimatch.js"
+      },
+      {
+        "name": "minimist",
+        "version": "0.0.8",
+        "path": "node_modules\\minimist\\index.js"
+      },
+      {
+        "name": "mkdirp",
+        "version": "0.5.1",
+        "path": "node_modules\\mkdirp\\index.js"
+      },
+      {
+        "name": "once",
+        "version": "1.4.0",
+        "path": "node_modules\\once\\once.js"
+      },
+      {
+        "name": "os-tmpdir",
+        "version": "1.0.2",
+        "path": "node_modules\\os-tmpdir\\index.js"
+      },
+      {
+        "name": "path-is-absolute",
+        "version": "1.0.1",
+        "path": "node_modules\\path-is-absolute\\index.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.6.1",
+        "path": "node_modules\\rimraf\\rimraf.js"
+      },
+      {
+        "name": "temp",
+        "version": "0.8.3",
+        "path": "node_modules\\temp\\lib\\temp.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.2.8",
+        "path": "node_modules\\temp\\node_modules\\rimraf\\rimraf.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules\\underscore\\underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      },
+      {
+        "name": "wrappy",
+        "version": "1.0.2",
+        "path": "node_modules\\wrappy\\wrappy.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib\\gitflowhandler.coffee",
+        "lib\\gitrepositoryasync.coffee",
+        "lib\\main.coffee",
+        "lib\\repositories.coffee",
+        "lib\\treeviewui.coffee",
+        "lib\\utils.coffee"
+      ],
+      ".js": [
+        "node_modules\\async\\dist\\async.js",
+        "node_modules\\async\\dist\\async.min.js",
+        "node_modules\\async\\lib\\async.js",
+        "node_modules\\balanced-match\\index.js",
+        "node_modules\\brace-expansion\\index.js",
+        "node_modules\\concat-map\\example\\map.js",
+        "node_modules\\concat-map\\index.js",
+        "node_modules\\fs-plus\\lib\\fs-plus.js",
+        "node_modules\\fs.realpath\\index.js",
+        "node_modules\\fs.realpath\\old.js",
+        "node_modules\\glob\\common.js",
+        "node_modules\\glob\\glob.js",
+        "node_modules\\glob\\sync.js",
+        "node_modules\\inflight\\inflight.js",
+        "node_modules\\inherits\\inherits.js",
+        "node_modules\\inherits\\inherits_browser.js",
+        "node_modules\\minimatch\\minimatch.js",
+        "node_modules\\minimist\\example\\parse.js",
+        "node_modules\\minimist\\index.js",
+        "node_modules\\mkdirp\\bin\\cmd.js",
+        "node_modules\\mkdirp\\examples\\pow.js",
+        "node_modules\\mkdirp\\index.js",
+        "node_modules\\once\\once.js",
+        "node_modules\\os-tmpdir\\index.js",
+        "node_modules\\path-is-absolute\\index.js",
+        "node_modules\\rimraf\\bin.js",
+        "node_modules\\rimraf\\rimraf.js",
+        "node_modules\\temp\\examples\\grepcount.js",
+        "node_modules\\temp\\examples\\pdfcreator.js",
+        "node_modules\\temp\\lib\\temp.js",
+        "node_modules\\temp\\node_modules\\rimraf\\bin.js",
+        "node_modules\\temp\\node_modules\\rimraf\\rimraf.js",
+        "node_modules\\temp\\no_cleanup.js",
+        "node_modules\\temp\\no_cleanup_on_exit.js",
+        "node_modules\\temp\\no_cleanup_on_exit.spec.js",
+        "node_modules\\underscore\\underscore-min.js",
+        "node_modules\\underscore\\underscore.js",
+        "node_modules\\underscore-plus\\lib\\underscore-plus.js",
+        "node_modules\\wrappy\\wrappy.js"
+      ],
+      ".json": [
+        "node_modules\\async\\package.json",
+        "node_modules\\balanced-match\\package.json",
+        "node_modules\\brace-expansion\\package.json",
+        "node_modules\\concat-map\\package.json",
+        "node_modules\\fs-plus\\package.json",
+        "node_modules\\fs.realpath\\package.json",
+        "node_modules\\glob\\package.json",
+        "node_modules\\inflight\\package.json",
+        "node_modules\\inherits\\package.json",
+        "node_modules\\minimatch\\package.json",
+        "node_modules\\minimist\\package.json",
+        "node_modules\\mkdirp\\package.json",
+        "node_modules\\once\\package.json",
+        "node_modules\\os-tmpdir\\package.json",
+        "node_modules\\path-is-absolute\\package.json",
+        "node_modules\\rimraf\\package.json",
+        "node_modules\\temp\\node_modules\\rimraf\\package.json",
+        "node_modules\\temp\\package.json",
+        "node_modules\\underscore\\package.json",
+        "node_modules\\underscore-plus\\package.json",
+        "node_modules\\wrappy\\package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "fs-plus": "^3.0.0",
+          "temp": "^0.8.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^0.4.1",
+          "concat-map": "0.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\fs-plus\\lib",
+          "node_modules\\fs-plus"
+        ],
+        "dependencies": {
+          "async": "^1.5.2",
+          "mkdirp": "^0.5.1",
+          "rimraf": "^2.5.2",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\glob"
+        ],
+        "dependencies": {
+          "fs.realpath": "^1.0.0",
+          "inflight": "^1.0.4",
+          "inherits": "2",
+          "minimatch": "^3.0.4",
+          "once": "^1.3.0",
+          "path-is-absolute": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\inflight"
+        ],
+        "dependencies": {
+          "once": "^1.3.0",
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\minimatch"
+        ],
+        "dependencies": {
+          "brace-expansion": "^1.1.7"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\mkdirp\\bin",
+          "node_modules\\mkdirp\\examples",
+          "node_modules\\mkdirp",
+          "node_modules\\mkdirp\\test"
+        ],
+        "dependencies": {
+          "minimist": "0.0.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\once"
+        ],
+        "dependencies": {
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\rimraf"
+        ],
+        "dependencies": {
+          "glob": "^7.0.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\temp\\examples",
+          "node_modules\\temp\\lib",
+          "node_modules\\temp",
+          "node_modules\\temp\\test"
+        ],
+        "dependencies": {
+          "os-tmpdir": "^1.0.0",
+          "rimraf": "~2.2.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\underscore-plus\\lib",
+          "node_modules\\underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

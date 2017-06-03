@@ -1,0 +1,145 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+        "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11753-18016-3jrwqy.l0ygv6lxr"
+    ]
+  ],
+  "_from": "..\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+  "_id": "busy-signal@1.4.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/busy-signal",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+    "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+  "_shasum": "bea1229c77d3ea332466bc878e52ab4a2a394590",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+  "_where": "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11753-18016-3jrwqy.l0ygv6lxr",
+  "bugs": {
+    "url": "https://github.com/steelbrain/busy-signal/issues"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "disposify": "^1.0.0",
+    "escape-html": "^1.0.3",
+    "ms": "^1.0.0"
+  },
+  "description": "A package that provides an easy to use API to show your package is performing a task",
+  "devDependencies": {
+    "eslint-config-steelbrain": "^3.0.1",
+    "jasmine-fix": "^1.0.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/steelbrain/busy-signal#readme",
+  "keywords": [
+    "busy",
+    "signal"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "busy-signal",
+  "optionalDependencies": {},
+  "providedServices": {
+    "busy-signal": {
+      "versions": {
+        "1.0.0": "providerRegistry"
+      }
+    }
+  },
+  "readme": "# Busy Signal\n\n[![Greenkeeper badge](https://badges.greenkeeper.io/steelbrain/busy-signal.svg)](https://greenkeeper.io/)\n\nBusy Signal is a base package that provides an easy to use API to show your package is performing a task.\n\n## API\n\nPlease head to [`busy-signal` wiki](https://github.com/steelbrain/busy-signal/wiki/Busy-Signal-API) for the API documentation\n\n## Screenshot\n\n![busy-signal](https://cloud.githubusercontent.com/assets/4278113/22865536/0a123074-f188-11e6-8c6e-38574a6fe14c.gif)\n\n## License\n\nThis project is licensed under the terms of MIT License\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/busy-signal.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "1.4.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "disposify",
+        "version": "1.0.0",
+        "path": "node_modules\\disposify\\lib\\index.js"
+      },
+      {
+        "name": "escape-html",
+        "version": "1.0.3",
+        "path": "node_modules\\escape-html\\index.js"
+      },
+      {
+        "name": "ms",
+        "version": "1.0.0",
+        "path": "node_modules\\ms\\index.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        ".eslintrc.json",
+        "node_modules\\disposify\\package.json",
+        "node_modules\\escape-html\\package.json",
+        "node_modules\\ms\\package.json",
+        "package.json"
+      ],
+      ".js": [
+        "lib\\element.js",
+        "lib\\helpers.js",
+        "lib\\index.js",
+        "lib\\main.js",
+        "lib\\provider.js",
+        "lib\\registry.js",
+        "lib\\types.js",
+        "node_modules\\disposify\\lib\\index.js",
+        "node_modules\\escape-html\\index.js",
+        "node_modules\\ms\\index.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "decls",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "disposify": "^1.0.0",
+          "escape-html": "^1.0.3",
+          "ms": "^1.0.0"
+        }
+      }
+    ]
+  }
+}

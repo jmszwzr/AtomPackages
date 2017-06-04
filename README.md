@@ -71,3 +71,4 @@ b, legal, img, l, i, code, t, table
 - [Atom快速上手指南](https://zhuanlan.zhihu.com/p/26175781)
 - [Atom 编辑器 入门 快捷键 插件安利](http://www.jianshu.com/p/aa8f8a252ed9)
 - [Emmet使用](http://www.cnblogs.com/matchless/archive/2013/04/10/3010628.html)
+- [Atom编辑器配置](http://imweb.io/topic/56c12f7e5c49f9d377ed8f1e)

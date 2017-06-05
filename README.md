@@ -11,11 +11,23 @@ Ctrl + ]                向左缩进
 Shift + Home            选定光标至行首
 Shift + End             选定光标至行尾
 Ctrl + D                匹配选定下一个
-Alt + F3                匹配选定所有(和Snipaste快捷键冲突)
 Ctrl + up               选中行上移
 Ctrl + down             选中行下移
+ctrl-shift-g            Styleguide
+ctrl-shift-k            快速删除当前行(与搜狗输入法冲突)
+ctrl-shift-d            复制当前行到下一行
 
-#platformio-ide-terminal
+# keymaps
+Alt + F2                匹配选定所有(和Snipaste快捷键冲突)
+
+
+# ask-stack
+shift-alt-a             打开搜索strackoverflow
+# git-control
+ctrl-alt-g              打开关闭git-control
+# expose
+alt-z                   打开关闭所有已经打开文件的缩略图
+# platformio-ide-terminal
 Ctrl + `                显示隐藏所有终端
 
 # 目录树操作
@@ -83,15 +95,24 @@ b, legal, img, l, i, code, t, table
 
 
 ## Atom -- 常见问题解决
-- markdown-scroll-sync报`atom-text-editor.Object.defineProperty.get is deprecated`错误
-```
-解决方案如下：  
-1.git clone git@github.com:vincentcn/markdown-scroll-sync.git
-2.删除.atom/packages目录下的markdown-scroll-sync
-3.将clone下来的markdown-scroll-sync复制粘贴到.atom/packages下
-4.进入markdown-scroll-sync目录，运行apm install
-5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
-```
+
+### **快捷键冲突**
+>  
+- 1、打开 设置 -> Keybingdings；
+- 2、复制目标快捷键的配置信息，如下图所示，目标是将 ctrl + alt + o 快捷键配置为打开或关闭 git-control；
+![images](https://github.com/jmszwzr/AtomPackages/raw/master/_images/Keybingdings.png)
+- 3、打开 "keymap.cson"(ctrl + shift + p / cmd + shift + p, type "open keymap")；
+- 4、粘贴配置信息至文件末尾。
+
+### 从Atom官网或者Atom编辑器下载的markdown-scroll-sync报`atom-text-editor.Object.defineProperty.get is deprecated`错误
+
+>解决方案如下：  
+- 1.git clone git@github.com:vincentcn/markdown-scroll-sync.git
+- 2.删除.atom/packages目录下的markdown-scroll-sync
+- 3.将clone下来的markdown-scroll-sync复制粘贴到.atom/packages下
+- 4.进入markdown-scroll-sync目录，运行apm install
+- 5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
+
 
 
 
@@ -110,4 +131,5 @@ b, legal, img, l, i, code, t, table
 - [Atom 编辑器 入门 快捷键 插件安利](http://www.jianshu.com/p/aa8f8a252ed9)
 - [Emmet使用](http://www.cnblogs.com/matchless/archive/2013/04/10/3010628.html)
 - [Atom编辑器配置](http://imweb.io/topic/56c12f7e5c49f9d377ed8f1e)
+- [优美的编辑器Github Atom](https://crazylxr.github.io/2016/10/10/2016-10-10-%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom/)
 - [磨刀不误砍柴工，配置你的前端开发环境：Atom](https://segmentfault.com/a/1190000007690359)

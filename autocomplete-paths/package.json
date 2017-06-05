@@ -1,0 +1,138 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-8748-10i92qn.3skkfhia4i"
+    ]
+  ],
+  "_from": "..\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+  "_id": "autocomplete-paths@1.0.5",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/autocomplete-paths",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+  "_shasum": "5e7067c0992d19e7b54a35bb07aacb154e38442c",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-8748-1wwqc40.g2e8nnrk9\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-8748-10i92qn.3skkfhia4i",
+  "bugs": {
+    "url": "https://github.com/atom-community/autocomplete-paths/issues"
+  },
+  "dependencies": {
+    "fuzzaldrin": ">=1.0.0",
+    "underscore-plus": ">=1.1.2"
+  },
+  "description": "Adds path autocompletion to autocomplete+",
+  "devDependencies": {
+    "coffeelint": "^1.8.1"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/atom-community/autocomplete-paths#readme",
+  "license": "MIT",
+  "main": "./lib/autocomplete-paths",
+  "name": "autocomplete-paths",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "1.0.0": "provide"
+      }
+    }
+  },
+  "readme": "# autocomplete+ paths suggestions [![Build Status](https://travis-ci.org/atom-community/autocomplete-paths.svg?branch=master)](https://travis-ci.org/atom-community/autocomplete-paths)\n\n[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atom-community/autocomplete-paths?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\n[View the changelog](https://github.com/atom-community/autocomplete-paths/blob/master/CHANGELOG.md)\n\nAdds path autocompletion to autocomplete+\n\n![autocomplete-paths](http://s1.directupload.net/images/140411/p5kvife6.gif)\n\n## Installation\n\nYou can install autocomplete-paths using the Preferences pane.\n\n**Please make sure you have autocomplete-plus installed as well**\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-community/autocomplete-paths.git"
+  },
+  "version": "1.0.5",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "fuzzaldrin",
+        "version": "2.1.0",
+        "path": "node_modules\\fuzzaldrin\\lib\\fuzzaldrin.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules\\underscore\\underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules\\fuzzaldrin\\package.json",
+        "node_modules\\underscore\\package.json",
+        "node_modules\\underscore-plus\\package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib\\autocomplete-paths.coffee",
+        "lib\\paths-provider.coffee"
+      ],
+      ".js": [
+        "node_modules\\fuzzaldrin\\lib\\filter.js",
+        "node_modules\\fuzzaldrin\\lib\\fuzzaldrin.js",
+        "node_modules\\fuzzaldrin\\lib\\matcher.js",
+        "node_modules\\fuzzaldrin\\lib\\scorer.js",
+        "node_modules\\underscore\\underscore-min.js",
+        "node_modules\\underscore\\underscore.js",
+        "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec",
+          "spec\\fixtures",
+          "spec\\issues"
+        ],
+        "dependencies": {
+          "fuzzaldrin": ">=1.0.0",
+          "underscore-plus": ">=1.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\underscore-plus\\lib",
+          "node_modules\\underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

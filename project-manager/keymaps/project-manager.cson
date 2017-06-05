@@ -1,0 +1,14 @@
+'.platform-darwin':
+  'ctrl-cmd-p': 'project-manager:list-projects'
+
+'.platform-win32':
+  'alt-shift-P': 'project-manager:list-projects'
+
+'.platform-linux':
+  'alt-shift-P': 'project-manager:list-projects'
+
+'.project-manager input':
+  'enter': 'core:confirm'
+
+'.project-manager atom-text-editor[mini]':
+  'shift-enter': 'project-manager:alt-confirm'

@@ -1,0 +1,30 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Project Manager'
+      'submenu': [
+        {
+          'label': 'List Projects',
+          'command': 'project-manager:list-projects'
+        }
+        {
+          'label': 'Save Project',
+          'command': 'project-manager:save-project'
+        }
+        {
+          'label': 'Edit Project',
+          'command': 'project-manager:edit-project'
+        }
+        {
+          'label': 'Edit Projects',
+          'command': 'project-manager:edit-projects'
+        }
+        {
+          'label': 'Update Projects',
+          'command': 'project-manager:update-projects'
+        }
+      ]
+    ]
+  }
+]

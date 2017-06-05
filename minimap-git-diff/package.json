@@ -1,0 +1,335 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-12328-fjm31u.zh27iltyb9"
+    ]
+  ],
+  "_from": "..\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+  "_id": "minimap-git-diff@4.3.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/minimap-git-diff",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+  "_shasum": "351b314abee91e17e3688479ada6b6fd49e94d89",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-12328-12drdjn.72lprdx6r\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-12328-fjm31u.zh27iltyb9",
+  "author": {
+    "name": "Cédric Néhémie",
+    "email": "cedric.nehemie@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/atom-minimap/minimap-git-diff/issues"
+  },
+  "consumedServices": {
+    "minimap": {
+      "versions": {
+        "1.0.0": "consumeMinimapServiceV1"
+      }
+    }
+  },
+  "dependencies": {
+    "fs-plus": "^2.0.0",
+    "mixto": "1.x"
+  },
+  "description": "A minimap binding for the git diff package",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.125.0"
+  },
+  "homepage": "https://github.com/atom-minimap/minimap-git-diff#readme",
+  "license": "MIT",
+  "main": "./lib/minimap-git-diff",
+  "name": "minimap-git-diff",
+  "optionalDependencies": {},
+  "readme": "# minimap-git-diff package\n\nA minimap binding for the Atom git-diff package.\n\n![Minimap Git Diff Screenshot](https://github.com/atom-minimap/minimap-git-diff/blob/master/screenshot.png?raw=true)\n\nYou will need the [Minimap package](https://github.com/fundon/atom-minimap) installed to use this package.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-minimap/minimap-git-diff.git"
+  },
+  "version": "4.3.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "async",
+        "version": "1.5.2",
+        "path": "node_modules\\async\\lib\\async.js"
+      },
+      {
+        "name": "balanced-match",
+        "version": "0.4.2",
+        "path": "node_modules\\balanced-match\\index.js"
+      },
+      {
+        "name": "brace-expansion",
+        "version": "1.1.7",
+        "path": "node_modules\\brace-expansion\\index.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules\\concat-map\\index.js"
+      },
+      {
+        "name": "fs-plus",
+        "version": "2.10.1",
+        "path": "node_modules\\fs-plus\\lib\\fs-plus.js"
+      },
+      {
+        "name": "fs.realpath",
+        "version": "1.0.0",
+        "path": "node_modules\\fs.realpath\\index.js"
+      },
+      {
+        "name": "glob",
+        "version": "7.1.2",
+        "path": "node_modules\\glob\\glob.js"
+      },
+      {
+        "name": "inflight",
+        "version": "1.0.6",
+        "path": "node_modules\\inflight\\inflight.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.3",
+        "path": "node_modules\\inherits\\inherits.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "3.0.4",
+        "path": "node_modules\\minimatch\\minimatch.js"
+      },
+      {
+        "name": "minimist",
+        "version": "0.0.8",
+        "path": "node_modules\\minimist\\index.js"
+      },
+      {
+        "name": "mixto",
+        "version": "1.0.0",
+        "path": "node_modules\\mixto\\lib\\mixin.js"
+      },
+      {
+        "name": "mkdirp",
+        "version": "0.5.1",
+        "path": "node_modules\\mkdirp\\index.js"
+      },
+      {
+        "name": "once",
+        "version": "1.4.0",
+        "path": "node_modules\\once\\once.js"
+      },
+      {
+        "name": "path-is-absolute",
+        "version": "1.0.1",
+        "path": "node_modules\\path-is-absolute\\index.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.6.1",
+        "path": "node_modules\\rimraf\\rimraf.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules\\underscore\\underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      },
+      {
+        "name": "wrappy",
+        "version": "1.0.2",
+        "path": "node_modules\\wrappy\\wrappy.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib\\helpers.coffee",
+        "lib\\minimap-git-diff-binding.coffee",
+        "lib\\minimap-git-diff.coffee"
+      ],
+      ".js": [
+        "node_modules\\async\\dist\\async.js",
+        "node_modules\\async\\dist\\async.min.js",
+        "node_modules\\async\\lib\\async.js",
+        "node_modules\\balanced-match\\index.js",
+        "node_modules\\brace-expansion\\index.js",
+        "node_modules\\concat-map\\example\\map.js",
+        "node_modules\\concat-map\\index.js",
+        "node_modules\\fs-plus\\lib\\fs-plus.js",
+        "node_modules\\fs.realpath\\index.js",
+        "node_modules\\fs.realpath\\old.js",
+        "node_modules\\glob\\common.js",
+        "node_modules\\glob\\glob.js",
+        "node_modules\\glob\\sync.js",
+        "node_modules\\inflight\\inflight.js",
+        "node_modules\\inherits\\inherits.js",
+        "node_modules\\inherits\\inherits_browser.js",
+        "node_modules\\minimatch\\minimatch.js",
+        "node_modules\\minimist\\example\\parse.js",
+        "node_modules\\minimist\\index.js",
+        "node_modules\\mixto\\lib\\mixin.js",
+        "node_modules\\mkdirp\\bin\\cmd.js",
+        "node_modules\\mkdirp\\examples\\pow.js",
+        "node_modules\\mkdirp\\index.js",
+        "node_modules\\once\\once.js",
+        "node_modules\\path-is-absolute\\index.js",
+        "node_modules\\rimraf\\bin.js",
+        "node_modules\\rimraf\\rimraf.js",
+        "node_modules\\underscore\\underscore-min.js",
+        "node_modules\\underscore\\underscore.js",
+        "node_modules\\underscore-plus\\lib\\underscore-plus.js",
+        "node_modules\\wrappy\\wrappy.js"
+      ],
+      ".json": [
+        "node_modules\\async\\package.json",
+        "node_modules\\balanced-match\\package.json",
+        "node_modules\\brace-expansion\\package.json",
+        "node_modules\\concat-map\\package.json",
+        "node_modules\\fs-plus\\package.json",
+        "node_modules\\fs.realpath\\package.json",
+        "node_modules\\glob\\package.json",
+        "node_modules\\inflight\\package.json",
+        "node_modules\\inherits\\package.json",
+        "node_modules\\minimatch\\package.json",
+        "node_modules\\minimist\\package.json",
+        "node_modules\\mixto\\package.json",
+        "node_modules\\mkdirp\\package.json",
+        "node_modules\\once\\package.json",
+        "node_modules\\path-is-absolute\\package.json",
+        "node_modules\\rimraf\\package.json",
+        "node_modules\\underscore\\package.json",
+        "node_modules\\underscore-plus\\package.json",
+        "node_modules\\wrappy\\package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "fs-plus": "^2.0.0",
+          "mixto": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^0.4.1",
+          "concat-map": "0.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\fs-plus\\lib",
+          "node_modules\\fs-plus"
+        ],
+        "dependencies": {
+          "async": "^1.5.2",
+          "mkdirp": "^0.5.1",
+          "rimraf": "^2.5.2",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\glob"
+        ],
+        "dependencies": {
+          "fs.realpath": "^1.0.0",
+          "inflight": "^1.0.4",
+          "inherits": "2",
+          "minimatch": "^3.0.4",
+          "once": "^1.3.0",
+          "path-is-absolute": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\inflight"
+        ],
+        "dependencies": {
+          "once": "^1.3.0",
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\minimatch"
+        ],
+        "dependencies": {
+          "brace-expansion": "^1.1.7"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\mkdirp\\bin",
+          "node_modules\\mkdirp\\examples",
+          "node_modules\\mkdirp",
+          "node_modules\\mkdirp\\test"
+        ],
+        "dependencies": {
+          "minimist": "0.0.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\once"
+        ],
+        "dependencies": {
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\rimraf"
+        ],
+        "dependencies": {
+          "glob": "^7.0.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\underscore-plus\\lib",
+          "node_modules\\underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

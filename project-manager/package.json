@@ -1,0 +1,2049 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-20504-w9iva2.67u8skbj4i"
+    ]
+  ],
+  "_from": "..\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+  "_id": "project-manager@3.3.5",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/project-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+  "_shasum": "145fbdfcb6c24d31e073e974c839bae9f2b44ff9",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-20504-ff7skh.bygof4unmi\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-20504-w9iva2.67u8skbj4i",
+  "bugs": {
+    "url": "https://github.com/danielbrodin/atom-project-manager/issues"
+  },
+  "configSchema": {
+    "showPath": {
+      "type": "boolean",
+      "default": true
+    },
+    "environmentSpecificProjects": {
+      "type": "boolean",
+      "default": false
+    },
+    "prettifyTitle": {
+      "type": "boolean",
+      "default": true,
+      "description": "Will suggest a prettified project title on save."
+    },
+    "savePathsRelativeToHome": {
+      "type": "boolean",
+      "default": false,
+      "description": "Will save paths relative to home path if possible."
+    },
+    "sortBy": {
+      "type": "string",
+      "description": "Default sorting is the order in which the projects are",
+      "default": "default",
+      "enum": [
+        "default",
+        "title",
+        "group",
+        "last modified"
+      ]
+    },
+    "includeGitRepositories": {
+      "type": "boolean",
+      "default": false,
+      "description": "Will search for directories in your `Project Home` that include `.git` and list them."
+    },
+    "ignoreDirectories": {
+      "type": "string",
+      "default": "node_modules, vendor",
+      "description": "Comma separated list of directories to skip when looking for git repositories."
+    },
+    "alwaysOpenInSameWindow": {
+      "type": "boolean",
+      "default": false,
+      "description": "Will reverse `shift+enter` in the list view to open in a new window."
+    }
+  },
+  "dependencies": {
+    "atom-project-util": "^4.1.0",
+    "atom-space-pen-views": "^2.0.3",
+    "change-case": "^3.0.0",
+    "etch": "^0.8.0",
+    "findit": "^2.0.0",
+    "mobx": "^2.6.0",
+    "season": "^5.4.1",
+    "tildify": "^1.2.0",
+    "underscore-plus": "^1.6.6",
+    "untildify": "^3.0.2"
+  },
+  "description": "Project Manager for easy access and switching between projects in Atom.",
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "engines": {
+    "atom": ">1.4.0"
+  },
+  "homepage": "https://github.com/danielbrodin/atom-project-manager#readme",
+  "keywords": [
+    "project",
+    "manager",
+    "settings",
+    "workflow",
+    "productivity"
+  ],
+  "license": "MIT",
+  "main": "./lib/project-manager",
+  "name": "project-manager",
+  "optionalDependencies": {},
+  "providedServices": {
+    "project-manager": {
+      "description": "Get access to all saved projects",
+      "versions": {
+        "3.1.0": "provideProjects"
+      }
+    }
+  },
+  "readme": "# Project Manager\n[![Build status](https://travis-ci.org/danielbrodin/atom-project-manager.svg?branch=master)](https://travis-ci.org/danielbrodin/atom-project-manager/)\n[![apm](https://img.shields.io/apm/dm/project-manager.svg)](https://atom.io/packages/project-manager)\n[![apm](https://img.shields.io/apm/v/project-manager.svg)]()\n\n[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DR4XQWAZV6M2A&lc=SE&item_name=Project%20Manager&item_number=atom%2dproject%2dmanager&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) a :beer: if you enjoy using the [project manager](https://github.com/danielbrodin/atom-project-manager) :)\n\n![Project Manager](https://raw.github.com/danielbrodin/atom-project-manager/master/project-manager.gif)\n\n\nGet easy access to all your projects and manage them with project specific settings and options.\n\n## Install\n```\n$ apm install project-manager\n```\nYou can also open Atom and go to Preferences > Install and search for `project-manager`\n\n\n## Use\n### List Projects\n`ctrl-cmd-p` (mac) / `alt-shift-P` (win & linux) or `Project Manager: List Projects` in the Command Palette.\n\nProjects can be filtered by `title`, `group` and `template` by typing `group: atom` which would give all projects with the `atom` group.\n\n\n### Save Project\n`Project Manager: Save Project` in the Command Palette and write the title you want to save the project as.\n\n### Edit Project\n`Project Manager: Edit Project` will open a page where you can edit the current project. It currently only supports certain fields.\n\n### Edit Projects\nAll projects are saved in a `.cson` file which you can easily reach by searching for `Project Manager: Edit Projects` in the Command Palette.\n\n## Project Settings\n\nsetting    | Type      | Description                                                                                                                                           | Default               \n-----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------\n`title`    | `string`  | Projects title. Used in the projects list                                                                                                | `''`                  \n`paths`    | `array`   | The folders that will open in the tree view. First path is the main one that counts as the project.                                                   | `[]`                  \n`settings` | `Object`  | Enables you to set project specific settings. Everything that goes in the `config.cson` file can go here. It also supports scoped settings.           | `{}`                  \n`icon`     | `string`  | Icon that shows in the projects list. It's class-based so can either be a class already provided by Atom like `icon-squirrel` or a class of your own. You can find a list of all icons on [octicons.github.com](https://octicons.github.com/). | `'icon-chevron-right'`\n`devMode`  | `boolean` | `true` if project should open in dev mode. [Look here][devMode] for more info.                                                                        | `false`               \n`group`    | `string`  | Adds a group to the projects list that can be used to group and filter projects                                                                       | `null`                \n`template` | `string`  | If you add a project in the `projects.cson` file without `paths` it will count as a template. This way you can easily share settings between projects | `null`                \n\n### Local settings file\nAll these settings can be added to a `project.cson` file in the root folder of the project. It follows the below example, but without the array.\n\n### Example\n```coffeescript\n[\n  {\n    title: 'Project Manager'\n    group: 'Atom'\n    paths: [\n      '/path/to/project-manager'\n    ]\n    devMode: true\n    settings:\n      'editor.tabLength': 4\n      'editor.showInvisibles': true\n  }\n]\n\n```\n\n## Provider\nIf you want to use the projects available through the Project Manager you can use the provided methods.\n\n```javascript\nfunction consumeProjectManager({ getProjects, getProject, saveProject, openProject } => {\n  /**\n   * Get an array containing all projects.\n   * The callback will be run each time a project is added.\n   */\n  getProjects(projects => {\n    // Do something with the projects.\n  });\n\n  /**\n   * Get the currently active project.\n   * The callback will be run whenever the active project changes.\n   */\n  getProject(project => {\n    if (project) {\n      // We have an active project.\n    } else {\n      // Project is either not loaded yet, or there is no project saved.\n    }\n  });\n\n  /**\n   * Can take either a project recieved from getProjects/getProject or\n   * just an object with the props for a new project.\n   */\n  saveProject(project);\n\n  /**\n   * Will open the project.\n   * `openInSameWindow` should be true if the project should open up in the\n   * current window.\n   */\n  openProject(project, openInSameWindow);\n});\n\n```\n\n\n## Contribute\nIf you would like to contribute to the project manager, be it new features or bugs,\nplease do the following:\n\n1. Fork the repository\n2. Create a new topic branch off the master branch that describe what it does\n3. Commit and push the branch\n4. Make a pull request describing what you have done\n5. Now it will hopefully get merged :)\n\nAll PR's should:\n- Pass the [eslint](https://atom.io/packages/linter-eslint) linter\n- Add a test when it makes sense, which should be most of the time\n\n[devMode]: https://atom.io/docs/api/v1.11.2/AtomEnvironment#instance-open\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbrodin/atom-project-manager.git"
+  },
+  "scripts": {
+    "test": "apm test && ./node_modules/.bin/eslint lib/**"
+  },
+  "version": "3.3.5",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "async",
+        "version": "1.5.2",
+        "path": "node_modules\\async\\lib\\async.js"
+      },
+      {
+        "name": "atom-project-util",
+        "version": "4.1.0",
+        "path": "node_modules\\atom-project-util\\index.js"
+      },
+      {
+        "name": "atom-space-pen-views",
+        "version": "2.2.0",
+        "path": "node_modules\\atom-space-pen-views\\lib\\main.js"
+      },
+      {
+        "name": "balanced-match",
+        "version": "0.4.2",
+        "path": "node_modules\\balanced-match\\index.js"
+      },
+      {
+        "name": "brace-expansion",
+        "version": "1.1.7",
+        "path": "node_modules\\brace-expansion\\index.js"
+      },
+      {
+        "name": "browser-split",
+        "version": "0.0.1",
+        "path": "node_modules\\browser-split\\index.js"
+      },
+      {
+        "name": "camel-case",
+        "version": "3.0.0",
+        "path": "node_modules\\camel-case\\camel-case.js"
+      },
+      {
+        "name": "camelize",
+        "version": "1.0.0",
+        "path": "node_modules\\camelize\\index.js"
+      },
+      {
+        "name": "change-case",
+        "version": "3.0.1",
+        "path": "node_modules\\change-case\\change-case.js"
+      },
+      {
+        "name": "coffee-script",
+        "version": "1.9.0",
+        "path": "node_modules\\coffee-script\\lib\\coffee-script\\coffee-script.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules\\concat-map\\index.js"
+      },
+      {
+        "name": "constant-case",
+        "version": "2.0.0",
+        "path": "node_modules\\constant-case\\constant-case.js"
+      },
+      {
+        "name": "cson-parser",
+        "version": "1.0.9",
+        "path": "node_modules\\cson-parser\\lib\\cson-parser.js"
+      },
+      {
+        "name": "d",
+        "version": "0.1.1",
+        "path": "node_modules\\d\\index.js"
+      },
+      {
+        "name": "dom-walk",
+        "version": "0.1.1",
+        "path": "node_modules\\dom-walk\\index.js"
+      },
+      {
+        "name": "dot-case",
+        "version": "2.1.1",
+        "path": "node_modules\\dot-case\\dot-case.js"
+      },
+      {
+        "name": "emissary",
+        "version": "1.3.3",
+        "path": "node_modules\\emissary\\lib\\emissary.js"
+      },
+      {
+        "name": "es5-ext",
+        "version": "0.10.22",
+        "path": "node_modules\\es5-ext\\index.js"
+      },
+      {
+        "name": "d",
+        "version": "1.0.0",
+        "path": "node_modules\\es5-ext\\node_modules\\d\\index.js"
+      },
+      {
+        "name": "es6-iterator",
+        "version": "2.0.1",
+        "path": "node_modules\\es5-ext\\node_modules\\es6-iterator\\index.js"
+      },
+      {
+        "name": "es6-symbol",
+        "version": "3.1.1",
+        "path": "node_modules\\es5-ext\\node_modules\\es6-symbol\\index.js"
+      },
+      {
+        "name": "es6-iterator",
+        "version": "0.1.3",
+        "path": "node_modules\\es6-iterator\\index.js"
+      },
+      {
+        "name": "es6-symbol",
+        "version": "2.0.1",
+        "path": "node_modules\\es6-symbol\\index.js"
+      },
+      {
+        "name": "es6-weak-map",
+        "version": "0.1.4",
+        "path": "node_modules\\es6-weak-map\\index.js"
+      },
+      {
+        "name": "etch",
+        "version": "0.8.0",
+        "path": "node_modules\\etch\\dist\\index.js"
+      },
+      {
+        "name": "ev-store",
+        "version": "7.0.0",
+        "path": "node_modules\\ev-store\\index.js"
+      },
+      {
+        "name": "findit",
+        "version": "2.0.0",
+        "path": "node_modules\\findit\\index.js"
+      },
+      {
+        "name": "fs-plus",
+        "version": "2.10.1",
+        "path": "node_modules\\fs-plus\\lib\\fs-plus.js"
+      },
+      {
+        "name": "fs.realpath",
+        "version": "1.0.0",
+        "path": "node_modules\\fs.realpath\\index.js"
+      },
+      {
+        "name": "fuzzaldrin",
+        "version": "2.1.0",
+        "path": "node_modules\\fuzzaldrin\\lib\\fuzzaldrin.js"
+      },
+      {
+        "name": "glob",
+        "version": "7.1.2",
+        "path": "node_modules\\glob\\glob.js"
+      },
+      {
+        "name": "global",
+        "version": "4.3.2",
+        "path": "node_modules\\global\\window.js"
+      },
+      {
+        "name": "grim",
+        "version": "1.5.0",
+        "path": "node_modules\\grim\\lib\\grim.js"
+      },
+      {
+        "name": "header-case",
+        "version": "1.0.1",
+        "path": "node_modules\\header-case\\header-case.js"
+      },
+      {
+        "name": "individual",
+        "version": "3.0.0",
+        "path": "node_modules\\individual\\index.js"
+      },
+      {
+        "name": "inflight",
+        "version": "1.0.6",
+        "path": "node_modules\\inflight\\inflight.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.3",
+        "path": "node_modules\\inherits\\inherits.js"
+      },
+      {
+        "name": "is-lower-case",
+        "version": "1.1.3",
+        "path": "node_modules\\is-lower-case\\is-lower-case.js"
+      },
+      {
+        "name": "is-object",
+        "version": "1.0.1",
+        "path": "node_modules\\is-object\\index.js"
+      },
+      {
+        "name": "is-upper-case",
+        "version": "1.1.2",
+        "path": "node_modules\\is-upper-case\\is-upper-case.js"
+      },
+      {
+        "name": "jquery",
+        "version": "2.1.4",
+        "path": "node_modules\\jquery\\dist\\jquery.js"
+      },
+      {
+        "name": "lower-case",
+        "version": "1.1.4",
+        "path": "node_modules\\lower-case\\lower-case.js"
+      },
+      {
+        "name": "lower-case-first",
+        "version": "1.0.2",
+        "path": "node_modules\\lower-case-first\\lower-case-first.js"
+      },
+      {
+        "name": "min-document",
+        "version": "2.19.0",
+        "path": "node_modules\\min-document\\index.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "3.0.4",
+        "path": "node_modules\\minimatch\\minimatch.js"
+      },
+      {
+        "name": "minimist",
+        "version": "0.0.8",
+        "path": "node_modules\\minimist\\index.js"
+      },
+      {
+        "name": "mixto",
+        "version": "1.0.0",
+        "path": "node_modules\\mixto\\lib\\mixin.js"
+      },
+      {
+        "name": "mkdirp",
+        "version": "0.5.1",
+        "path": "node_modules\\mkdirp\\index.js"
+      },
+      {
+        "name": "mobx",
+        "version": "2.7.0",
+        "path": "node_modules\\mobx\\lib\\mobx.js"
+      },
+      {
+        "name": "next-tick",
+        "version": "0.2.2",
+        "path": "node_modules\\next-tick\\index.js"
+      },
+      {
+        "name": "no-case",
+        "version": "2.3.1",
+        "path": "node_modules\\no-case\\no-case.js"
+      },
+      {
+        "name": "once",
+        "version": "1.4.0",
+        "path": "node_modules\\once\\once.js"
+      },
+      {
+        "name": "optimist",
+        "version": "0.4.0",
+        "path": "node_modules\\optimist\\index.js"
+      },
+      {
+        "name": "os-homedir",
+        "version": "1.0.2",
+        "path": "node_modules\\os-homedir\\index.js"
+      },
+      {
+        "name": "param-case",
+        "version": "2.1.1",
+        "path": "node_modules\\param-case\\param-case.js"
+      },
+      {
+        "name": "pascal-case",
+        "version": "2.0.1",
+        "path": "node_modules\\pascal-case\\pascal-case.js"
+      },
+      {
+        "name": "path-case",
+        "version": "2.1.1",
+        "path": "node_modules\\path-case\\path-case.js"
+      },
+      {
+        "name": "path-is-absolute",
+        "version": "1.0.1",
+        "path": "node_modules\\path-is-absolute\\index.js"
+      },
+      {
+        "name": "process",
+        "version": "0.5.2",
+        "path": "node_modules\\process\\index.js"
+      },
+      {
+        "name": "property-accessors",
+        "version": "1.1.3",
+        "path": "node_modules\\property-accessors\\lib\\property-accessors.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.6.1",
+        "path": "node_modules\\rimraf\\rimraf.js"
+      },
+      {
+        "name": "season",
+        "version": "5.4.1",
+        "path": "node_modules\\season\\lib\\cson.js"
+      },
+      {
+        "name": "sentence-case",
+        "version": "2.1.1",
+        "path": "node_modules\\sentence-case\\sentence-case.js"
+      },
+      {
+        "name": "snake-case",
+        "version": "2.1.0",
+        "path": "node_modules\\snake-case\\snake-case.js"
+      },
+      {
+        "name": "space-pen",
+        "version": "5.1.2",
+        "path": "node_modules\\space-pen\\lib\\space-pen.js"
+      },
+      {
+        "name": "string-template",
+        "version": "0.2.1",
+        "path": "node_modules\\string-template\\index.js"
+      },
+      {
+        "name": "swap-case",
+        "version": "1.1.2",
+        "path": "node_modules\\swap-case\\swap-case.js"
+      },
+      {
+        "name": "tildify",
+        "version": "1.2.0",
+        "path": "node_modules\\tildify\\index.js"
+      },
+      {
+        "name": "title-case",
+        "version": "2.1.1",
+        "path": "node_modules\\title-case\\title-case.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules\\underscore\\underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      },
+      {
+        "name": "untildify",
+        "version": "3.0.2",
+        "path": "node_modules\\untildify\\index.js"
+      },
+      {
+        "name": "upper-case",
+        "version": "1.1.3",
+        "path": "node_modules\\upper-case\\upper-case.js"
+      },
+      {
+        "name": "upper-case-first",
+        "version": "1.1.2",
+        "path": "node_modules\\upper-case-first\\upper-case-first.js"
+      },
+      {
+        "name": "virtual-dom",
+        "version": "2.1.1",
+        "path": "node_modules\\virtual-dom\\index.js"
+      },
+      {
+        "name": "wordwrap",
+        "version": "0.0.3",
+        "path": "node_modules\\wordwrap\\index.js"
+      },
+      {
+        "name": "wrappy",
+        "version": "1.0.2",
+        "path": "node_modules\\wrappy\\wrappy.js"
+      },
+      {
+        "name": "x-is-array",
+        "version": "0.1.0",
+        "path": "node_modules\\x-is-array\\index.js"
+      },
+      {
+        "name": "x-is-string",
+        "version": "0.1.0",
+        "path": "node_modules\\x-is-string\\index.js"
+      },
+      {
+        "name": "xtend",
+        "version": "4.0.1",
+        "path": "node_modules\\xtend\\immutable.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        ".eslintrc.json",
+        "node_modules\\async\\package.json",
+        "node_modules\\atom-project-util\\package.json",
+        "node_modules\\atom-space-pen-views\\package.json",
+        "node_modules\\balanced-match\\package.json",
+        "node_modules\\brace-expansion\\package.json",
+        "node_modules\\browser-split\\component.json",
+        "node_modules\\browser-split\\package.json",
+        "node_modules\\camel-case\\package.json",
+        "node_modules\\camelize\\package.json",
+        "node_modules\\change-case\\package.json",
+        "node_modules\\coffee-script\\bower.json",
+        "node_modules\\coffee-script\\package.json",
+        "node_modules\\concat-map\\package.json",
+        "node_modules\\constant-case\\package.json",
+        "node_modules\\cson-parser\\package.json",
+        "node_modules\\d\\package.json",
+        "node_modules\\dom-walk\\package.json",
+        "node_modules\\dot-case\\package.json",
+        "node_modules\\emissary\\package.json",
+        "node_modules\\error\\package.json",
+        "node_modules\\es5-ext\\node_modules\\d\\package.json",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\package.json",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\package.json",
+        "node_modules\\es5-ext\\package.json",
+        "node_modules\\es6-iterator\\package.json",
+        "node_modules\\es6-symbol\\package.json",
+        "node_modules\\es6-weak-map\\package.json",
+        "node_modules\\etch\\package.json",
+        "node_modules\\ev-store\\package.json",
+        "node_modules\\findit\\package.json",
+        "node_modules\\fs-plus\\package.json",
+        "node_modules\\fs.realpath\\package.json",
+        "node_modules\\fuzzaldrin\\package.json",
+        "node_modules\\glob\\package.json",
+        "node_modules\\global\\package.json",
+        "node_modules\\grim\\package.json",
+        "node_modules\\header-case\\package.json",
+        "node_modules\\individual\\package.json",
+        "node_modules\\inflight\\package.json",
+        "node_modules\\inherits\\package.json",
+        "node_modules\\is-lower-case\\package.json",
+        "node_modules\\is-object\\.jscs.json",
+        "node_modules\\is-object\\.testem.json",
+        "node_modules\\is-object\\package.json",
+        "node_modules\\is-upper-case\\package.json",
+        "node_modules\\jquery\\bower.json",
+        "node_modules\\jquery\\package.json",
+        "node_modules\\lower-case\\package.json",
+        "node_modules\\lower-case-first\\package.json",
+        "node_modules\\min-document\\.testem.json",
+        "node_modules\\min-document\\package.json",
+        "node_modules\\minimatch\\package.json",
+        "node_modules\\minimist\\package.json",
+        "node_modules\\mixto\\package.json",
+        "node_modules\\mkdirp\\package.json",
+        "node_modules\\mobx\\bower.json",
+        "node_modules\\mobx\\package.json",
+        "node_modules\\next-tick\\package.json",
+        "node_modules\\no-case\\package.json",
+        "node_modules\\once\\package.json",
+        "node_modules\\optimist\\package.json",
+        "node_modules\\os-homedir\\package.json",
+        "node_modules\\param-case\\package.json",
+        "node_modules\\pascal-case\\package.json",
+        "node_modules\\path-case\\package.json",
+        "node_modules\\path-is-absolute\\package.json",
+        "node_modules\\process\\package.json",
+        "node_modules\\property-accessors\\package.json",
+        "node_modules\\rimraf\\package.json",
+        "node_modules\\season\\package.json",
+        "node_modules\\sentence-case\\package.json",
+        "node_modules\\snake-case\\package.json",
+        "node_modules\\space-pen\\api.json",
+        "node_modules\\space-pen\\package.json",
+        "node_modules\\string-template\\package.json",
+        "node_modules\\swap-case\\package.json",
+        "node_modules\\tildify\\package.json",
+        "node_modules\\title-case\\package.json",
+        "node_modules\\underscore\\package.json",
+        "node_modules\\underscore-plus\\package.json",
+        "node_modules\\untildify\\package.json",
+        "node_modules\\upper-case\\package.json",
+        "node_modules\\upper-case-first\\package.json",
+        "node_modules\\virtual-dom\\package.json",
+        "node_modules\\wordwrap\\package.json",
+        "node_modules\\wrappy\\package.json",
+        "node_modules\\x-is-array\\package.json",
+        "node_modules\\x-is-string\\package.json",
+        "node_modules\\xtend\\package.json",
+        "package.json"
+      ],
+      ".js": [
+        "lib\\Manager.js",
+        "lib\\models\\Project.js",
+        "lib\\project-manager.js",
+        "lib\\Settings.js",
+        "lib\\stores\\FileStore.js",
+        "lib\\stores\\GitStore.js",
+        "lib\\views\\EditView.js",
+        "lib\\views\\projects-list-view.js",
+        "lib\\views\\view-uri.js",
+        "node_modules\\async\\dist\\async.js",
+        "node_modules\\async\\dist\\async.min.js",
+        "node_modules\\async\\lib\\async.js",
+        "node_modules\\atom-project-util\\index.js",
+        "node_modules\\atom-space-pen-views\\lib\\main.js",
+        "node_modules\\atom-space-pen-views\\lib\\scroll-view.js",
+        "node_modules\\atom-space-pen-views\\lib\\select-list-view.js",
+        "node_modules\\atom-space-pen-views\\lib\\text-editor-view.js",
+        "node_modules\\balanced-match\\index.js",
+        "node_modules\\brace-expansion\\index.js",
+        "node_modules\\browser-split\\index.js",
+        "node_modules\\camel-case\\camel-case.js",
+        "node_modules\\camelize\\example\\camel.js",
+        "node_modules\\camelize\\index.js",
+        "node_modules\\change-case\\change-case.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\browser.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\cake.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\coffee-script.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\command.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\grammar.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\helpers.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\index.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\lexer.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\nodes.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\optparse.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\parser.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\register.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\repl.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\rewriter.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\scope.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\sourcemap.js",
+        "node_modules\\coffee-script\\register.js",
+        "node_modules\\coffee-script\\repl.js",
+        "node_modules\\concat-map\\example\\map.js",
+        "node_modules\\concat-map\\index.js",
+        "node_modules\\constant-case\\constant-case.js",
+        "node_modules\\cson-parser\\lib\\cson-parser.js",
+        "node_modules\\cson-parser\\lib\\parse.js",
+        "node_modules\\cson-parser\\lib\\stringify.js",
+        "node_modules\\d\\auto-bind.js",
+        "node_modules\\d\\index.js",
+        "node_modules\\d\\lazy.js",
+        "node_modules\\dom-walk\\example\\index.js",
+        "node_modules\\dom-walk\\example\\static\\bundle.js",
+        "node_modules\\dom-walk\\index.js",
+        "node_modules\\dot-case\\dot-case.js",
+        "node_modules\\emissary\\lib\\behavior.js",
+        "node_modules\\emissary\\lib\\emissary.js",
+        "node_modules\\emissary\\lib\\emitter.js",
+        "node_modules\\emissary\\lib\\helpers.js",
+        "node_modules\\emissary\\lib\\signal.js",
+        "node_modules\\emissary\\lib\\subscriber.js",
+        "node_modules\\emissary\\lib\\subscription.js",
+        "node_modules\\error\\option.js",
+        "node_modules\\error\\test.js",
+        "node_modules\\error\\typed.js",
+        "node_modules\\error\\validation.js",
+        "node_modules\\es5-ext\\array\\#\\@@iterator\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\@@iterator\\index.js",
+        "node_modules\\es5-ext\\array\\#\\@@iterator\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\@@iterator\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\binary-search.js",
+        "node_modules\\es5-ext\\array\\#\\clear.js",
+        "node_modules\\es5-ext\\array\\#\\compact.js",
+        "node_modules\\es5-ext\\array\\#\\concat\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\concat\\index.js",
+        "node_modules\\es5-ext\\array\\#\\concat\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\concat\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\contains.js",
+        "node_modules\\es5-ext\\array\\#\\copy-within\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\copy-within\\index.js",
+        "node_modules\\es5-ext\\array\\#\\copy-within\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\copy-within\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\diff.js",
+        "node_modules\\es5-ext\\array\\#\\e-index-of.js",
+        "node_modules\\es5-ext\\array\\#\\e-last-index-of.js",
+        "node_modules\\es5-ext\\array\\#\\entries\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\entries\\index.js",
+        "node_modules\\es5-ext\\array\\#\\entries\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\entries\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\exclusion.js",
+        "node_modules\\es5-ext\\array\\#\\fill\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\fill\\index.js",
+        "node_modules\\es5-ext\\array\\#\\fill\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\fill\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\filter\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\filter\\index.js",
+        "node_modules\\es5-ext\\array\\#\\filter\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\filter\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\find\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\find\\index.js",
+        "node_modules\\es5-ext\\array\\#\\find\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\find\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\find-index\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\find-index\\index.js",
+        "node_modules\\es5-ext\\array\\#\\find-index\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\find-index\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\first-index.js",
+        "node_modules\\es5-ext\\array\\#\\first.js",
+        "node_modules\\es5-ext\\array\\#\\flatten.js",
+        "node_modules\\es5-ext\\array\\#\\for-each-right.js",
+        "node_modules\\es5-ext\\array\\#\\group.js",
+        "node_modules\\es5-ext\\array\\#\\index.js",
+        "node_modules\\es5-ext\\array\\#\\indexes-of.js",
+        "node_modules\\es5-ext\\array\\#\\intersection.js",
+        "node_modules\\es5-ext\\array\\#\\is-copy.js",
+        "node_modules\\es5-ext\\array\\#\\is-uniq.js",
+        "node_modules\\es5-ext\\array\\#\\keys\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\keys\\index.js",
+        "node_modules\\es5-ext\\array\\#\\keys\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\keys\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\last-index.js",
+        "node_modules\\es5-ext\\array\\#\\last.js",
+        "node_modules\\es5-ext\\array\\#\\map\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\map\\index.js",
+        "node_modules\\es5-ext\\array\\#\\map\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\map\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\remove.js",
+        "node_modules\\es5-ext\\array\\#\\separate.js",
+        "node_modules\\es5-ext\\array\\#\\slice\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\slice\\index.js",
+        "node_modules\\es5-ext\\array\\#\\slice\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\slice\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\some-right.js",
+        "node_modules\\es5-ext\\array\\#\\splice\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\splice\\index.js",
+        "node_modules\\es5-ext\\array\\#\\splice\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\splice\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\uniq.js",
+        "node_modules\\es5-ext\\array\\#\\values\\implement.js",
+        "node_modules\\es5-ext\\array\\#\\values\\index.js",
+        "node_modules\\es5-ext\\array\\#\\values\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\#\\values\\shim.js",
+        "node_modules\\es5-ext\\array\\#\\_compare-by-length.js",
+        "node_modules\\es5-ext\\array\\from\\implement.js",
+        "node_modules\\es5-ext\\array\\from\\index.js",
+        "node_modules\\es5-ext\\array\\from\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\from\\shim.js",
+        "node_modules\\es5-ext\\array\\generate.js",
+        "node_modules\\es5-ext\\array\\index.js",
+        "node_modules\\es5-ext\\array\\is-plain-array.js",
+        "node_modules\\es5-ext\\array\\of\\implement.js",
+        "node_modules\\es5-ext\\array\\of\\index.js",
+        "node_modules\\es5-ext\\array\\of\\is-implemented.js",
+        "node_modules\\es5-ext\\array\\of\\shim.js",
+        "node_modules\\es5-ext\\array\\to-array.js",
+        "node_modules\\es5-ext\\array\\valid-array.js",
+        "node_modules\\es5-ext\\array\\_is-extensible.js",
+        "node_modules\\es5-ext\\array\\_sub-array-dummy-safe.js",
+        "node_modules\\es5-ext\\array\\_sub-array-dummy.js",
+        "node_modules\\es5-ext\\boolean\\index.js",
+        "node_modules\\es5-ext\\boolean\\is-boolean.js",
+        "node_modules\\es5-ext\\date\\#\\copy.js",
+        "node_modules\\es5-ext\\date\\#\\days-in-month.js",
+        "node_modules\\es5-ext\\date\\#\\floor-day.js",
+        "node_modules\\es5-ext\\date\\#\\floor-month.js",
+        "node_modules\\es5-ext\\date\\#\\floor-year.js",
+        "node_modules\\es5-ext\\date\\#\\format.js",
+        "node_modules\\es5-ext\\date\\#\\index.js",
+        "node_modules\\es5-ext\\date\\index.js",
+        "node_modules\\es5-ext\\date\\is-date.js",
+        "node_modules\\es5-ext\\date\\valid-date.js",
+        "node_modules\\es5-ext\\error\\#\\index.js",
+        "node_modules\\es5-ext\\error\\#\\throw.js",
+        "node_modules\\es5-ext\\error\\custom.js",
+        "node_modules\\es5-ext\\error\\index.js",
+        "node_modules\\es5-ext\\error\\is-error.js",
+        "node_modules\\es5-ext\\error\\valid-error.js",
+        "node_modules\\es5-ext\\function\\#\\compose.js",
+        "node_modules\\es5-ext\\function\\#\\copy.js",
+        "node_modules\\es5-ext\\function\\#\\curry.js",
+        "node_modules\\es5-ext\\function\\#\\index.js",
+        "node_modules\\es5-ext\\function\\#\\lock.js",
+        "node_modules\\es5-ext\\function\\#\\not.js",
+        "node_modules\\es5-ext\\function\\#\\partial.js",
+        "node_modules\\es5-ext\\function\\#\\spread.js",
+        "node_modules\\es5-ext\\function\\#\\to-string-tokens.js",
+        "node_modules\\es5-ext\\function\\constant.js",
+        "node_modules\\es5-ext\\function\\identity.js",
+        "node_modules\\es5-ext\\function\\index.js",
+        "node_modules\\es5-ext\\function\\invoke.js",
+        "node_modules\\es5-ext\\function\\is-arguments.js",
+        "node_modules\\es5-ext\\function\\is-function.js",
+        "node_modules\\es5-ext\\function\\noop.js",
+        "node_modules\\es5-ext\\function\\pluck.js",
+        "node_modules\\es5-ext\\function\\valid-function.js",
+        "node_modules\\es5-ext\\function\\_define-length.js",
+        "node_modules\\es5-ext\\global.js",
+        "node_modules\\es5-ext\\index.js",
+        "node_modules\\es5-ext\\iterable\\for-each.js",
+        "node_modules\\es5-ext\\iterable\\index.js",
+        "node_modules\\es5-ext\\iterable\\is.js",
+        "node_modules\\es5-ext\\iterable\\validate-object.js",
+        "node_modules\\es5-ext\\iterable\\validate.js",
+        "node_modules\\es5-ext\\json\\index.js",
+        "node_modules\\es5-ext\\json\\safe-stringify.js",
+        "node_modules\\es5-ext\\math\\acosh\\implement.js",
+        "node_modules\\es5-ext\\math\\acosh\\index.js",
+        "node_modules\\es5-ext\\math\\acosh\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\acosh\\shim.js",
+        "node_modules\\es5-ext\\math\\asinh\\implement.js",
+        "node_modules\\es5-ext\\math\\asinh\\index.js",
+        "node_modules\\es5-ext\\math\\asinh\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\asinh\\shim.js",
+        "node_modules\\es5-ext\\math\\atanh\\implement.js",
+        "node_modules\\es5-ext\\math\\atanh\\index.js",
+        "node_modules\\es5-ext\\math\\atanh\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\atanh\\shim.js",
+        "node_modules\\es5-ext\\math\\cbrt\\implement.js",
+        "node_modules\\es5-ext\\math\\cbrt\\index.js",
+        "node_modules\\es5-ext\\math\\cbrt\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\cbrt\\shim.js",
+        "node_modules\\es5-ext\\math\\clz32\\implement.js",
+        "node_modules\\es5-ext\\math\\clz32\\index.js",
+        "node_modules\\es5-ext\\math\\clz32\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\clz32\\shim.js",
+        "node_modules\\es5-ext\\math\\cosh\\implement.js",
+        "node_modules\\es5-ext\\math\\cosh\\index.js",
+        "node_modules\\es5-ext\\math\\cosh\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\cosh\\shim.js",
+        "node_modules\\es5-ext\\math\\expm1\\implement.js",
+        "node_modules\\es5-ext\\math\\expm1\\index.js",
+        "node_modules\\es5-ext\\math\\expm1\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\expm1\\shim.js",
+        "node_modules\\es5-ext\\math\\fround\\implement.js",
+        "node_modules\\es5-ext\\math\\fround\\index.js",
+        "node_modules\\es5-ext\\math\\fround\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\fround\\shim.js",
+        "node_modules\\es5-ext\\math\\hypot\\implement.js",
+        "node_modules\\es5-ext\\math\\hypot\\index.js",
+        "node_modules\\es5-ext\\math\\hypot\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\hypot\\shim.js",
+        "node_modules\\es5-ext\\math\\imul\\implement.js",
+        "node_modules\\es5-ext\\math\\imul\\index.js",
+        "node_modules\\es5-ext\\math\\imul\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\imul\\shim.js",
+        "node_modules\\es5-ext\\math\\index.js",
+        "node_modules\\es5-ext\\math\\log10\\implement.js",
+        "node_modules\\es5-ext\\math\\log10\\index.js",
+        "node_modules\\es5-ext\\math\\log10\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\log10\\shim.js",
+        "node_modules\\es5-ext\\math\\log1p\\implement.js",
+        "node_modules\\es5-ext\\math\\log1p\\index.js",
+        "node_modules\\es5-ext\\math\\log1p\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\log1p\\shim.js",
+        "node_modules\\es5-ext\\math\\log2\\implement.js",
+        "node_modules\\es5-ext\\math\\log2\\index.js",
+        "node_modules\\es5-ext\\math\\log2\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\log2\\shim.js",
+        "node_modules\\es5-ext\\math\\sign\\implement.js",
+        "node_modules\\es5-ext\\math\\sign\\index.js",
+        "node_modules\\es5-ext\\math\\sign\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\sign\\shim.js",
+        "node_modules\\es5-ext\\math\\sinh\\implement.js",
+        "node_modules\\es5-ext\\math\\sinh\\index.js",
+        "node_modules\\es5-ext\\math\\sinh\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\sinh\\shim.js",
+        "node_modules\\es5-ext\\math\\tanh\\implement.js",
+        "node_modules\\es5-ext\\math\\tanh\\index.js",
+        "node_modules\\es5-ext\\math\\tanh\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\tanh\\shim.js",
+        "node_modules\\es5-ext\\math\\trunc\\implement.js",
+        "node_modules\\es5-ext\\math\\trunc\\index.js",
+        "node_modules\\es5-ext\\math\\trunc\\is-implemented.js",
+        "node_modules\\es5-ext\\math\\trunc\\shim.js",
+        "node_modules\\es5-ext\\math\\_pack-ieee754.js",
+        "node_modules\\es5-ext\\math\\_unpack-ieee754.js",
+        "node_modules\\es5-ext\\node_modules\\d\\auto-bind.js",
+        "node_modules\\es5-ext\\node_modules\\d\\index.js",
+        "node_modules\\es5-ext\\node_modules\\d\\lazy.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\#\\chain.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\array.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\for-of.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\get.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\index.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\is-iterable.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\string.js",
+        "node_modules\\es5-ext\\node_modules\\es6-iterator\\valid-iterable.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\implement.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\index.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\is-implemented.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\is-native-implemented.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\is-symbol.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\polyfill.js",
+        "node_modules\\es5-ext\\node_modules\\es6-symbol\\validate-symbol.js",
+        "node_modules\\es5-ext\\number\\#\\index.js",
+        "node_modules\\es5-ext\\number\\#\\pad.js",
+        "node_modules\\es5-ext\\number\\epsilon\\implement.js",
+        "node_modules\\es5-ext\\number\\epsilon\\index.js",
+        "node_modules\\es5-ext\\number\\epsilon\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\index.js",
+        "node_modules\\es5-ext\\number\\is-finite\\implement.js",
+        "node_modules\\es5-ext\\number\\is-finite\\index.js",
+        "node_modules\\es5-ext\\number\\is-finite\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\is-finite\\shim.js",
+        "node_modules\\es5-ext\\number\\is-integer\\implement.js",
+        "node_modules\\es5-ext\\number\\is-integer\\index.js",
+        "node_modules\\es5-ext\\number\\is-integer\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\is-integer\\shim.js",
+        "node_modules\\es5-ext\\number\\is-nan\\implement.js",
+        "node_modules\\es5-ext\\number\\is-nan\\index.js",
+        "node_modules\\es5-ext\\number\\is-nan\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\is-nan\\shim.js",
+        "node_modules\\es5-ext\\number\\is-natural.js",
+        "node_modules\\es5-ext\\number\\is-number.js",
+        "node_modules\\es5-ext\\number\\is-safe-integer\\implement.js",
+        "node_modules\\es5-ext\\number\\is-safe-integer\\index.js",
+        "node_modules\\es5-ext\\number\\is-safe-integer\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\is-safe-integer\\shim.js",
+        "node_modules\\es5-ext\\number\\max-safe-integer\\implement.js",
+        "node_modules\\es5-ext\\number\\max-safe-integer\\index.js",
+        "node_modules\\es5-ext\\number\\max-safe-integer\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\min-safe-integer\\implement.js",
+        "node_modules\\es5-ext\\number\\min-safe-integer\\index.js",
+        "node_modules\\es5-ext\\number\\min-safe-integer\\is-implemented.js",
+        "node_modules\\es5-ext\\number\\to-integer.js",
+        "node_modules\\es5-ext\\number\\to-pos-integer.js",
+        "node_modules\\es5-ext\\number\\to-uint32.js",
+        "node_modules\\es5-ext\\object\\assign\\implement.js",
+        "node_modules\\es5-ext\\object\\assign\\index.js",
+        "node_modules\\es5-ext\\object\\assign\\is-implemented.js",
+        "node_modules\\es5-ext\\object\\assign\\shim.js",
+        "node_modules\\es5-ext\\object\\clear.js",
+        "node_modules\\es5-ext\\object\\compact.js",
+        "node_modules\\es5-ext\\object\\compare.js",
+        "node_modules\\es5-ext\\object\\copy-deep.js",
+        "node_modules\\es5-ext\\object\\copy.js",
+        "node_modules\\es5-ext\\object\\count.js",
+        "node_modules\\es5-ext\\object\\create.js",
+        "node_modules\\es5-ext\\object\\ensure-natural-number-value.js",
+        "node_modules\\es5-ext\\object\\ensure-natural-number.js",
+        "node_modules\\es5-ext\\object\\ensure-promise.js",
+        "node_modules\\es5-ext\\object\\eq.js",
+        "node_modules\\es5-ext\\object\\every.js",
+        "node_modules\\es5-ext\\object\\filter.js",
+        "node_modules\\es5-ext\\object\\find-key.js",
+        "node_modules\\es5-ext\\object\\find.js",
+        "node_modules\\es5-ext\\object\\first-key.js",
+        "node_modules\\es5-ext\\object\\flatten.js",
+        "node_modules\\es5-ext\\object\\for-each.js",
+        "node_modules\\es5-ext\\object\\get-property-names.js",
+        "node_modules\\es5-ext\\object\\index.js",
+        "node_modules\\es5-ext\\object\\is-array-like.js",
+        "node_modules\\es5-ext\\object\\is-callable.js",
+        "node_modules\\es5-ext\\object\\is-copy-deep.js",
+        "node_modules\\es5-ext\\object\\is-copy.js",
+        "node_modules\\es5-ext\\object\\is-empty.js",
+        "node_modules\\es5-ext\\object\\is-number-value.js",
+        "node_modules\\es5-ext\\object\\is-object.js",
+        "node_modules\\es5-ext\\object\\is-plain-object.js",
+        "node_modules\\es5-ext\\object\\is-promise.js",
+        "node_modules\\es5-ext\\object\\is-value.js",
+        "node_modules\\es5-ext\\object\\is.js",
+        "node_modules\\es5-ext\\object\\key-of.js",
+        "node_modules\\es5-ext\\object\\keys\\implement.js",
+        "node_modules\\es5-ext\\object\\keys\\index.js",
+        "node_modules\\es5-ext\\object\\keys\\is-implemented.js",
+        "node_modules\\es5-ext\\object\\keys\\shim.js",
+        "node_modules\\es5-ext\\object\\map-keys.js",
+        "node_modules\\es5-ext\\object\\map.js",
+        "node_modules\\es5-ext\\object\\mixin-prototypes.js",
+        "node_modules\\es5-ext\\object\\mixin.js",
+        "node_modules\\es5-ext\\object\\normalize-options.js",
+        "node_modules\\es5-ext\\object\\primitive-set.js",
+        "node_modules\\es5-ext\\object\\safe-traverse.js",
+        "node_modules\\es5-ext\\object\\serialize.js",
+        "node_modules\\es5-ext\\object\\set-prototype-of\\implement.js",
+        "node_modules\\es5-ext\\object\\set-prototype-of\\index.js",
+        "node_modules\\es5-ext\\object\\set-prototype-of\\is-implemented.js",
+        "node_modules\\es5-ext\\object\\set-prototype-of\\shim.js",
+        "node_modules\\es5-ext\\object\\some.js",
+        "node_modules\\es5-ext\\object\\to-array.js",
+        "node_modules\\es5-ext\\object\\unserialize.js",
+        "node_modules\\es5-ext\\object\\valid-callable.js",
+        "node_modules\\es5-ext\\object\\valid-object.js",
+        "node_modules\\es5-ext\\object\\valid-value.js",
+        "node_modules\\es5-ext\\object\\validate-array-like-object.js",
+        "node_modules\\es5-ext\\object\\validate-array-like.js",
+        "node_modules\\es5-ext\\object\\validate-stringifiable-value.js",
+        "node_modules\\es5-ext\\object\\validate-stringifiable.js",
+        "node_modules\\es5-ext\\object\\_iterate.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\index.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\is-sticky.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\is-unicode.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\match\\implement.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\match\\index.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\match\\is-implemented.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\match\\shim.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\replace\\implement.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\replace\\index.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\replace\\is-implemented.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\replace\\shim.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\search\\implement.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\search\\index.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\search\\is-implemented.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\search\\shim.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\split\\implement.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\split\\index.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\split\\is-implemented.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\split\\shim.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\sticky\\implement.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\sticky\\is-implemented.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\unicode\\implement.js",
+        "node_modules\\es5-ext\\reg-exp\\#\\unicode\\is-implemented.js",
+        "node_modules\\es5-ext\\reg-exp\\escape.js",
+        "node_modules\\es5-ext\\reg-exp\\index.js",
+        "node_modules\\es5-ext\\reg-exp\\is-reg-exp.js",
+        "node_modules\\es5-ext\\reg-exp\\valid-reg-exp.js",
+        "node_modules\\es5-ext\\safe-to-string.js",
+        "node_modules\\es5-ext\\string\\#\\@@iterator\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\@@iterator\\index.js",
+        "node_modules\\es5-ext\\string\\#\\@@iterator\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\@@iterator\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\at.js",
+        "node_modules\\es5-ext\\string\\#\\camel-to-hyphen.js",
+        "node_modules\\es5-ext\\string\\#\\capitalize.js",
+        "node_modules\\es5-ext\\string\\#\\case-insensitive-compare.js",
+        "node_modules\\es5-ext\\string\\#\\code-point-at\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\code-point-at\\index.js",
+        "node_modules\\es5-ext\\string\\#\\code-point-at\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\code-point-at\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\contains\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\contains\\index.js",
+        "node_modules\\es5-ext\\string\\#\\contains\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\contains\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\count.js",
+        "node_modules\\es5-ext\\string\\#\\ends-with\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\ends-with\\index.js",
+        "node_modules\\es5-ext\\string\\#\\ends-with\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\ends-with\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\hyphen-to-camel.js",
+        "node_modules\\es5-ext\\string\\#\\indent.js",
+        "node_modules\\es5-ext\\string\\#\\index.js",
+        "node_modules\\es5-ext\\string\\#\\last.js",
+        "node_modules\\es5-ext\\string\\#\\normalize\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\normalize\\index.js",
+        "node_modules\\es5-ext\\string\\#\\normalize\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\normalize\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\normalize\\_data.js",
+        "node_modules\\es5-ext\\string\\#\\pad.js",
+        "node_modules\\es5-ext\\string\\#\\plain-replace-all.js",
+        "node_modules\\es5-ext\\string\\#\\plain-replace.js",
+        "node_modules\\es5-ext\\string\\#\\repeat\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\repeat\\index.js",
+        "node_modules\\es5-ext\\string\\#\\repeat\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\repeat\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\starts-with\\implement.js",
+        "node_modules\\es5-ext\\string\\#\\starts-with\\index.js",
+        "node_modules\\es5-ext\\string\\#\\starts-with\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\#\\starts-with\\shim.js",
+        "node_modules\\es5-ext\\string\\#\\uncapitalize.js",
+        "node_modules\\es5-ext\\string\\format-method.js",
+        "node_modules\\es5-ext\\string\\from-code-point\\implement.js",
+        "node_modules\\es5-ext\\string\\from-code-point\\index.js",
+        "node_modules\\es5-ext\\string\\from-code-point\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\from-code-point\\shim.js",
+        "node_modules\\es5-ext\\string\\index.js",
+        "node_modules\\es5-ext\\string\\is-string.js",
+        "node_modules\\es5-ext\\string\\random-uniq.js",
+        "node_modules\\es5-ext\\string\\raw\\implement.js",
+        "node_modules\\es5-ext\\string\\raw\\index.js",
+        "node_modules\\es5-ext\\string\\raw\\is-implemented.js",
+        "node_modules\\es5-ext\\string\\raw\\shim.js",
+        "node_modules\\es6-iterator\\#\\chain.js",
+        "node_modules\\es6-iterator\\array.js",
+        "node_modules\\es6-iterator\\for-of.js",
+        "node_modules\\es6-iterator\\get.js",
+        "node_modules\\es6-iterator\\index.js",
+        "node_modules\\es6-iterator\\is-iterable.js",
+        "node_modules\\es6-iterator\\string.js",
+        "node_modules\\es6-iterator\\valid-iterable.js",
+        "node_modules\\es6-symbol\\implement.js",
+        "node_modules\\es6-symbol\\index.js",
+        "node_modules\\es6-symbol\\is-implemented.js",
+        "node_modules\\es6-symbol\\is-native-implemented.js",
+        "node_modules\\es6-symbol\\is-symbol.js",
+        "node_modules\\es6-symbol\\polyfill.js",
+        "node_modules\\es6-symbol\\validate-symbol.js",
+        "node_modules\\es6-weak-map\\implement.js",
+        "node_modules\\es6-weak-map\\index.js",
+        "node_modules\\es6-weak-map\\is-implemented.js",
+        "node_modules\\es6-weak-map\\is-native-implemented.js",
+        "node_modules\\es6-weak-map\\is-weak-map.js",
+        "node_modules\\es6-weak-map\\polyfill.js",
+        "node_modules\\es6-weak-map\\valid-weak-map.js",
+        "node_modules\\etch\\dist\\component-helpers.js",
+        "node_modules\\etch\\dist\\component-widget.js",
+        "node_modules\\etch\\dist\\default-scheduler.js",
+        "node_modules\\etch\\dist\\dom.js",
+        "node_modules\\etch\\dist\\index.js",
+        "node_modules\\etch\\dist\\ref-hook.js",
+        "node_modules\\etch\\dist\\refs-stack.js",
+        "node_modules\\etch\\dist\\scheduler-assignment.js",
+        "node_modules\\etch\\dist\\svg-attribute-translations.js",
+        "node_modules\\etch\\dist\\svg-tags.js",
+        "node_modules\\ev-store\\index.js",
+        "node_modules\\ev-store\\test.js",
+        "node_modules\\findit\\example\\emitter.js",
+        "node_modules\\findit\\index.js",
+        "node_modules\\fs-plus\\lib\\fs-plus.js",
+        "node_modules\\fs.realpath\\index.js",
+        "node_modules\\fs.realpath\\old.js",
+        "node_modules\\fuzzaldrin\\lib\\filter.js",
+        "node_modules\\fuzzaldrin\\lib\\fuzzaldrin.js",
+        "node_modules\\fuzzaldrin\\lib\\matcher.js",
+        "node_modules\\fuzzaldrin\\lib\\scorer.js",
+        "node_modules\\glob\\common.js",
+        "node_modules\\glob\\glob.js",
+        "node_modules\\glob\\sync.js",
+        "node_modules\\global\\console.js",
+        "node_modules\\global\\document.js",
+        "node_modules\\global\\process.js",
+        "node_modules\\global\\window.js",
+        "node_modules\\grim\\lib\\deprecation.js",
+        "node_modules\\grim\\lib\\grim.js",
+        "node_modules\\header-case\\header-case.js",
+        "node_modules\\individual\\index.js",
+        "node_modules\\individual\\one-version.js",
+        "node_modules\\individual\\test.js",
+        "node_modules\\inflight\\inflight.js",
+        "node_modules\\inherits\\inherits.js",
+        "node_modules\\inherits\\inherits_browser.js",
+        "node_modules\\is-lower-case\\is-lower-case.js",
+        "node_modules\\is-object\\index.js",
+        "node_modules\\is-upper-case\\is-upper-case.js",
+        "node_modules\\jquery\\dist\\jquery.js",
+        "node_modules\\jquery\\dist\\jquery.min.js",
+        "node_modules\\jquery\\src\\ajax\\jsonp.js",
+        "node_modules\\jquery\\src\\ajax\\load.js",
+        "node_modules\\jquery\\src\\ajax\\parseJSON.js",
+        "node_modules\\jquery\\src\\ajax\\parseXML.js",
+        "node_modules\\jquery\\src\\ajax\\script.js",
+        "node_modules\\jquery\\src\\ajax\\var\\nonce.js",
+        "node_modules\\jquery\\src\\ajax\\var\\rquery.js",
+        "node_modules\\jquery\\src\\ajax\\xhr.js",
+        "node_modules\\jquery\\src\\ajax.js",
+        "node_modules\\jquery\\src\\attributes\\attr.js",
+        "node_modules\\jquery\\src\\attributes\\classes.js",
+        "node_modules\\jquery\\src\\attributes\\prop.js",
+        "node_modules\\jquery\\src\\attributes\\support.js",
+        "node_modules\\jquery\\src\\attributes\\val.js",
+        "node_modules\\jquery\\src\\attributes.js",
+        "node_modules\\jquery\\src\\callbacks.js",
+        "node_modules\\jquery\\src\\core\\access.js",
+        "node_modules\\jquery\\src\\core\\init.js",
+        "node_modules\\jquery\\src\\core\\parseHTML.js",
+        "node_modules\\jquery\\src\\core\\ready.js",
+        "node_modules\\jquery\\src\\core\\var\\rsingleTag.js",
+        "node_modules\\jquery\\src\\core.js",
+        "node_modules\\jquery\\src\\css\\addGetHookIf.js",
+        "node_modules\\jquery\\src\\css\\curCSS.js",
+        "node_modules\\jquery\\src\\css\\defaultDisplay.js",
+        "node_modules\\jquery\\src\\css\\hiddenVisibleSelectors.js",
+        "node_modules\\jquery\\src\\css\\support.js",
+        "node_modules\\jquery\\src\\css\\swap.js",
+        "node_modules\\jquery\\src\\css\\var\\cssExpand.js",
+        "node_modules\\jquery\\src\\css\\var\\getStyles.js",
+        "node_modules\\jquery\\src\\css\\var\\isHidden.js",
+        "node_modules\\jquery\\src\\css\\var\\rmargin.js",
+        "node_modules\\jquery\\src\\css\\var\\rnumnonpx.js",
+        "node_modules\\jquery\\src\\css.js",
+        "node_modules\\jquery\\src\\data\\accepts.js",
+        "node_modules\\jquery\\src\\data\\Data.js",
+        "node_modules\\jquery\\src\\data\\var\\data_priv.js",
+        "node_modules\\jquery\\src\\data\\var\\data_user.js",
+        "node_modules\\jquery\\src\\data.js",
+        "node_modules\\jquery\\src\\deferred.js",
+        "node_modules\\jquery\\src\\deprecated.js",
+        "node_modules\\jquery\\src\\dimensions.js",
+        "node_modules\\jquery\\src\\effects\\animatedSelector.js",
+        "node_modules\\jquery\\src\\effects\\Tween.js",
+        "node_modules\\jquery\\src\\effects.js",
+        "node_modules\\jquery\\src\\event\\ajax.js",
+        "node_modules\\jquery\\src\\event\\alias.js",
+        "node_modules\\jquery\\src\\event\\support.js",
+        "node_modules\\jquery\\src\\event.js",
+        "node_modules\\jquery\\src\\exports\\amd.js",
+        "node_modules\\jquery\\src\\exports\\global.js",
+        "node_modules\\jquery\\src\\intro.js",
+        "node_modules\\jquery\\src\\jquery.js",
+        "node_modules\\jquery\\src\\manipulation\\support.js",
+        "node_modules\\jquery\\src\\manipulation\\var\\rcheckableType.js",
+        "node_modules\\jquery\\src\\manipulation\\_evalUrl.js",
+        "node_modules\\jquery\\src\\manipulation.js",
+        "node_modules\\jquery\\src\\offset.js",
+        "node_modules\\jquery\\src\\outro.js",
+        "node_modules\\jquery\\src\\queue\\delay.js",
+        "node_modules\\jquery\\src\\queue.js",
+        "node_modules\\jquery\\src\\selector-native.js",
+        "node_modules\\jquery\\src\\selector-sizzle.js",
+        "node_modules\\jquery\\src\\selector.js",
+        "node_modules\\jquery\\src\\serialize.js",
+        "node_modules\\jquery\\src\\sizzle\\dist\\sizzle.js",
+        "node_modules\\jquery\\src\\sizzle\\dist\\sizzle.min.js",
+        "node_modules\\jquery\\src\\traversing\\findFilter.js",
+        "node_modules\\jquery\\src\\traversing\\var\\rneedsContext.js",
+        "node_modules\\jquery\\src\\traversing.js",
+        "node_modules\\jquery\\src\\var\\arr.js",
+        "node_modules\\jquery\\src\\var\\class2type.js",
+        "node_modules\\jquery\\src\\var\\concat.js",
+        "node_modules\\jquery\\src\\var\\hasOwn.js",
+        "node_modules\\jquery\\src\\var\\indexOf.js",
+        "node_modules\\jquery\\src\\var\\pnum.js",
+        "node_modules\\jquery\\src\\var\\push.js",
+        "node_modules\\jquery\\src\\var\\rnotwhite.js",
+        "node_modules\\jquery\\src\\var\\slice.js",
+        "node_modules\\jquery\\src\\var\\strundefined.js",
+        "node_modules\\jquery\\src\\var\\support.js",
+        "node_modules\\jquery\\src\\var\\toString.js",
+        "node_modules\\jquery\\src\\wrap.js",
+        "node_modules\\lower-case\\lower-case.js",
+        "node_modules\\lower-case-first\\lower-case-first.js",
+        "node_modules\\min-document\\document.js",
+        "node_modules\\min-document\\dom-comment.js",
+        "node_modules\\min-document\\dom-element.js",
+        "node_modules\\min-document\\dom-fragment.js",
+        "node_modules\\min-document\\dom-text.js",
+        "node_modules\\min-document\\event\\add-event-listener.js",
+        "node_modules\\min-document\\event\\dispatch-event.js",
+        "node_modules\\min-document\\event\\remove-event-listener.js",
+        "node_modules\\min-document\\event.js",
+        "node_modules\\min-document\\index.js",
+        "node_modules\\min-document\\serialize.js",
+        "node_modules\\minimatch\\minimatch.js",
+        "node_modules\\minimist\\example\\parse.js",
+        "node_modules\\minimist\\index.js",
+        "node_modules\\mixto\\lib\\mixin.js",
+        "node_modules\\mkdirp\\bin\\cmd.js",
+        "node_modules\\mkdirp\\examples\\pow.js",
+        "node_modules\\mkdirp\\index.js",
+        "node_modules\\mobx\\lib\\mobx.js",
+        "node_modules\\mobx\\lib\\mobx.min.js",
+        "node_modules\\mobx\\lib\\mobx.umd.js",
+        "node_modules\\mobx\\lib\\mobx.umd.min.js",
+        "node_modules\\next-tick\\index.js",
+        "node_modules\\no-case\\no-case.js",
+        "node_modules\\no-case\\vendor\\camel-case-regexp.js",
+        "node_modules\\no-case\\vendor\\camel-case-upper-regexp.js",
+        "node_modules\\no-case\\vendor\\non-word-regexp.js",
+        "node_modules\\once\\once.js",
+        "node_modules\\optimist\\example\\bool.js",
+        "node_modules\\optimist\\example\\boolean_double.js",
+        "node_modules\\optimist\\example\\boolean_single.js",
+        "node_modules\\optimist\\example\\default_hash.js",
+        "node_modules\\optimist\\example\\default_singles.js",
+        "node_modules\\optimist\\example\\divide.js",
+        "node_modules\\optimist\\example\\line_count.js",
+        "node_modules\\optimist\\example\\line_count_options.js",
+        "node_modules\\optimist\\example\\line_count_wrap.js",
+        "node_modules\\optimist\\example\\nonopt.js",
+        "node_modules\\optimist\\example\\reflect.js",
+        "node_modules\\optimist\\example\\short.js",
+        "node_modules\\optimist\\example\\string.js",
+        "node_modules\\optimist\\example\\usage-options.js",
+        "node_modules\\optimist\\example\\xup.js",
+        "node_modules\\optimist\\index.js",
+        "node_modules\\os-homedir\\index.js",
+        "node_modules\\param-case\\param-case.js",
+        "node_modules\\pascal-case\\pascal-case.js",
+        "node_modules\\path-case\\path-case.js",
+        "node_modules\\path-is-absolute\\index.js",
+        "node_modules\\process\\browser.js",
+        "node_modules\\process\\index.js",
+        "node_modules\\property-accessors\\lib\\property-accessors.js",
+        "node_modules\\rimraf\\bin.js",
+        "node_modules\\rimraf\\rimraf.js",
+        "node_modules\\season\\lib\\cson.js",
+        "node_modules\\season\\lib\\csonc.js",
+        "node_modules\\sentence-case\\sentence-case.js",
+        "node_modules\\snake-case\\snake-case.js",
+        "node_modules\\space-pen\\lib\\space-pen.js",
+        "node_modules\\string-template\\compile.js",
+        "node_modules\\string-template\\index.js",
+        "node_modules\\swap-case\\swap-case.js",
+        "node_modules\\tildify\\index.js",
+        "node_modules\\title-case\\title-case.js",
+        "node_modules\\underscore\\underscore-min.js",
+        "node_modules\\underscore\\underscore.js",
+        "node_modules\\underscore-plus\\lib\\underscore-plus.js",
+        "node_modules\\untildify\\index.js",
+        "node_modules\\upper-case\\upper-case.js",
+        "node_modules\\upper-case-first\\upper-case-first.js",
+        "node_modules\\virtual-dom\\create-element.js",
+        "node_modules\\virtual-dom\\diff.js",
+        "node_modules\\virtual-dom\\dist\\virtual-dom.js",
+        "node_modules\\virtual-dom\\h.js",
+        "node_modules\\virtual-dom\\index.js",
+        "node_modules\\virtual-dom\\patch.js",
+        "node_modules\\virtual-dom\\vdom\\apply-properties.js",
+        "node_modules\\virtual-dom\\vdom\\create-element.js",
+        "node_modules\\virtual-dom\\vdom\\dom-index.js",
+        "node_modules\\virtual-dom\\vdom\\patch-op.js",
+        "node_modules\\virtual-dom\\vdom\\patch.js",
+        "node_modules\\virtual-dom\\vdom\\update-widget.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\hooks\\attribute-hook.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\hooks\\ev-hook.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\hooks\\focus-hook.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\hooks\\soft-set-hook.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\index.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\parse-tag.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\svg-attribute-namespace.js",
+        "node_modules\\virtual-dom\\virtual-hyperscript\\svg.js",
+        "node_modules\\virtual-dom\\vnode\\handle-thunk.js",
+        "node_modules\\virtual-dom\\vnode\\is-thunk.js",
+        "node_modules\\virtual-dom\\vnode\\is-vhook.js",
+        "node_modules\\virtual-dom\\vnode\\is-vnode.js",
+        "node_modules\\virtual-dom\\vnode\\is-vtext.js",
+        "node_modules\\virtual-dom\\vnode\\is-widget.js",
+        "node_modules\\virtual-dom\\vnode\\version.js",
+        "node_modules\\virtual-dom\\vnode\\vnode.js",
+        "node_modules\\virtual-dom\\vnode\\vpatch.js",
+        "node_modules\\virtual-dom\\vnode\\vtext.js",
+        "node_modules\\virtual-dom\\vtree\\diff-props.js",
+        "node_modules\\virtual-dom\\vtree\\diff.js",
+        "node_modules\\wordwrap\\example\\center.js",
+        "node_modules\\wordwrap\\example\\meat.js",
+        "node_modules\\wordwrap\\index.js",
+        "node_modules\\wrappy\\wrappy.js",
+        "node_modules\\x-is-array\\index.js",
+        "node_modules\\x-is-string\\index.js",
+        "node_modules\\xtend\\immutable.js",
+        "node_modules\\xtend\\mutable.js",
+        "node_modules\\xtend\\test.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "lib\\models",
+          "lib\\stores",
+          "lib\\views",
+          "spec"
+        ],
+        "dependencies": {
+          "atom-project-util": "^4.1.0",
+          "atom-space-pen-views": "^2.0.3",
+          "change-case": "^3.0.0",
+          "etch": "^0.8.0",
+          "findit": "^2.0.0",
+          "mobx": "^2.6.0",
+          "season": "^5.4.1",
+          "tildify": "^1.2.0",
+          "underscore-plus": "^1.6.6",
+          "untildify": "^3.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\atom-space-pen-views\\lib",
+          "node_modules\\atom-space-pen-views"
+        ],
+        "dependencies": {
+          "fuzzaldrin": "^2.1.0",
+          "space-pen": "^5.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^0.4.1",
+          "concat-map": "0.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\camel-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0",
+          "upper-case": "^1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\change-case"
+        ],
+        "dependencies": {
+          "camel-case": "^3.0.0",
+          "constant-case": "^2.0.0",
+          "dot-case": "^2.1.0",
+          "header-case": "^1.0.0",
+          "is-lower-case": "^1.1.0",
+          "is-upper-case": "^1.1.0",
+          "lower-case": "^1.1.1",
+          "lower-case-first": "^1.0.0",
+          "no-case": "^2.2.0",
+          "param-case": "^2.1.0",
+          "pascal-case": "^2.0.0",
+          "path-case": "^2.1.0",
+          "sentence-case": "^2.1.0",
+          "snake-case": "^2.1.0",
+          "swap-case": "^1.1.0",
+          "title-case": "^2.1.0",
+          "upper-case": "^1.1.1",
+          "upper-case-first": "^1.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\constant-case"
+        ],
+        "dependencies": {
+          "snake-case": "^2.1.0",
+          "upper-case": "^1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\cson-parser\\lib",
+          "node_modules\\cson-parser"
+        ],
+        "dependencies": {
+          "coffee-script": "1.9.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\d",
+          "node_modules\\d\\test"
+        ],
+        "dependencies": {
+          "es5-ext": "~0.10.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\dot-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\emissary\\lib",
+          "node_modules\\emissary"
+        ],
+        "dependencies": {
+          "es6-weak-map": "^0.1.2",
+          "mixto": "1.x",
+          "property-accessors": "^1.1",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\error"
+        ],
+        "dependencies": {
+          "camelize": "^1.0.0",
+          "string-template": "~0.2.0",
+          "xtend": "~4.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es5-ext\\array\\#\\@@iterator",
+          "node_modules\\es5-ext\\array\\#",
+          "node_modules\\es5-ext\\array\\#\\concat",
+          "node_modules\\es5-ext\\array\\#\\copy-within",
+          "node_modules\\es5-ext\\array\\#\\entries",
+          "node_modules\\es5-ext\\array\\#\\fill",
+          "node_modules\\es5-ext\\array\\#\\filter",
+          "node_modules\\es5-ext\\array\\#\\find",
+          "node_modules\\es5-ext\\array\\#\\find-index",
+          "node_modules\\es5-ext\\array\\#\\keys",
+          "node_modules\\es5-ext\\array\\#\\map",
+          "node_modules\\es5-ext\\array\\#\\slice",
+          "node_modules\\es5-ext\\array\\#\\splice",
+          "node_modules\\es5-ext\\array\\#\\values",
+          "node_modules\\es5-ext\\array\\from",
+          "node_modules\\es5-ext\\array",
+          "node_modules\\es5-ext\\array\\of",
+          "node_modules\\es5-ext\\boolean",
+          "node_modules\\es5-ext\\date\\#",
+          "node_modules\\es5-ext\\date",
+          "node_modules\\es5-ext\\error\\#",
+          "node_modules\\es5-ext\\error",
+          "node_modules\\es5-ext\\function\\#",
+          "node_modules\\es5-ext\\function",
+          "node_modules\\es5-ext",
+          "node_modules\\es5-ext\\iterable",
+          "node_modules\\es5-ext\\json",
+          "node_modules\\es5-ext\\math\\acosh",
+          "node_modules\\es5-ext\\math\\asinh",
+          "node_modules\\es5-ext\\math\\atanh",
+          "node_modules\\es5-ext\\math\\cbrt",
+          "node_modules\\es5-ext\\math\\clz32",
+          "node_modules\\es5-ext\\math\\cosh",
+          "node_modules\\es5-ext\\math\\expm1",
+          "node_modules\\es5-ext\\math\\fround",
+          "node_modules\\es5-ext\\math\\hypot",
+          "node_modules\\es5-ext\\math\\imul",
+          "node_modules\\es5-ext\\math",
+          "node_modules\\es5-ext\\math\\log10",
+          "node_modules\\es5-ext\\math\\log1p",
+          "node_modules\\es5-ext\\math\\log2",
+          "node_modules\\es5-ext\\math\\sign",
+          "node_modules\\es5-ext\\math\\sinh",
+          "node_modules\\es5-ext\\math\\tanh",
+          "node_modules\\es5-ext\\math\\trunc",
+          "node_modules\\es5-ext\\number\\#",
+          "node_modules\\es5-ext\\number\\epsilon",
+          "node_modules\\es5-ext\\number",
+          "node_modules\\es5-ext\\number\\is-finite",
+          "node_modules\\es5-ext\\number\\is-integer",
+          "node_modules\\es5-ext\\number\\is-nan",
+          "node_modules\\es5-ext\\number\\is-safe-integer",
+          "node_modules\\es5-ext\\number\\max-safe-integer",
+          "node_modules\\es5-ext\\number\\min-safe-integer",
+          "node_modules\\es5-ext\\object\\assign",
+          "node_modules\\es5-ext\\object",
+          "node_modules\\es5-ext\\object\\keys",
+          "node_modules\\es5-ext\\object\\set-prototype-of",
+          "node_modules\\es5-ext\\reg-exp\\#",
+          "node_modules\\es5-ext\\reg-exp\\#\\match",
+          "node_modules\\es5-ext\\reg-exp\\#\\replace",
+          "node_modules\\es5-ext\\reg-exp\\#\\search",
+          "node_modules\\es5-ext\\reg-exp\\#\\split",
+          "node_modules\\es5-ext\\reg-exp\\#\\sticky",
+          "node_modules\\es5-ext\\reg-exp\\#\\unicode",
+          "node_modules\\es5-ext\\reg-exp",
+          "node_modules\\es5-ext\\string\\#\\@@iterator",
+          "node_modules\\es5-ext\\string\\#",
+          "node_modules\\es5-ext\\string\\#\\code-point-at",
+          "node_modules\\es5-ext\\string\\#\\contains",
+          "node_modules\\es5-ext\\string\\#\\ends-with",
+          "node_modules\\es5-ext\\string\\#\\normalize",
+          "node_modules\\es5-ext\\string\\#\\repeat",
+          "node_modules\\es5-ext\\string\\#\\starts-with",
+          "node_modules\\es5-ext\\string",
+          "node_modules\\es5-ext\\string\\from-code-point",
+          "node_modules\\es5-ext\\string\\raw",
+          "node_modules\\es5-ext\\test\\array\\#\\@@iterator",
+          "node_modules\\es5-ext\\test\\array\\#",
+          "node_modules\\es5-ext\\test\\array\\#\\concat",
+          "node_modules\\es5-ext\\test\\array\\#\\copy-within",
+          "node_modules\\es5-ext\\test\\array\\#\\entries",
+          "node_modules\\es5-ext\\test\\array\\#\\fill",
+          "node_modules\\es5-ext\\test\\array\\#\\filter",
+          "node_modules\\es5-ext\\test\\array\\#\\find",
+          "node_modules\\es5-ext\\test\\array\\#\\find-index",
+          "node_modules\\es5-ext\\test\\array\\#\\keys",
+          "node_modules\\es5-ext\\test\\array\\#\\map",
+          "node_modules\\es5-ext\\test\\array\\#\\slice",
+          "node_modules\\es5-ext\\test\\array\\#\\splice",
+          "node_modules\\es5-ext\\test\\array\\#\\values",
+          "node_modules\\es5-ext\\test\\array\\from",
+          "node_modules\\es5-ext\\test\\array",
+          "node_modules\\es5-ext\\test\\array\\of",
+          "node_modules\\es5-ext\\test\\boolean",
+          "node_modules\\es5-ext\\test\\date\\#",
+          "node_modules\\es5-ext\\test\\date",
+          "node_modules\\es5-ext\\test\\error\\#",
+          "node_modules\\es5-ext\\test\\error",
+          "node_modules\\es5-ext\\test\\function\\#",
+          "node_modules\\es5-ext\\test\\function",
+          "node_modules\\es5-ext\\test",
+          "node_modules\\es5-ext\\test\\iterable",
+          "node_modules\\es5-ext\\test\\json",
+          "node_modules\\es5-ext\\test\\math\\acosh",
+          "node_modules\\es5-ext\\test\\math\\asinh",
+          "node_modules\\es5-ext\\test\\math\\atanh",
+          "node_modules\\es5-ext\\test\\math\\cbrt",
+          "node_modules\\es5-ext\\test\\math\\clz32",
+          "node_modules\\es5-ext\\test\\math\\cosh",
+          "node_modules\\es5-ext\\test\\math\\expm1",
+          "node_modules\\es5-ext\\test\\math\\fround",
+          "node_modules\\es5-ext\\test\\math\\hypot",
+          "node_modules\\es5-ext\\test\\math\\imul",
+          "node_modules\\es5-ext\\test\\math\\log10",
+          "node_modules\\es5-ext\\test\\math\\log1p",
+          "node_modules\\es5-ext\\test\\math\\log2",
+          "node_modules\\es5-ext\\test\\math\\sign",
+          "node_modules\\es5-ext\\test\\math\\sinh",
+          "node_modules\\es5-ext\\test\\math\\tanh",
+          "node_modules\\es5-ext\\test\\math\\trunc",
+          "node_modules\\es5-ext\\test\\math",
+          "node_modules\\es5-ext\\test\\number\\#",
+          "node_modules\\es5-ext\\test\\number\\epsilon",
+          "node_modules\\es5-ext\\test\\number\\is-finite",
+          "node_modules\\es5-ext\\test\\number\\is-integer",
+          "node_modules\\es5-ext\\test\\number\\is-nan",
+          "node_modules\\es5-ext\\test\\number",
+          "node_modules\\es5-ext\\test\\number\\is-safe-integer",
+          "node_modules\\es5-ext\\test\\number\\max-safe-integer",
+          "node_modules\\es5-ext\\test\\number\\min-safe-integer",
+          "node_modules\\es5-ext\\test\\object\\assign",
+          "node_modules\\es5-ext\\test\\object",
+          "node_modules\\es5-ext\\test\\object\\keys",
+          "node_modules\\es5-ext\\test\\object\\set-prototype-of",
+          "node_modules\\es5-ext\\test\\reg-exp\\#",
+          "node_modules\\es5-ext\\test\\reg-exp\\#\\match",
+          "node_modules\\es5-ext\\test\\reg-exp\\#\\replace",
+          "node_modules\\es5-ext\\test\\reg-exp\\#\\search",
+          "node_modules\\es5-ext\\test\\reg-exp\\#\\split",
+          "node_modules\\es5-ext\\test\\reg-exp\\#\\sticky",
+          "node_modules\\es5-ext\\test\\reg-exp\\#\\unicode",
+          "node_modules\\es5-ext\\test\\reg-exp",
+          "node_modules\\es5-ext\\test\\string\\#\\@@iterator",
+          "node_modules\\es5-ext\\test\\string\\#",
+          "node_modules\\es5-ext\\test\\string\\#\\code-point-at",
+          "node_modules\\es5-ext\\test\\string\\#\\contains",
+          "node_modules\\es5-ext\\test\\string\\#\\ends-with",
+          "node_modules\\es5-ext\\test\\string\\#\\normalize",
+          "node_modules\\es5-ext\\test\\string\\#\\repeat",
+          "node_modules\\es5-ext\\test\\string\\#\\starts-with",
+          "node_modules\\es5-ext\\test\\string",
+          "node_modules\\es5-ext\\test\\string\\from-code-point",
+          "node_modules\\es5-ext\\test\\string\\raw"
+        ],
+        "dependencies": {
+          "es6-iterator": "2",
+          "es6-symbol": "~3.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es5-ext\\node_modules\\d",
+          "node_modules\\es5-ext\\node_modules\\d\\test"
+        ],
+        "dependencies": {
+          "es5-ext": "^0.10.9"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es5-ext\\node_modules\\es6-iterator\\#",
+          "node_modules\\es5-ext\\node_modules\\es6-iterator",
+          "node_modules\\es5-ext\\node_modules\\es6-iterator\\test\\#",
+          "node_modules\\es5-ext\\node_modules\\es6-iterator\\test"
+        ],
+        "dependencies": {
+          "d": "1",
+          "es5-ext": "^0.10.14",
+          "es6-symbol": "^3.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es5-ext\\node_modules\\es6-symbol",
+          "node_modules\\es5-ext\\node_modules\\es6-symbol\\test"
+        ],
+        "dependencies": {
+          "d": "1",
+          "es5-ext": "~0.10.14"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es6-iterator\\#",
+          "node_modules\\es6-iterator",
+          "node_modules\\es6-iterator\\test\\#",
+          "node_modules\\es6-iterator\\test"
+        ],
+        "dependencies": {
+          "d": "~0.1.1",
+          "es5-ext": "~0.10.5",
+          "es6-symbol": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es6-symbol",
+          "node_modules\\es6-symbol\\test"
+        ],
+        "dependencies": {
+          "d": "~0.1.1",
+          "es5-ext": "~0.10.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\es6-weak-map",
+          "node_modules\\es6-weak-map\\test"
+        ],
+        "dependencies": {
+          "d": "~0.1.1",
+          "es5-ext": "~0.10.6",
+          "es6-iterator": "~0.1.3",
+          "es6-symbol": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\etch\\dist",
+          "node_modules\\etch"
+        ],
+        "dependencies": {
+          "virtual-dom": "^2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\ev-store"
+        ],
+        "dependencies": {
+          "individual": "^3.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\fs-plus\\lib",
+          "node_modules\\fs-plus"
+        ],
+        "dependencies": {
+          "async": "^1.5.2",
+          "mkdirp": "^0.5.1",
+          "rimraf": "^2.5.2",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\glob"
+        ],
+        "dependencies": {
+          "fs.realpath": "^1.0.0",
+          "inflight": "^1.0.4",
+          "inherits": "2",
+          "minimatch": "^3.0.4",
+          "once": "^1.3.0",
+          "path-is-absolute": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\global"
+        ],
+        "dependencies": {
+          "min-document": "^2.19.0",
+          "process": "~0.5.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\grim\\lib",
+          "node_modules\\grim"
+        ],
+        "dependencies": {
+          "emissary": "^1.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\header-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0",
+          "upper-case": "^1.1.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\inflight"
+        ],
+        "dependencies": {
+          "once": "^1.3.0",
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\is-lower-case"
+        ],
+        "dependencies": {
+          "lower-case": "^1.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\is-upper-case"
+        ],
+        "dependencies": {
+          "upper-case": "^1.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\lower-case-first"
+        ],
+        "dependencies": {
+          "lower-case": "^1.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\min-document",
+          "node_modules\\min-document\\event",
+          "node_modules\\min-document\\test",
+          "node_modules\\min-document\\test\\static"
+        ],
+        "dependencies": {
+          "dom-walk": "^0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\minimatch"
+        ],
+        "dependencies": {
+          "brace-expansion": "^1.1.7"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\mkdirp\\bin",
+          "node_modules\\mkdirp\\examples",
+          "node_modules\\mkdirp",
+          "node_modules\\mkdirp\\test"
+        ],
+        "dependencies": {
+          "minimist": "0.0.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\no-case",
+          "node_modules\\no-case\\vendor"
+        ],
+        "dependencies": {
+          "lower-case": "^1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\once"
+        ],
+        "dependencies": {
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\optimist\\example",
+          "node_modules\\optimist",
+          "node_modules\\optimist\\test",
+          "node_modules\\optimist\\test\\_"
+        ],
+        "dependencies": {
+          "wordwrap": "~0.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\param-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\pascal-case"
+        ],
+        "dependencies": {
+          "camel-case": "^3.0.0",
+          "upper-case-first": "^1.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\path-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\property-accessors\\lib",
+          "node_modules\\property-accessors"
+        ],
+        "dependencies": {
+          "es6-weak-map": "^0.1.2",
+          "mixto": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\rimraf"
+        ],
+        "dependencies": {
+          "glob": "^7.0.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\season\\lib",
+          "node_modules\\season"
+        ],
+        "dependencies": {
+          "cson-parser": "1.0.9",
+          "fs-plus": "2.x",
+          "optimist": "~0.4.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\sentence-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0",
+          "upper-case-first": "^1.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\snake-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\space-pen",
+          "node_modules\\space-pen\\lib"
+        ],
+        "dependencies": {
+          "grim": "^1.0.0",
+          "jquery": "2.1.4",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\swap-case"
+        ],
+        "dependencies": {
+          "lower-case": "^1.1.1",
+          "upper-case": "^1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\tildify"
+        ],
+        "dependencies": {
+          "os-homedir": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\title-case"
+        ],
+        "dependencies": {
+          "no-case": "^2.2.0",
+          "upper-case": "^1.0.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\underscore-plus\\lib",
+          "node_modules\\underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\upper-case-first"
+        ],
+        "dependencies": {
+          "upper-case": "^1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\virtual-dom",
+          "node_modules\\virtual-dom\\dist",
+          "node_modules\\virtual-dom\\test",
+          "node_modules\\virtual-dom\\test\\lib",
+          "node_modules\\virtual-dom\\vdom",
+          "node_modules\\virtual-dom\\vdom\\test",
+          "node_modules\\virtual-dom\\virtual-hyperscript\\hooks",
+          "node_modules\\virtual-dom\\virtual-hyperscript",
+          "node_modules\\virtual-dom\\virtual-hyperscript\\test",
+          "node_modules\\virtual-dom\\vnode",
+          "node_modules\\virtual-dom\\vnode\\test",
+          "node_modules\\virtual-dom\\vtree",
+          "node_modules\\virtual-dom\\vtree\\test"
+        ],
+        "dependencies": {
+          "browser-split": "0.0.1",
+          "error": "^4.3.0",
+          "ev-store": "^7.0.0",
+          "global": "^4.3.0",
+          "is-object": "^1.0.1",
+          "next-tick": "^0.2.2",
+          "x-is-array": "0.1.0",
+          "x-is-string": "0.1.0"
+        }
+      }
+    ]
+  }
+}

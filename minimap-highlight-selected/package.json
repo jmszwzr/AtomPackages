@@ -1,0 +1,329 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-14600-1leqhqh.e3zoy1fw29"
+    ]
+  ],
+  "_from": "..\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+  "_id": "minimap-highlight-selected@4.6.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/minimap-highlight-selected",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+  "_shasum": "6a794f616ac22fce6f97e23106b46bbda2d01d1d",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-14600-18n8e7u.4cvfpf1or\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-14600-1leqhqh.e3zoy1fw29",
+  "bugs": {
+    "url": "https://github.com/atom-minimap/minimap-highlight-selected/issues"
+  },
+  "consumedServices": {
+    "minimap": {
+      "versions": {
+        "1.0.0": "consumeMinimapServiceV1"
+      }
+    },
+    "highlightSelected": {
+      "versions": {
+        "2.0.0": "consumeHighlightSelectedServiceV2"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.4.1",
+    "atom-utils": "0.0.1",
+    "event-kit": ">= 0.7.2",
+    "underscore-plus": "1.x"
+  },
+  "description": "A minimap binding for the highlight-selected package",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/atom-minimap/minimap-highlight-selected#readme",
+  "license": "MIT",
+  "main": "./lib/minimap-highlight-selected",
+  "name": "minimap-highlight-selected",
+  "optionalDependencies": {},
+  "package-deps": [
+    "highlight-selected"
+  ],
+  "readme": "# minimap-highlight-selected package\n\nA minimap binding for the [highlight-selected package](https://github.com/richrace/highlight-selected).\n\n![Screenshot](https://github.com/atom-minimap/minimap-highlight-selected/blob/master/screenshot.png?raw=true)\n\n### Customization\n\nIf you want to change the color of the minimap highlights use the following CSS rules in your user stylesheet:\n\n```css\n/* The rule for normal highlights */\n.minimap .highlight-selected {\n  background: blue;\n}\n\n/* The rule for selected highlights */\n.minimap .highlight-selected.selected {\n  background: red;\n}\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-minimap/minimap-highlight-selected.git"
+  },
+  "version": "4.6.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "atom-package-deps",
+        "version": "4.6.0",
+        "path": "node_modules\\atom-package-deps\\lib\\index.js"
+      },
+      {
+        "name": "atom-package-path",
+        "version": "1.1.0",
+        "path": "node_modules\\atom-package-path\\lib\\index.js"
+      },
+      {
+        "name": "atom-utils",
+        "version": "0.0.1",
+        "path": "node_modules\\atom-utils\\lib\\atom-utils.js"
+      },
+      {
+        "name": "consistent-env",
+        "version": "1.3.1",
+        "path": "node_modules\\consistent-env\\lib\\index.js"
+      },
+      {
+        "name": "event-kit",
+        "version": "2.3.0",
+        "path": "node_modules\\event-kit\\lib\\event-kit.js"
+      },
+      {
+        "name": "is-utf8",
+        "version": "0.2.1",
+        "path": "node_modules\\is-utf8\\is-utf8.js"
+      },
+      {
+        "name": "lodash.uniq",
+        "version": "4.5.0",
+        "path": "node_modules\\lodash.uniq\\index.js"
+      },
+      {
+        "name": "sb-callsite",
+        "version": "1.1.2",
+        "path": "node_modules\\sb-callsite\\lib\\main.js"
+      },
+      {
+        "name": "sb-exec",
+        "version": "3.1.0",
+        "path": "node_modules\\sb-exec\\lib\\index.js"
+      },
+      {
+        "name": "sb-fs",
+        "version": "3.0.0",
+        "path": "node_modules\\sb-fs\\lib\\index.js"
+      },
+      {
+        "name": "sb-memoize",
+        "version": "1.0.2",
+        "path": "node_modules\\sb-memoize\\lib\\index.js"
+      },
+      {
+        "name": "sb-npm-path",
+        "version": "2.0.0",
+        "path": "node_modules\\sb-npm-path\\lib\\index.js"
+      },
+      {
+        "name": "sb-promisify",
+        "version": "2.0.2",
+        "path": "node_modules\\sb-promisify\\lib\\index.js"
+      },
+      {
+        "name": "semver",
+        "version": "5.3.0",
+        "path": "node_modules\\semver\\semver.js"
+      },
+      {
+        "name": "strip-bom-buf",
+        "version": "1.0.0",
+        "path": "node_modules\\strip-bom-buf\\index.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules\\underscore\\underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib\\minimap-highlight-selected.coffee"
+      ],
+      ".json": [
+        "node_modules\\atom-package-deps\\.eslintrc.json",
+        "node_modules\\atom-package-deps\\package.json",
+        "node_modules\\atom-package-path\\package.json",
+        "node_modules\\atom-utils\\package.json",
+        "node_modules\\consistent-env\\.eslintrc.json",
+        "node_modules\\consistent-env\\package.json",
+        "node_modules\\event-kit\\api.json",
+        "node_modules\\event-kit\\package.json",
+        "node_modules\\is-utf8\\package.json",
+        "node_modules\\lodash.uniq\\package.json",
+        "node_modules\\sb-callsite\\package.json",
+        "node_modules\\sb-exec\\.eslintrc.json",
+        "node_modules\\sb-exec\\package.json",
+        "node_modules\\sb-fs\\package.json",
+        "node_modules\\sb-memoize\\.eslintrc.json",
+        "node_modules\\sb-memoize\\package.json",
+        "node_modules\\sb-npm-path\\.eslintrc.json",
+        "node_modules\\sb-npm-path\\package.json",
+        "node_modules\\sb-promisify\\package.json",
+        "node_modules\\semver\\package.json",
+        "node_modules\\strip-bom-buf\\package.json",
+        "node_modules\\underscore\\package.json",
+        "node_modules\\underscore-plus\\package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules\\atom-package-deps\\lib\\helpers.js",
+        "node_modules\\atom-package-deps\\lib\\index.js",
+        "node_modules\\atom-package-deps\\lib\\types.js",
+        "node_modules\\atom-package-deps\\lib\\view.js",
+        "node_modules\\atom-package-path\\lib\\index.js",
+        "node_modules\\atom-utils\\lib\\atom-utils.js",
+        "node_modules\\consistent-env\\lib\\helpers.js",
+        "node_modules\\consistent-env\\lib\\index.js",
+        "node_modules\\event-kit\\lib\\composite-disposable.js",
+        "node_modules\\event-kit\\lib\\disposable.js",
+        "node_modules\\event-kit\\lib\\emitter.js",
+        "node_modules\\event-kit\\lib\\event-kit.js",
+        "node_modules\\is-utf8\\is-utf8.js",
+        "node_modules\\lodash.uniq\\index.js",
+        "node_modules\\sb-callsite\\lib\\main.js",
+        "node_modules\\sb-exec\\decls\\jasmine.js",
+        "node_modules\\sb-exec\\lib\\helpers.js",
+        "node_modules\\sb-exec\\lib\\index.js",
+        "node_modules\\sb-exec\\lib\\types.js",
+        "node_modules\\sb-fs\\lib\\index.js",
+        "node_modules\\sb-memoize\\lib\\index.js",
+        "node_modules\\sb-npm-path\\decls\\jasmine.js",
+        "node_modules\\sb-npm-path\\lib\\helpers.js",
+        "node_modules\\sb-npm-path\\lib\\index.js",
+        "node_modules\\sb-promisify\\lib\\index.js",
+        "node_modules\\semver\\semver.js",
+        "node_modules\\strip-bom-buf\\index.js",
+        "node_modules\\underscore\\underscore-min.js",
+        "node_modules\\underscore\\underscore.js",
+        "node_modules\\underscore-plus\\lib\\underscore-plus.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "atom-package-deps": "^4.4.1",
+          "atom-utils": "0.0.1",
+          "event-kit": ">= 0.7.2",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\atom-package-deps",
+          "node_modules\\atom-package-deps\\lib"
+        ],
+        "dependencies": {
+          "atom-package-path": "^1.1.0",
+          "sb-exec": "^3.0.1",
+          "sb-fs": "^3.0.0",
+          "semver": "^5.3.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\atom-package-path\\lib",
+          "node_modules\\atom-package-path",
+          "node_modules\\atom-package-path\\spec"
+        ],
+        "dependencies": {
+          "sb-callsite": "^1.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\consistent-env",
+          "node_modules\\consistent-env\\lib"
+        ],
+        "dependencies": {
+          "lodash.uniq": "^4.5.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\sb-exec",
+          "node_modules\\sb-exec\\decls",
+          "node_modules\\sb-exec\\lib"
+        ],
+        "dependencies": {
+          "consistent-env": "^1.2.0",
+          "lodash.uniq": "^4.5.0",
+          "sb-npm-path": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\sb-fs\\lib",
+          "node_modules\\sb-fs"
+        ],
+        "dependencies": {
+          "sb-promisify": "^2.0.1",
+          "strip-bom-buf": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\sb-npm-path",
+          "node_modules\\sb-npm-path\\decls",
+          "node_modules\\sb-npm-path\\lib"
+        ],
+        "dependencies": {
+          "sb-memoize": "^1.0.2",
+          "sb-promisify": "^2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\strip-bom-buf"
+        ],
+        "dependencies": {
+          "is-utf8": "^0.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\underscore-plus\\lib",
+          "node_modules\\underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

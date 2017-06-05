@@ -1,0 +1,36 @@
+@import "ui-variables";
+
+/* Theme adjustments */
+
+.theme-atom-light-ui {
+  atom-panel.modal.expose-panel {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.theme-one-light-ui, .theme-one-dark-ui {
+  atom-panel.modal.expose-panel {
+    background-color: inherit;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+}
+
+.theme-atom-material-ui {
+  atom-panel.modal.overlay.from-top {
+    background-color: inherit;
+    padding: 10px;
+  }
+
+  .expose-view .tab-body, .expose-view .tab-header {
+    background-color: @app-background-color;
+  }
+}
+
+.theme-native-ui {
+  atom-panel.modal.expose-panel {
+    top: 0 !important;
+  }
+}

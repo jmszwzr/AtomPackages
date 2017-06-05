@@ -1,0 +1,22 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'expose'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'expose:toggle'
+        }
+      ]
+    ]
+  }
+]
+
+'context-menu':
+  '.expose-view': [
+    {label: 'Close Exposé', command: 'expose:close'}
+  ]
+  '.expose-tab': [
+    {label: 'Close Tab', command: 'expose:close-tab'}
+  ]

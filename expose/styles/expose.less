@@ -1,0 +1,214 @@
+@import "ui-variables";
+
+/* Layout */
+
+atom-panel.modal.expose-panel.from-top {
+  position: fixed;
+  left: 0;
+  margin: auto;
+  top: 0;
+  padding-top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+atom-workspace-axis.expose-blur {
+  -webkit-filter: blur(5px)
+}
+
+atom-panel.modal .expose-view {
+  @shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 100%;
+
+  .expose-top {
+    background-color: @base-background-color;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto @component-padding auto;
+    padding: @component-padding / 2 0;
+
+    .input-block-item {
+      display: flex;
+      padding: @component-padding / 2 @component-padding;
+
+      .btn-group {
+        display: flex;
+        flex: 1 1 220px;
+        .btn {
+          padding-top: 4px;
+        }
+      }
+
+      // Fix for invalid spacing in modal mini text editor
+      atom-text-editor[mini] {
+        margin-bottom: 0;
+        .editor-contents--private {
+          height: 22px !important;
+        }
+      }
+    }
+
+    .input-block-item--flex {
+      flex: 100;
+      position: relative;
+      atom-text-editor {
+        width: 100%;
+      }
+    }
+  }
+
+  .tab-list {
+    display: -webkit-flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    .expose-tab {
+      width: 210px;
+      margin: @component-padding;
+      -webkit-user-drag: element;
+      border: #333 solid 1px;
+      background: @base-background-color;
+
+      .tab-header {
+        height: 32px;
+        padding: 8px 2px;
+        text-align: center;
+        cursor: move;
+
+        .title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0 15px;
+
+          &.pending {
+            font-style: italic;
+          }
+
+          &::before {
+            margin-right: 5px;
+          }
+        }
+
+        .close-icon {
+          float: right;
+          margin-top: -17px;
+          cursor: pointer;
+          transform: scale(0);
+          transition-duration: .08s;
+        }
+      }
+
+      .tab-body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 140px;
+        padding: 5px;
+        border-top-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+
+        img {
+          max-height: 100%;
+        }
+
+        a::before {
+          .icon-resize(64px);
+        }
+
+        a.animate::before {
+          -webkit-animation: spin 1s infinite linear;
+        }
+      }
+
+      &:hover {
+        .tab-body {
+          box-shadow: @shadow;
+        }
+
+        .close-icon {
+          transform: scale(1);
+          transition-duration: .12s;
+        }
+      }
+
+      &.active .tab-body {
+        border-style: solid dashed dashed;
+        padding-bottom: 4px;
+        // Do not jump when adding a border
+        atom-text-editor-minimap {
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+
+  // Fix stand alone minimap in relative mode (issue #23)
+  atom-text-editor-minimap[stand-alone=true] {
+    width: 190px;
+  }
+
+/* Tabs numbers */
+
+  .tab-numbers-style(@content) {
+    .close-icon {
+      transform: none;
+
+      &::before {
+        font-family: Helvetica, Arial, sans-serif;
+        content: @content;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .expose-tab:not(:hover) {
+    &:nth-of-type(1) { .tab-numbers-style("1"); }
+    &:nth-of-type(2) { .tab-numbers-style("2"); }
+    &:nth-of-type(3) { .tab-numbers-style("3"); }
+    &:nth-of-type(4) { .tab-numbers-style("4"); }
+    &:nth-of-type(5) { .tab-numbers-style("5"); }
+    &:nth-of-type(6) { .tab-numbers-style("6"); }
+    &:nth-of-type(7) { .tab-numbers-style("7"); }
+    &:nth-of-type(8) { .tab-numbers-style("8"); }
+    &:nth-of-type(9) { .tab-numbers-style("9"); }
+  }
+
+/* Modal zoom animation */
+
+  &.animate {
+  	transform: scale(0.7);
+  	opacity: 0;
+  	transition: all 0.1s;
+  }
+
+  &.animate.visible {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+
+/* Helpers */
+
+  .ghost {
+    opacity: 0.4;
+  }
+
+  @-webkit-keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+
+  .icon-resize(@size) {
+    font-size: @size;
+    height: @size;
+    width: @size;
+  }
+}

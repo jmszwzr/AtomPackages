@@ -21,14 +21,10 @@ ctrl-shift-d            复制当前行到下一行
 Alt + F2                匹配选定所有(和Snipaste快捷键冲突)
 
 
-# ask-stack
-shift-alt-a             打开搜索strackoverflow
-# git-control
-ctrl-alt-g              打开关闭git-control
-# expose
-alt-z                   打开关闭所有已经打开文件的缩略图
-# platformio-ide-terminal
-Ctrl + `                显示隐藏所有终端
+# ask-stack                 shift-alt-a             打开搜索strackoverflow
+# git-control               ctrl-alt-g              打开关闭git-control
+# expose                    alt-z                   打开关闭所有已经打开文件的缩略图
+# platformio-ide-terminal   Ctrl + `                显示隐藏所有终端
 
 # 目录树操作
 a   添加文件

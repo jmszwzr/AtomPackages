@@ -13,7 +13,6 @@ export class SignalElement extends HTMLElement {
   createdCallback() {
     this.update([], [])
     this.classList.add('inline-block')
-    this.classList.add('loading-spinner-tiny')
   }
   update(titles: Array<string>, history: Array<{ title: string, duration: string }>) {
     this.setBusy(!!titles.length)

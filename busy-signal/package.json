@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+        "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
-        "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+        "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
+        "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
         "type": "local"
       },
-      "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11753-18016-3jrwqy.l0ygv6lxr"
+      "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11756-46796-siwqk.6tpecrqkt9"
     ]
   ],
-  "_from": "..\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
-  "_id": "busy-signal@1.4.1",
+  "_from": "..\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
+  "_id": "busy-signal@1.4.3",
   "_inCache": true,
   "_installable": true,
   "_location": "/busy-signal",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+    "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
-    "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
+    "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
+    "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:..\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
-  "_shasum": "bea1229c77d3ea332466bc878e52ab4a2a394590",
+  "_resolved": "file:..\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
+  "_shasum": "6baf37a38bf9468d9bfd491817102a70b50e05f3",
   "_shrinkwrap": null,
-  "_spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11753-18016-1x7y150.utjpuv7vi\\package.tgz",
-  "_where": "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11753-18016-3jrwqy.l0ygv6lxr",
+  "_spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11756-46796-67qdei.ec16as8aor\\package.tgz",
+  "_where": "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11756-46796-siwqk.6tpecrqkt9",
   "bugs": {
     "url": "https://github.com/steelbrain/busy-signal/issues"
   },
@@ -49,11 +49,12 @@
   "dependencies": {
     "disposify": "^1.0.0",
     "escape-html": "^1.0.3",
-    "ms": "^1.0.0"
+    "ms": "^2.0.0"
   },
   "description": "A package that provides an easy to use API to show your package is performing a task",
   "devDependencies": {
     "eslint-config-steelbrain": "^3.0.1",
+    "flow-bin": "^0.47.0",
     "jasmine-fix": "^1.0.1"
   },
   "engines": {
@@ -85,7 +86,7 @@
     "lint": "eslint .",
     "test": "apm test"
   },
-  "version": "1.4.1",
+  "version": "1.4.3",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
@@ -101,7 +102,7 @@
       },
       {
         "name": "ms",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "path": "node_modules\\ms\\index.js"
       }
     ],
@@ -111,6 +112,7 @@
         "node_modules\\disposify\\package.json",
         "node_modules\\escape-html\\package.json",
         "node_modules\\ms\\package.json",
+        "package-lock.json",
         "package.json"
       ],
       ".js": [
@@ -137,7 +139,7 @@
         "dependencies": {
           "disposify": "^1.0.0",
           "escape-html": "^1.0.3",
-          "ms": "^1.0.0"
+          "ms": "^2.0.0"
         }
       }
     ]

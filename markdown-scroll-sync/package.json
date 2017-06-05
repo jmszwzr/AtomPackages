@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
-        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
         "type": "local"
       },
-      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-22680-hdhn9z.43vlr9hpvi"
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-26164-1r55z47.i0mqiu23xr"
     ]
   ],
-  "_from": "..\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
+  "_from": "..\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
   "_id": "markdown-scroll-sync@2.1.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/markdown-scroll-sync",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
-    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:..\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
+  "_resolved": "file:..\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
   "_shasum": "6fbec1ae0719aee51667636a4042336057ce1433",
   "_shrinkwrap": null,
-  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-22680-84phqq.imztm1v2t9\\package.tgz",
-  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-22680-hdhn9z.43vlr9hpvi",
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11755-26164-oumlmh.441ytd42t9\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11755-26164-1r55z47.i0mqiu23xr",
   "bugs": {
     "url": "https://github.com/mark-hahn/markdown-scroll-sync/issues"
   },

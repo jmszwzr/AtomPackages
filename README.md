@@ -82,6 +82,23 @@ b, legal, img, l, i, code, t, table
 - [ask-stack](https://atom.io/packages/ask-stack)，Ask Stack Overflow for Atom
 
 
+## Atom -- 常见问题解决
+- markdown-scroll-sync报`atom-text-editor.Object.defineProperty.get is deprecated`错误
+```
+解决方案如下：  
+1.git clone git@github.com:vincentcn/markdown-scroll-sync.git
+2.删除.atom/packages目录下的markdown-scroll-sync
+3.将clone下来的markdown-scroll-sync复制粘贴到.atom/packages下
+4.进入markdown-scroll-sync目录，运行apm install
+5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
+```
+
+
+
+
+
+
+
 
 
 

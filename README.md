@@ -82,16 +82,20 @@ alt + ctrl + shift + }  展开全部
 
 ## 常用插件
 
+#### 必备插件
+-[sync-settings](https://atom.io/packages/sync-settings)
+
 #### UI主题
-- [atom-material-ui](https://atom.io/themes/atom-material-ui) ，听说好看到爆
-- [atom-material-syntax](https://atom.io/themes/atom-material-syntax)，和上面配套
+- [atom-material-ui](https://atom.io/themes/atom-material-ui) ，一个好用好看的MD风格的主题
+- [atom-material-syntax](https://atom.io/themes/atom-material-syntax)，用于语法高亮，配合Atom Material UI主题使用会更加完美
 - [seti-ui](https://atom.io/themes/seti-ui)
 - [seti-syntax](https://atom.io/themes/seti-syntax)，和上面配套，亮点在文件的 icons
 
 #### 代码美化
-- [file-icons](https://atom.io/packages/file-icons)，显示文件类型对应的图标
-- [atom-beautify](https://atom.io/packages/atom-beautify)，支持大多数语言的代码格式化
+- [file-icons](https://atom.io/packages/file-icons)，在Atom中显示文件类型对应的图标
+- [atom-beautify](https://atom.io/packages/atom-beautify)，一个可以快速美化代码排版本的神器，支持HTML, CSS, JavaScript, PHP, Python, Ruby, Java, C, C++, C#, Objective-C,SQL等语言svo
 - [minimap](https://atom.io/packages/minimap)，代码预览图
+- [highlight-selected](https://atom.io/packages/highlight-selected)，高亮显示所有和选中文本一样的文本，很适用的插件
 
 #### 代码提示
 - [emmet](https://atom.io/packages/emmet)，超有名的前端工具
@@ -102,15 +106,20 @@ alt + ctrl + shift + }  展开全部
 - [autocomplete-paths](https://atom.io/packages/autocomplete-paths)，补全路径，有用！
 - [autocomplete-python](https://atom.io/packages/autocomplete-python)，Python补全
 
+#### 语法检查
+- [linter](https://atom.io/packages/linter)，linter是一语法检查插件，它可以识别大部分语法，并对你的语法错误进行纠正。linter只是一个框架，针对不同语言的有不同具体插件
+
 #### Git
 - [git-time-machine](https://atom.io/themes/git-time-machine)，视图显示一个文件的提交历史
 
 #### Markdown
 - [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
+- [markdown-preview-enhanced](https://atom.io/packages/markdown-preview-enhanced)，非常强大markdown实时预览插件，强烈推荐
 
-#### 好玩
-- [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
+#### 插件类
 - [activate-power-mode](https://atom.io/packages/activate-power-mode)，这个叼，不过慎用
+- [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
+- [split-diff](https://atom.io/packages/minimap-split-diff)，文本比较工具，可比较两个窗口里的文档内容
 - [project-manager](https://atom.io/packages/project-manager)，管理项目
 - [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
 
@@ -152,3 +161,4 @@ alt + ctrl + shift + }  展开全部
 - [磨刀不误砍柴工，配置你的前端开发环境：Atom](https://segmentfault.com/a/1190000007690359)
 - [使用Atom打造无懈可击的Markdown编辑器](http://www.cnblogs.com/fanzhidongyzby/p/6637084.html)
 - [ATOM编辑器快捷键大全](http://www.168seo.cn/tools/1279.html)
+- [推荐几款我喜欢的Atom插件](http://www.tuicool.com/articles/qmEVfy)

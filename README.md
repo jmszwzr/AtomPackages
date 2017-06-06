@@ -35,15 +35,16 @@ alt-B,alt-right         移动到单词末尾(同上)
 ctrl-K,ctrl-U           使当前字符大写
 ctrl-K,ctrl-L           使当前字符小写
 
-shift + alt + D         keymap            删除当前光标所在行
 alt + F2                keymap            匹配选定所有(和Snipaste快捷键冲突)
+shift + alt + D         keymap            删除当前光标所在行
 
-shift + alt + A         package           ask-stack：打开搜索strackoverflow
-ctrl + alt + G          package           git-control：打开关闭git-control
 alt + Z                 package           expose：打开关闭所有已经打开文件的缩略图
-ctrl + alt + G          package           git-control：打开关闭git-control
+alt + T                 package           git-time-machine：与文件的git提交历史记录进行比较
 ctrl + `                package           platformio-ide-terminal：显示隐藏所有终端
+ctrl + alt + G          package           git-control：打开关闭git-control
+ctrl + alt + G          package           git-control：打开关闭git-control
 ctrl + shift + M        package           markdown-preview-plus：Markdown预览(不用自带的)
+shift + alt + A         package           ask-stack：打开搜索strackoverflow
 
 
 # 目录树操作
@@ -78,42 +79,40 @@ alt + ctrl + shift + }  展开全部
 - ctrl + F： 文件中关键词搜索及替换
 - 选择多项：按住 ctrl / ctrl，用鼠标点击另外一处你想选择的地方，这样，你就可以看到多个一起闪动的光标
 
-```java
-// 代码片段
-public class Student{
-    private String username;
-    private String password;
-}
-```
-
 
 ## 常用插件
 
-1、UI主题
-
-
-- [atom-material-ui](https://atom.io/themes/atom-material-ui) ，笔者使用的ui
+#### UI主题
+- [atom-material-ui](https://atom.io/themes/atom-material-ui) ，听说好看到爆
 - [atom-material-syntax](https://atom.io/themes/atom-material-syntax)，和上面配套
-- [eti-syntax](https://atom.io/themes/seti-syntax)，亮点在文件的 icons
+- [seti-ui](https://atom.io/themes/seti-ui)
+- [seti-syntax](https://atom.io/themes/seti-syntax)，和上面配套，亮点在文件的 icons
 
-2、代码美化
+#### 代码美化
 - [file-icons](https://atom.io/packages/file-icons)，显示文件类型对应的图标
 - [atom-beautify](https://atom.io/packages/atom-beautify)，支持大多数语言的代码格式化
-- [activate-power-mode](https://atom.io/packages/activate-power-mode)，这个叼，不过慎用
-- [pigments](https://atom.io/packages/pigments)，颜色提示
 - [minimap](https://atom.io/packages/minimap)，代码预览图
 
-3、提升效率
-- [autocomplete-paths](https://atom.io/packages/autocomplete-paths)，补全路径，有用！
-- [atom-ternjs](https://atom.io/packages/atom-ternjs)，补全 JS
-- [autocomplete-python](https://atom.io/packages/autocomplete-python)，Python补全
+#### 代码提示
 - [emmet](https://atom.io/packages/emmet)，超有名的前端工具
+- [pigments](https://atom.io/packages/pigments)，颜色提示
 - [docblockr](https://atom.io/packages/docblockr)，代码注释，可惜不支持Python
-- [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
-- [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
-- [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
-- [project-manager](https://atom.io/packages/project-manager)，管理项目
 - [ask-stack](https://atom.io/packages/ask-stack)，Ask Stack Overflow for Atom
+- [atom-ternjs](https://atom.io/packages/atom-ternjs)，补全 JS
+- [autocomplete-paths](https://atom.io/packages/autocomplete-paths)，补全路径，有用！
+- [autocomplete-python](https://atom.io/packages/autocomplete-python)，Python补全
+
+#### Git
+- [git-time-machine](https://atom.io/themes/git-time-machine)，视图显示一个文件的提交历史
+
+#### Markdown
+- [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
+
+#### 好玩
+- [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
+- [activate-power-mode](https://atom.io/packages/activate-power-mode)，这个叼，不过慎用
+- [project-manager](https://atom.io/packages/project-manager)，管理项目
+- [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
 
 
 ## Atom -- 常见问题解决

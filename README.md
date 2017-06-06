@@ -151,3 +151,4 @@ alt + ctrl + shift + }  展开全部
 - [优美的编辑器Github Atom](https://crazylxr.github.io/2016/10/10/2016-10-10-%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom/)
 - [磨刀不误砍柴工，配置你的前端开发环境：Atom](https://segmentfault.com/a/1190000007690359)
 - [使用Atom打造无懈可击的Markdown编辑器](http://www.cnblogs.com/fanzhidongyzby/p/6637084.html)
+- [ATOM编辑器快捷键大全](http://www.168seo.cn/tools/1279.html)

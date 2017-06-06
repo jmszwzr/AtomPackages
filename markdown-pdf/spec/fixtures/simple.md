@@ -1,5 +1,0 @@
-*italic*
-
-**bold**
-
-> quote

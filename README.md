@@ -119,15 +119,13 @@ b, legal, img, l, i, code, t, table
 
 
 
-
-
-
 --------------------
 ## 资料来源
->   
+
 - [Atom快速上手指南](https://zhuanlan.zhihu.com/p/26175781)
 - [Atom 编辑器 入门 快捷键 插件安利](http://www.jianshu.com/p/aa8f8a252ed9)
 - [Emmet使用](http://www.cnblogs.com/matchless/archive/2013/04/10/3010628.html)
 - [Atom编辑器配置](http://imweb.io/topic/56c12f7e5c49f9d377ed8f1e)
 - [优美的编辑器Github Atom](https://crazylxr.github.io/2016/10/10/2016-10-10-%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom/)
 - [磨刀不误砍柴工，配置你的前端开发环境：Atom](https://segmentfault.com/a/1190000007690359)
+- [使用Atom打造无懈可击的Markdown编辑器](http://www.cnblogs.com/fanzhidongyzby/p/6637084.html)

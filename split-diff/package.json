@@ -1,0 +1,134 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+        "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11757-69184-gngg30.c88xx8yqfr"
+    ]
+  ],
+  "_from": "..\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+  "_id": "split-diff@1.4.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/split-diff",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+    "spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+  "_shasum": "2cb8cf11a577eaf47b7dc3c0403e7350e434a692",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\qyd\\AppData\\Local\\Temp\\d-11757-69184-1axdlsh.tqnp0evcxr\\package.tgz",
+  "_where": "C:\\Users\\qyd\\AppData\\Local\\Temp\\apm-install-dir-11757-69184-gngg30.c88xx8yqfr",
+  "bugs": {
+    "url": "https://github.com/mupchrch/split-diff/issues"
+  },
+  "dependencies": {
+    "diff": "latest"
+  },
+  "description": "A split pane diff tool.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">= 1.17 < 2.0.0"
+  },
+  "homepage": "https://github.com/mupchrch/split-diff#readme",
+  "keywords": [
+    "diff",
+    "git",
+    "split",
+    "compare",
+    "panes",
+    "files",
+    "lines",
+    "code",
+    "difference",
+    "visual"
+  ],
+  "license": "MIT",
+  "main": "./lib/split-diff",
+  "name": "split-diff",
+  "optionalDependencies": {},
+  "providedServices": {
+    "split-diff": {
+      "versions": {
+        "1.0.0": "provideSplitDiff"
+      }
+    }
+  },
+  "readme": "# split-diff package\n\nDiffs text between two split panes. New panes are created if less than two panes exist upon run of the package.\n\n\\*\\* **Supports diffing recent git changes!** \\*\\*\n\n![split-diff in action](https://github.com/mupchrch/split-diff/raw/master/demo.gif)\n\n## Usage\n\n### Commands\n\nYou can call any of these commands from your own custom keybinding, simply override the command in your keymap.cson!\n\n| Command | Effect | Default Keymaps |\n| ------- | ------ | --------------- |\n| Toggle `split-diff:toggle` | Toggles a diff of the text between two side-by-side panes. Creates panes as necessary. Displays git changes if there is a repository found. | `ctrl-alt-t` |\n| Enable `split-diff:enable` | Enables a diff of the text between two side-by-side panes. Creates panes as necessary. Displays git changes if there is a repository found. | ... |\n| Disable `split-diff:disable` | Disables a diff. Removes any panes that were created by this package. | ... |\n| Ignore Whitespace `split-diff:ignore-whitespace` | Toggles the Ignore Whitespace setting. | ... |\n| Move to Next Diff `split-diff:next-diff` | Highlights the next difference. Moves the cursor so it can be easily copied. | `ctrl-alt-n` |\n| Move to Previous Diff `split-diff:prev-diff` | Highlights the previous difference. Moves the cursor so it can be easily copied. | `ctrl-alt-p` |\n| Copy to Right `split-diff:copy-to-right` | Copies all differences containing a cursor to the right pane. | `ctrl-alt-.` |\n| Copy to Left `split-diff:copy-to-left` | Copies all differences containing a cursor to the left pane. | `ctrl-alt-,` |\n\n### Settings\n\n* **Show Word Diff** - Diffs the words between each line when this box is checked.\n* **Ignore Whitespace** - Will not diff whitespace when this box is checked.\n* **Mute Notifications** - Mutes all warning notifications when this box is checked.\n* **Hide Tree View** - Automatically hides the tree-view during diff. Re-shows on disable.\n* **Sync Scrolling** - Syncs the scrolling of the editors.\n#### Colors\n* **Added Color Side** - Which editor (left or right) to highlight as added. The opposite editor will be highlighted as removed.\n* **Override Highlight Colors** - Whether to override diff colors derived from the current syntax theme.\n* **Added Custom Color** - The color that will be used when overriding added highlight colors.\n* **Removed Custom Color** - The color that will be used when overriding removed highlight colors.\n\n### Service API\nPackages can consume the split-diff service to do things like enable a diff between two editors.\n\n```js\n/**\n * Getter for the marker layers of each editor being diffed.\n * @return {Promise} A promise that resolves to an object containing the marker layers.\n */\ngetMarkerLayers();\n\n/**\n * Enables split-diff between the two given editors.\n * @param {TextEditor} editor1 - The left editor.\n * @param {TextEditor} editor2 - The right editor.\n * @param {object} options - Options to override any package setting.\n */\ndiffEditors(editor1, editor2, options);\n\n/**\n * Disables split-diff.\n */\ndisable();\n```\n\n## Minimap Plugin\n\nGet the [split-diff minimap plugin](https://atom.io/packages/minimap-split-diff) to make it easier to spot differences!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mupchrch/split-diff.git"
+  },
+  "version": "1.4.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "diff",
+        "version": "3.2.0",
+        "path": "node_modules\\diff\\lib\\index.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib\\buffer-extender.js",
+        "lib\\compute-diff.js",
+        "lib\\compute-word-diff.js",
+        "lib\\diff-view.js",
+        "lib\\editor-diff-extender.js",
+        "lib\\style-calculator.js",
+        "lib\\sync-scroll.js",
+        "node_modules\\diff\\dist\\diff.js",
+        "node_modules\\diff\\dist\\diff.min.js",
+        "node_modules\\diff\\lib\\convert\\dmp.js",
+        "node_modules\\diff\\lib\\convert\\xml.js",
+        "node_modules\\diff\\lib\\diff\\array.js",
+        "node_modules\\diff\\lib\\diff\\base.js",
+        "node_modules\\diff\\lib\\diff\\character.js",
+        "node_modules\\diff\\lib\\diff\\css.js",
+        "node_modules\\diff\\lib\\diff\\json.js",
+        "node_modules\\diff\\lib\\diff\\line.js",
+        "node_modules\\diff\\lib\\diff\\sentence.js",
+        "node_modules\\diff\\lib\\diff\\word.js",
+        "node_modules\\diff\\lib\\index.js",
+        "node_modules\\diff\\lib\\patch\\apply.js",
+        "node_modules\\diff\\lib\\patch\\create.js",
+        "node_modules\\diff\\lib\\patch\\merge.js",
+        "node_modules\\diff\\lib\\patch\\parse.js",
+        "node_modules\\diff\\lib\\util\\array.js",
+        "node_modules\\diff\\lib\\util\\distance-iterator.js",
+        "node_modules\\diff\\lib\\util\\params.js",
+        "node_modules\\diff\\runtime.js"
+      ],
+      ".coffee": [
+        "lib\\config-schema.coffee",
+        "lib\\split-diff.coffee",
+        "lib\\ui\\footer-view.coffee",
+        "lib\\ui\\loading-view.coffee"
+      ],
+      ".json": [
+        "node_modules\\diff\\package.json",
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

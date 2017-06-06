@@ -1,0 +1,78 @@
+# NOTE
+# No 'name' attribute prevents this Grammar file from showing up in the Grammar selection
+
+scopeName: "fenced-code.md"
+
+# Objects in {list} have the following structure:
+#
+# {
+#   pattern: {string}
+#   include: {string}
+#   contentName: {string}
+# }
+#
+# 'pattern' is required; item is ignored if 'pattern' is missing
+# If 'include' is omitted, 'include' will become 'source.'+pattern
+# If 'contentName' is omitted, 'contentName' will become pattern+'.embedded'+extension
+
+# NOTE
+# Keep this list alphabetized
+
+list: [
+  { pattern:'apib|apiblueprint', include:'text.html.markdown.source.gfm.apib' }
+  { pattern:'ass' }
+  { pattern:'coffee|coffeescript|coffee-script', include:'source.coffee' }
+  { pattern:'c' }
+  { pattern:'clean' }
+  { pattern:'clojure' }
+  { pattern:'cpp|c\\+\\+', include:'source.cpp' }
+  { pattern:'cr|crystal', include:'source.crystal'}
+  { pattern:'cs|csharp', include:'source.cs' }
+  { pattern:'css' }
+  { pattern:'diff|patch|rej', include:'source.diff' }
+  { pattern:'elixir' }
+  { pattern:'elm' }
+
+  # { pattern:'ecr', include:'source.crystal', contentName:'text.html.ecr'}
+  # { pattern:'erb', include:'source.ruby', contentName:'text.html.erb' }
+
+  { pattern:'erlang' }
+  { pattern:'go|golang', include:'source.go' }
+  { pattern:'haskell' }
+  { pattern:'html', include:'text.html.basic' }
+  { pattern:'idris' }
+  { pattern:'java' }
+  { pattern:'javascript|js|jsx', include:'source.js' }
+  { pattern:'json|har', include:'source.json' }
+  { pattern:'julia' }
+  { pattern:'latex|tex', include:'text.tex.latex' }
+  { pattern:'less', include:'source.css.less' }
+  { pattern:'lua' }
+  { pattern:'markdown|mdown|md', include:'text.md' }
+  { pattern:'m|mathematica', include:'source.mathematica' }
+  { pattern:'mermaid' }
+  { pattern:'mson', include:'text.html.markdown.source.gfm.mson' }
+  { pattern:'objc|objective-c', include:'source.objc' }
+  { pattern:'php', include:'text.html.php' }
+  { pattern:'py|python', include:'source.python' }
+  { pattern:'r' }
+  { pattern:'ruby' }
+  { pattern:'rust|rs', include:'source.rust' }
+  { pattern:'sass' }
+  { pattern:'scss', include:'source.css.scss' }
+  { pattern:'sh|bash', include:'source.shell' }
+  { pattern:'sql' }
+  { pattern:'swift' }
+  { pattern:'xml', include:'text.xml' }
+
+  # NOTE: temporarily disabled, see issue #77 for details
+  # { pattern:'yaml|yml', include:'source.yaml' }
+
+  # Fallback that detects any unsupported languages;
+  # Pattern might have to accept more characters.
+  {
+    pattern: '[a-zA-Z0-9-_]+'
+    include: 'source'
+    patternName: 'source.embedded'
+  }
+]

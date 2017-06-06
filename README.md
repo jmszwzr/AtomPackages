@@ -59,6 +59,9 @@ b, legal, img, l, i, code, t, table
 - 选中项目根目录，右键，选择 “Search in Directory”，可以全局准确搜索关键字
 - cmd + F / ctrl + F： 文件中关键词搜索及替换
 - 选择多项：按住 cmd / ctrl，用鼠标点击另外一处你想选择的地方，这样，你就可以看到多个一起闪动的光标
+- 打开serttings的基重方式
+    - ctrl-shift-p  svo
+    - ctrl-,    需要修改搜狗输入法中输入法管理器的搜狗平阴快捷键
 
 
 ## 常用插件
@@ -93,21 +96,20 @@ b, legal, img, l, i, code, t, table
 ## Atom -- 常见问题解决
 
 ### **快捷键冲突**
->  
-- 1、打开 设置 -> Keybingdings；
-- 2、复制目标快捷键的配置信息，如下图所示，目标是将 ctrl + alt + o 快捷键配置为打开或关闭 git-control；
+
+>- 1、打开 设置 -> Keybingdings；
+>- 2、复制目标快捷键的配置信息，如下图所示，目标是将 `ctrl + alt + o` 快捷键配置为打开或关闭 git-control；
 ![images](https://github.com/jmszwzr/AtomPackages/raw/master/_images/Keybingdings.png)
-- 3、打开 "keymap.cson"(ctrl + shift + p / cmd + shift + p, type "open keymap")；
-- 4、粘贴配置信息至文件末尾。
+>- 3、打开 "keymap.cson"(ctrl + shift + p / cmd + shift + p, type "open keymap")；
+>- 4、粘贴配置信息至文件末尾。
 
-### 从Atom官网或者Atom编辑器下载的markdown-scroll-sync报`atom-text-editor.Object.defineProperty.get is deprecated`错误
+### **markdown-scroll-sync报错**
 
->解决方案如下：  
-- 1.git clone git@github.com:vincentcn/markdown-scroll-sync.git
-- 2.删除.atom/packages目录下的markdown-scroll-sync
-- 3.将clone下来的markdown-scroll-sync复制粘贴到.atom/packages下
-- 4.进入markdown-scroll-sync目录，运行apm install
-- 5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
+>- 1.git clone `git@github.com:vincentcn/markdown-scroll-sync.git`
+>- 2.删除.atom/packages目录下的markdown-scroll-sync
+>- 3.将clone下来的markdown-scroll-sync复制粘贴到.atom/packages下
+>- 4.进入markdown-scroll-sync目录，运行`apm install`
+>- 5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
 
 
 

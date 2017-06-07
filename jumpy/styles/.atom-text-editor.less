@@ -1,0 +1,28 @@
+@import "ui-variables";
+
+#status-bar-jumpy {
+    color: @text-color-info;
+    &.no-match,
+    &.no-match .status {
+        color: @text-color-warning;
+    }
+}
+
+.jumpy-label {
+    &.irrelevant { // This is a marker to indicate not applicable (when 1 key is entered/known).
+        display: none;
+    }
+    color: @base-background-color;
+    background: @text-color;
+    position: absolute;
+    vertical-align: bottom;
+    transform: translate(0, -100%);
+    padding: .15em;
+    border-radius: @component-border-radius;
+    font-family: @font-family;
+    &.high-contrast {
+        background-color: @background-color-success;
+    }
+}
+
+@import "beacon.less";

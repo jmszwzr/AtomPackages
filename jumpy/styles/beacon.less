@@ -1,0 +1,36 @@
+// Original code / inspiration: http://codepen.io/daless14/pen/ELFgj/
+// Greatly modified of course...
+
+@import "ui-variables";
+
+.beacon {
+    display: block;
+    position: absolute;
+    border-radius: 1px;
+    width: 2px;
+    height: 2px;
+    z-index: -1;
+    -webkit-animation: rip .085s;
+    content: '';
+    top: -6px;
+}
+@-webkit-keyframes rip {
+    0% {
+        box-shadow:0 0 0 0 transparent,
+                   0 0 0 0 transparent,
+                   0 0 0 0 transparent,
+                   0 0 0 0 transparent;
+    }
+    5%  {
+        box-shadow:0 0 0 0 @background-color-error,
+                   0 0 0 0 rgba(255,255,255,0.5),
+                   0 0 0 0 @background-color-error,
+                   0 0 0 0 rgba(0,0,0,0.1);
+    }
+    100% {
+        box-shadow:0 0 4px 24px @background-color-error,
+                   0 0 0 0 transparent,
+                   0 0 0 0 transparent,
+                   0 0 0 0 transparent;
+    }
+}

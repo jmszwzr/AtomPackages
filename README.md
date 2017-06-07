@@ -38,12 +38,14 @@ ctrl-K,ctrl-L           使当前字符小写
 alt + F2                keymap            匹配选定所有(和Snipaste快捷键冲突)
 shift + alt + D         keymap            删除当前光标所在行
 ctrl + shift + alt + L  keymap            选择多行，进行多行编辑，不可跳跃(功能类似 ctrl + click)
+ctrl + shift + alt + O  keymap            activate-power-mode:toggle：让插件activate-power-mode的雪花效果生效/失效
+
 
 alt + Z                 package           expose：打开关闭所有已经打开文件的缩略图
 alt + T                 package           git-time-machine：与文件的git提交历史记录进行比较
 ctrl + `                package           platformio-ide-terminal：显示隐藏所有终端
 ctrl + alt + G          package           git-control：打开关闭git-control
-ctrl + alt + G          package           git-control：打开关闭git-control
+ctrl + alt + O          package           open-in-browers：在浏览器中打开当前文件
 ctrl + shift + M        package           markdown-preview-plus：Markdown预览(不用自带的)
 shift + alt + A         package           ask-stack：打开搜索strackoverflow
 
@@ -59,6 +61,13 @@ alt + ctrl + [          折叠
 alt + ctrl + ]          展开
 alt + ctrl + shift + {  折叠全部
 alt + ctrl + shift + }  展开全部
+
+# 书签
+ctrl + F2               显示所有书签
+ctrl + alt + F2         打上/取消所在行的书签
+ctrl + shift + F2       清除所有书签
+F2                      调到下一个书签
+shift + F2              调到上一个书签
 ```
 
 
@@ -128,6 +137,7 @@ alt + ctrl + shift + }  展开全部
 - [split-diff](https://atom.io/packages/minimap-split-diff)，文本比较工具，可比较两个窗口里的文档内容
 - [project-manager](https://atom.io/packages/project-manager)，管理项目
 - [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
+- [jumpy](https://atom.io/packages/jumpy)，利用快捷键，在文件中跳转至任意位置
 
 
 ## Atom -- 常见问题解决
@@ -149,8 +159,11 @@ alt + ctrl + shift + }  展开全部
 >- 5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
 
 
+## Atom -- 不常见问题（欢迎大家建言献策）
 
-
+- 在Atom中，右击文件名 Reveal in Tree View 无效果
+- 快捷键问题：使用Atom自带的快捷键 ctrl-0 无效果
+- ask-stack问题：使用自定义快捷键打开 ask-stack 时，如何使用快捷键关闭
 
 
 
@@ -168,3 +181,4 @@ alt + ctrl + shift + }  展开全部
 - [使用Atom打造无懈可击的Markdown编辑器](http://www.cnblogs.com/fanzhidongyzby/p/6637084.html)
 - [ATOM编辑器快捷键大全](http://www.168seo.cn/tools/1279.html)
 - [推荐几款我喜欢的Atom插件](http://www.tuicool.com/articles/qmEVfy)
+- [前端我在使用的插件（可能有点多）](https://atom-china.org/t/topic/2650)

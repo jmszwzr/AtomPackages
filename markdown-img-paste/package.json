@@ -1,0 +1,1121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-4276-tvqq9u.nbkpmpwrk9"
+    ]
+  ],
+  "_from": "..\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+  "_id": "markdown-img-paste@0.3.9",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/markdown-img-paste",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+  "_shasum": "008f40d3f39efbcde253310096d1b8a70873dbad",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-4276-1b1dttg.xbap1oflxr\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-4276-tvqq9u.nbkpmpwrk9",
+  "activationCommands": {
+    "atom-workspace": "markdown-img-paste:paste"
+  },
+  "bugs": {
+    "url": "https://github.com/cocoakekeyu/markdown-img-paste/issues"
+  },
+  "configSchema": {
+    "only_markdown": {
+      "type": "boolean",
+      "default": true,
+      "title": "Only in markdown grammar to enable the plugin",
+      "description": ""
+    },
+    "use_assets_folder": {
+      "type": "boolean",
+      "default": true,
+      "title": "Save images in assets folder",
+      "description": ""
+    },
+    "upload_to_mssm": {
+      "type": "boolean",
+      "default": false,
+      "title": "Use sm.ms for image link",
+      "description": ""
+    },
+    "upload_to_qiniu": {
+      "type": "boolean",
+      "default": false,
+      "title": "Use qiniu for image link",
+      "description": ""
+    },
+    "zAccessKey": {
+      "type": "string",
+      "default": "",
+      "title": "AccessKey",
+      "description": ""
+    },
+    "zSecretKey": {
+      "type": "string",
+      "default": "",
+      "title": "SecretKey",
+      "description": ""
+    },
+    "zbucket": {
+      "type": "string",
+      "default": "",
+      "title": "Bucket",
+      "description": ""
+    },
+    "zdomain": {
+      "type": "string",
+      "default": "http://",
+      "title": "Domain",
+      "description": ""
+    },
+    "zuphost": {
+      "type": "string",
+      "default": "http://upload.qiniu.com",
+      "title": "Uphost",
+      "description": "七牛云上传服务器域名，上传出错时可能是上传的区域服务器域名不对。默认不用设置。"
+    }
+  },
+  "dependencies": {
+    "qiniu": "=6.1.11",
+    "request": "^2.55.0"
+  },
+  "description": "Just use 'ctrl+shfit+v' paste image into markdown",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/cocoakekeyu/markdown-img-paste#readme",
+  "keywords": [
+    "markdown",
+    "md",
+    "image",
+    "paste"
+  ],
+  "license": "MIT",
+  "main": "./lib/markdown-img-paste",
+  "name": "markdown-img-paste",
+  "optionalDependencies": {},
+  "readme": "# Markdown-img-paste\n\n## Usage\n\n1. take a screenshot or copy a image\n2. hit `ctrl+shft+v` to paste image into markdown\n\nBy default, the image will store in current directory. But you can change like this:\n![](http://7xpcbe.com1.z0.glb.clouddn.com/markdown-img-paste.gif)\n\n## Setting\n\n### Only in markdown grammar to enable the plugin\n\nIf not, you can paste markdown image in any file.\n\n### Use sm.ms for image link\n\nsm.ms is a free web for upload image without an account.\n\n### Use qiniu for image link\n\nIf you have a qiniu account[(https://qiniu.com)](https://qiniu.com), you can upload image to qiniu server by setting the following four parameters.\n\n![](http://7xpcbe.com1.z0.glb.clouddn.com/markdown_setting.png))\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocoakekeyu/markdown-img-paste.git"
+  },
+  "version": "0.3.9",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "ajv",
+        "version": "4.11.8",
+        "path": "node_modules\\ajv\\lib\\ajv.js"
+      },
+      {
+        "name": "asn1",
+        "version": "0.2.3",
+        "path": "node_modules\\asn1\\lib\\index.js"
+      },
+      {
+        "name": "assert-plus",
+        "version": "0.2.0",
+        "path": "node_modules\\assert-plus\\assert.js"
+      },
+      {
+        "name": "asynckit",
+        "version": "0.4.0",
+        "path": "node_modules\\asynckit\\index.js"
+      },
+      {
+        "name": "aws-sign2",
+        "version": "0.6.0",
+        "path": "node_modules\\aws-sign2\\index.js"
+      },
+      {
+        "name": "aws4",
+        "version": "1.6.0",
+        "path": "node_modules\\aws4\\aws4.js"
+      },
+      {
+        "name": "bcrypt-pbkdf",
+        "version": "1.0.1",
+        "path": "node_modules\\bcrypt-pbkdf\\index.js"
+      },
+      {
+        "name": "boom",
+        "version": "2.10.1",
+        "path": "node_modules\\boom\\lib\\index.js"
+      },
+      {
+        "name": "buffer-concat",
+        "version": "0.0.1",
+        "path": "node_modules\\buffer-concat\\index.js"
+      },
+      {
+        "name": "caseless",
+        "version": "0.12.0",
+        "path": "node_modules\\caseless\\index.js"
+      },
+      {
+        "name": "co",
+        "version": "4.6.0",
+        "path": "node_modules\\co\\index.js"
+      },
+      {
+        "name": "combined-stream",
+        "version": "1.0.5",
+        "path": "node_modules\\combined-stream\\lib\\combined_stream.js"
+      },
+      {
+        "name": "crc32",
+        "version": "0.2.2",
+        "path": "node_modules\\crc32\\lib\\crc32.js"
+      },
+      {
+        "name": "cryptiles",
+        "version": "2.0.5",
+        "path": "node_modules\\cryptiles\\lib\\index.js"
+      },
+      {
+        "name": "dashdash",
+        "version": "1.14.1",
+        "path": "node_modules\\dashdash\\lib\\dashdash.js"
+      },
+      {
+        "name": "assert-plus",
+        "version": "1.0.0",
+        "path": "node_modules\\dashdash\\node_modules\\assert-plus\\assert.js"
+      },
+      {
+        "name": "debug",
+        "version": "0.7.2",
+        "path": "node_modules\\debug\\lib\\debug.js"
+      },
+      {
+        "name": "delayed-stream",
+        "version": "1.0.0",
+        "path": "node_modules\\delayed-stream\\lib\\delayed_stream.js"
+      },
+      {
+        "name": "ecc-jsbn",
+        "version": "0.1.1",
+        "path": "node_modules\\ecc-jsbn\\index.js"
+      },
+      {
+        "name": "extend",
+        "version": "3.0.1",
+        "path": "node_modules\\extend\\index.js"
+      },
+      {
+        "name": "extsprintf",
+        "version": "1.0.2",
+        "path": "node_modules\\extsprintf\\lib\\extsprintf.js"
+      },
+      {
+        "name": "forever-agent",
+        "version": "0.6.1",
+        "path": "node_modules\\forever-agent\\index.js"
+      },
+      {
+        "name": "form-data",
+        "version": "2.1.4",
+        "path": "node_modules\\form-data\\lib\\form_data.js"
+      },
+      {
+        "name": "formstream",
+        "version": "0.0.7",
+        "path": "node_modules\\formstream\\index.js"
+      },
+      {
+        "name": "getpass",
+        "version": "0.1.7",
+        "path": "node_modules\\getpass\\lib\\index.js"
+      },
+      {
+        "name": "assert-plus",
+        "version": "1.0.0",
+        "path": "node_modules\\getpass\\node_modules\\assert-plus\\assert.js"
+      },
+      {
+        "name": "har-schema",
+        "version": "1.0.5",
+        "path": "node_modules\\har-schema\\lib\\index.js"
+      },
+      {
+        "name": "har-validator",
+        "version": "4.2.1",
+        "path": "node_modules\\har-validator\\lib\\node4\\promise.js"
+      },
+      {
+        "name": "hawk",
+        "version": "3.1.3",
+        "path": "node_modules\\hawk\\lib\\index.js"
+      },
+      {
+        "name": "hoek",
+        "version": "2.16.3",
+        "path": "node_modules\\hoek\\lib\\index.js"
+      },
+      {
+        "name": "http-signature",
+        "version": "1.1.1",
+        "path": "node_modules\\http-signature\\lib\\index.js"
+      },
+      {
+        "name": "is-typedarray",
+        "version": "1.0.0",
+        "path": "node_modules\\is-typedarray\\index.js"
+      },
+      {
+        "name": "isstream",
+        "version": "0.1.2",
+        "path": "node_modules\\isstream\\isstream.js"
+      },
+      {
+        "name": "jodid25519",
+        "version": "1.0.2",
+        "path": "node_modules\\jodid25519\\index.js"
+      },
+      {
+        "name": "jsbn",
+        "version": "0.1.1",
+        "path": "node_modules\\jsbn\\index.js"
+      },
+      {
+        "name": "json-schema",
+        "version": "0.2.3",
+        "path": "node_modules\\json-schema\\lib\\validate.js"
+      },
+      {
+        "name": "json-stable-stringify",
+        "version": "1.0.1",
+        "path": "node_modules\\json-stable-stringify\\index.js"
+      },
+      {
+        "name": "json-stringify-safe",
+        "version": "5.0.1",
+        "path": "node_modules\\json-stringify-safe\\stringify.js"
+      },
+      {
+        "name": "jsonify",
+        "version": "0.0.0",
+        "path": "node_modules\\jsonify\\index.js"
+      },
+      {
+        "name": "jsprim",
+        "version": "1.4.0",
+        "path": "node_modules\\jsprim\\lib\\jsprim.js"
+      },
+      {
+        "name": "assert-plus",
+        "version": "1.0.0",
+        "path": "node_modules\\jsprim\\node_modules\\assert-plus\\assert.js"
+      },
+      {
+        "name": "mime",
+        "version": "1.2.9",
+        "path": "node_modules\\mime\\mime.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.27.0",
+        "path": "node_modules\\mime-db\\index.js"
+      },
+      {
+        "name": "mime-types",
+        "version": "2.1.15",
+        "path": "node_modules\\mime-types\\index.js"
+      },
+      {
+        "name": "oauth-sign",
+        "version": "0.8.2",
+        "path": "node_modules\\oauth-sign\\index.js"
+      },
+      {
+        "name": "pause-stream",
+        "version": "0.0.11",
+        "path": "node_modules\\pause-stream\\index.js"
+      },
+      {
+        "name": "performance-now",
+        "version": "0.2.0",
+        "path": "node_modules\\performance-now\\lib\\performance-now.js"
+      },
+      {
+        "name": "punycode",
+        "version": "1.4.1",
+        "path": "node_modules\\punycode\\punycode.js"
+      },
+      {
+        "name": "qiniu",
+        "version": "6.1.11",
+        "path": "node_modules\\qiniu\\index.js"
+      },
+      {
+        "name": "qs",
+        "version": "6.4.0",
+        "path": "node_modules\\qs\\lib\\index.js"
+      },
+      {
+        "name": "request",
+        "version": "2.81.0",
+        "path": "node_modules\\request\\index.js"
+      },
+      {
+        "name": "safe-buffer",
+        "version": "5.1.0",
+        "path": "node_modules\\safe-buffer\\index.js"
+      },
+      {
+        "name": "sntp",
+        "version": "1.0.9",
+        "path": "node_modules\\sntp\\index.js"
+      },
+      {
+        "name": "sshpk",
+        "version": "1.13.0",
+        "path": "node_modules\\sshpk\\lib\\index.js"
+      },
+      {
+        "name": "assert-plus",
+        "version": "1.0.0",
+        "path": "node_modules\\sshpk\\node_modules\\assert-plus\\assert.js"
+      },
+      {
+        "name": "stringstream",
+        "version": "0.0.5",
+        "path": "node_modules\\stringstream\\stringstream.js"
+      },
+      {
+        "name": "through",
+        "version": "2.3.8",
+        "path": "node_modules\\through\\index.js"
+      },
+      {
+        "name": "tough-cookie",
+        "version": "2.3.2",
+        "path": "node_modules\\tough-cookie\\lib\\cookie.js"
+      },
+      {
+        "name": "tunnel-agent",
+        "version": "0.6.0",
+        "path": "node_modules\\tunnel-agent\\index.js"
+      },
+      {
+        "name": "tweetnacl",
+        "version": "0.14.5",
+        "path": "node_modules\\tweetnacl\\nacl-fast.js"
+      },
+      {
+        "name": "urllib",
+        "version": "0.5.1",
+        "path": "node_modules\\urllib\\index.js"
+      },
+      {
+        "name": "uuid",
+        "version": "3.0.1",
+        "path": "node_modules\\uuid\\index.js"
+      },
+      {
+        "name": "verror",
+        "version": "1.3.6",
+        "path": "node_modules\\verror\\lib\\verror.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib\\markdown-img-paste.coffee",
+        "node_modules\\performance-now\\src\\performance-now.coffee"
+      ],
+      ".js": [
+        "node_modules\\ajv\\.tonic_example.js",
+        "node_modules\\ajv\\dist\\ajv.bundle.js",
+        "node_modules\\ajv\\dist\\ajv.min.js",
+        "node_modules\\ajv\\dist\\nodent.min.js",
+        "node_modules\\ajv\\dist\\regenerator.min.js",
+        "node_modules\\ajv\\lib\\ajv.js",
+        "node_modules\\ajv\\lib\\async.js",
+        "node_modules\\ajv\\lib\\cache.js",
+        "node_modules\\ajv\\lib\\compile\\equal.js",
+        "node_modules\\ajv\\lib\\compile\\formats.js",
+        "node_modules\\ajv\\lib\\compile\\index.js",
+        "node_modules\\ajv\\lib\\compile\\resolve.js",
+        "node_modules\\ajv\\lib\\compile\\rules.js",
+        "node_modules\\ajv\\lib\\compile\\schema_obj.js",
+        "node_modules\\ajv\\lib\\compile\\ucs2length.js",
+        "node_modules\\ajv\\lib\\compile\\util.js",
+        "node_modules\\ajv\\lib\\compile\\validation_error.js",
+        "node_modules\\ajv\\lib\\compile\\_rules.js",
+        "node_modules\\ajv\\lib\\dotjs\\allOf.js",
+        "node_modules\\ajv\\lib\\dotjs\\anyOf.js",
+        "node_modules\\ajv\\lib\\dotjs\\constant.js",
+        "node_modules\\ajv\\lib\\dotjs\\custom.js",
+        "node_modules\\ajv\\lib\\dotjs\\dependencies.js",
+        "node_modules\\ajv\\lib\\dotjs\\enum.js",
+        "node_modules\\ajv\\lib\\dotjs\\format.js",
+        "node_modules\\ajv\\lib\\dotjs\\items.js",
+        "node_modules\\ajv\\lib\\dotjs\\multipleOf.js",
+        "node_modules\\ajv\\lib\\dotjs\\not.js",
+        "node_modules\\ajv\\lib\\dotjs\\oneOf.js",
+        "node_modules\\ajv\\lib\\dotjs\\pattern.js",
+        "node_modules\\ajv\\lib\\dotjs\\patternRequired.js",
+        "node_modules\\ajv\\lib\\dotjs\\properties.js",
+        "node_modules\\ajv\\lib\\dotjs\\ref.js",
+        "node_modules\\ajv\\lib\\dotjs\\required.js",
+        "node_modules\\ajv\\lib\\dotjs\\switch.js",
+        "node_modules\\ajv\\lib\\dotjs\\uniqueItems.js",
+        "node_modules\\ajv\\lib\\dotjs\\validate.js",
+        "node_modules\\ajv\\lib\\dotjs\\_formatLimit.js",
+        "node_modules\\ajv\\lib\\dotjs\\_limit.js",
+        "node_modules\\ajv\\lib\\dotjs\\_limitItems.js",
+        "node_modules\\ajv\\lib\\dotjs\\_limitLength.js",
+        "node_modules\\ajv\\lib\\dotjs\\_limitProperties.js",
+        "node_modules\\ajv\\lib\\keyword.js",
+        "node_modules\\ajv\\lib\\v5.js",
+        "node_modules\\ajv\\scripts\\bundle.js",
+        "node_modules\\ajv\\scripts\\compile-dots.js",
+        "node_modules\\asn1\\lib\\ber\\errors.js",
+        "node_modules\\asn1\\lib\\ber\\index.js",
+        "node_modules\\asn1\\lib\\ber\\reader.js",
+        "node_modules\\asn1\\lib\\ber\\types.js",
+        "node_modules\\asn1\\lib\\ber\\writer.js",
+        "node_modules\\asn1\\lib\\index.js",
+        "node_modules\\asn1\\tst\\ber\\reader.test.js",
+        "node_modules\\asn1\\tst\\ber\\writer.test.js",
+        "node_modules\\assert-plus\\assert.js",
+        "node_modules\\asynckit\\bench.js",
+        "node_modules\\asynckit\\index.js",
+        "node_modules\\asynckit\\lib\\abort.js",
+        "node_modules\\asynckit\\lib\\async.js",
+        "node_modules\\asynckit\\lib\\defer.js",
+        "node_modules\\asynckit\\lib\\iterate.js",
+        "node_modules\\asynckit\\lib\\readable_asynckit.js",
+        "node_modules\\asynckit\\lib\\readable_parallel.js",
+        "node_modules\\asynckit\\lib\\readable_serial.js",
+        "node_modules\\asynckit\\lib\\readable_serial_ordered.js",
+        "node_modules\\asynckit\\lib\\state.js",
+        "node_modules\\asynckit\\lib\\streamify.js",
+        "node_modules\\asynckit\\lib\\terminator.js",
+        "node_modules\\asynckit\\parallel.js",
+        "node_modules\\asynckit\\serial.js",
+        "node_modules\\asynckit\\serialOrdered.js",
+        "node_modules\\asynckit\\stream.js",
+        "node_modules\\aws-sign2\\index.js",
+        "node_modules\\aws4\\aws4.js",
+        "node_modules\\aws4\\lru.js",
+        "node_modules\\bcrypt-pbkdf\\index.js",
+        "node_modules\\boom\\lib\\index.js",
+        "node_modules\\buffer-concat\\index.js",
+        "node_modules\\caseless\\index.js",
+        "node_modules\\caseless\\test.js",
+        "node_modules\\co\\index.js",
+        "node_modules\\combined-stream\\lib\\combined_stream.js",
+        "node_modules\\crc32\\bin\\runner.js",
+        "node_modules\\crc32\\lib\\crc32.js",
+        "node_modules\\cryptiles\\lib\\index.js",
+        "node_modules\\dashdash\\lib\\dashdash.js",
+        "node_modules\\dashdash\\node_modules\\assert-plus\\assert.js",
+        "node_modules\\debug\\debug.js",
+        "node_modules\\debug\\example\\app.js",
+        "node_modules\\debug\\example\\wildcards.js",
+        "node_modules\\debug\\example\\worker.js",
+        "node_modules\\debug\\index.js",
+        "node_modules\\debug\\lib\\debug.js",
+        "node_modules\\delayed-stream\\lib\\delayed_stream.js",
+        "node_modules\\ecc-jsbn\\index.js",
+        "node_modules\\ecc-jsbn\\lib\\ec.js",
+        "node_modules\\ecc-jsbn\\lib\\sec.js",
+        "node_modules\\ecc-jsbn\\test.js",
+        "node_modules\\extend\\index.js",
+        "node_modules\\extsprintf\\examples\\simple.js",
+        "node_modules\\extsprintf\\lib\\extsprintf.js",
+        "node_modules\\forever-agent\\index.js",
+        "node_modules\\form-data\\lib\\browser.js",
+        "node_modules\\form-data\\lib\\form_data.js",
+        "node_modules\\form-data\\lib\\populate.js",
+        "node_modules\\formstream\\index.js",
+        "node_modules\\formstream\\lib\\formstream.js",
+        "node_modules\\getpass\\lib\\index.js",
+        "node_modules\\getpass\\node_modules\\assert-plus\\assert.js",
+        "node_modules\\har-schema\\lib\\index.js",
+        "node_modules\\har-validator\\lib\\browser\\async.js",
+        "node_modules\\har-validator\\lib\\browser\\error.js",
+        "node_modules\\har-validator\\lib\\browser\\promise.js",
+        "node_modules\\har-validator\\lib\\node4\\async.js",
+        "node_modules\\har-validator\\lib\\node4\\error.js",
+        "node_modules\\har-validator\\lib\\node4\\promise.js",
+        "node_modules\\har-validator\\lib\\node6\\async.js",
+        "node_modules\\har-validator\\lib\\node6\\error.js",
+        "node_modules\\har-validator\\lib\\node6\\promise.js",
+        "node_modules\\har-validator\\lib\\node7\\async.js",
+        "node_modules\\har-validator\\lib\\node7\\error.js",
+        "node_modules\\har-validator\\lib\\node7\\promise.js",
+        "node_modules\\har-validator\\src\\async.js",
+        "node_modules\\har-validator\\src\\error.js",
+        "node_modules\\har-validator\\src\\promise.js",
+        "node_modules\\hawk\\dist\\client.js",
+        "node_modules\\hawk\\example\\usage.js",
+        "node_modules\\hawk\\lib\\browser.js",
+        "node_modules\\hawk\\lib\\client.js",
+        "node_modules\\hawk\\lib\\crypto.js",
+        "node_modules\\hawk\\lib\\index.js",
+        "node_modules\\hawk\\lib\\server.js",
+        "node_modules\\hawk\\lib\\utils.js",
+        "node_modules\\hoek\\lib\\escape.js",
+        "node_modules\\hoek\\lib\\index.js",
+        "node_modules\\http-signature\\lib\\index.js",
+        "node_modules\\http-signature\\lib\\parser.js",
+        "node_modules\\http-signature\\lib\\signer.js",
+        "node_modules\\http-signature\\lib\\utils.js",
+        "node_modules\\http-signature\\lib\\verify.js",
+        "node_modules\\is-typedarray\\index.js",
+        "node_modules\\is-typedarray\\test.js",
+        "node_modules\\isstream\\isstream.js",
+        "node_modules\\isstream\\test.js",
+        "node_modules\\jodid25519\\index.js",
+        "node_modules\\jodid25519\\lib\\core.js",
+        "node_modules\\jodid25519\\lib\\curve255.js",
+        "node_modules\\jodid25519\\lib\\dh.js",
+        "node_modules\\jodid25519\\lib\\eddsa.js",
+        "node_modules\\jodid25519\\lib\\utils.js",
+        "node_modules\\jsbn\\example.js",
+        "node_modules\\jsbn\\index.js",
+        "node_modules\\json-schema\\lib\\links.js",
+        "node_modules\\json-schema\\lib\\validate.js",
+        "node_modules\\json-stable-stringify\\example\\key_cmp.js",
+        "node_modules\\json-stable-stringify\\example\\nested.js",
+        "node_modules\\json-stable-stringify\\example\\str.js",
+        "node_modules\\json-stable-stringify\\example\\value_cmp.js",
+        "node_modules\\json-stable-stringify\\index.js",
+        "node_modules\\json-stringify-safe\\stringify.js",
+        "node_modules\\jsonify\\index.js",
+        "node_modules\\jsonify\\lib\\parse.js",
+        "node_modules\\jsonify\\lib\\stringify.js",
+        "node_modules\\jsprim\\lib\\jsprim.js",
+        "node_modules\\jsprim\\node_modules\\assert-plus\\assert.js",
+        "node_modules\\mime\\mime.js",
+        "node_modules\\mime\\test.js",
+        "node_modules\\mime-db\\index.js",
+        "node_modules\\mime-types\\index.js",
+        "node_modules\\oauth-sign\\index.js",
+        "node_modules\\pause-stream\\index.js",
+        "node_modules\\performance-now\\lib\\performance-now.js",
+        "node_modules\\punycode\\punycode.js",
+        "node_modules\\qiniu\\index.js",
+        "node_modules\\qiniu\\qiniu\\auth\\digest.js",
+        "node_modules\\qiniu\\qiniu\\conf.js",
+        "node_modules\\qiniu\\qiniu\\fop.js",
+        "node_modules\\qiniu\\qiniu\\io.js",
+        "node_modules\\qiniu\\qiniu\\rpc.js",
+        "node_modules\\qiniu\\qiniu\\rs.js",
+        "node_modules\\qiniu\\qiniu\\rsf.js",
+        "node_modules\\qiniu\\qiniu\\util.js",
+        "node_modules\\qs\\dist\\qs.js",
+        "node_modules\\qs\\lib\\formats.js",
+        "node_modules\\qs\\lib\\index.js",
+        "node_modules\\qs\\lib\\parse.js",
+        "node_modules\\qs\\lib\\stringify.js",
+        "node_modules\\qs\\lib\\utils.js",
+        "node_modules\\request\\index.js",
+        "node_modules\\request\\lib\\auth.js",
+        "node_modules\\request\\lib\\cookies.js",
+        "node_modules\\request\\lib\\getProxyFromURI.js",
+        "node_modules\\request\\lib\\har.js",
+        "node_modules\\request\\lib\\helpers.js",
+        "node_modules\\request\\lib\\multipart.js",
+        "node_modules\\request\\lib\\oauth.js",
+        "node_modules\\request\\lib\\querystring.js",
+        "node_modules\\request\\lib\\redirect.js",
+        "node_modules\\request\\lib\\tunnel.js",
+        "node_modules\\request\\request.js",
+        "node_modules\\safe-buffer\\index.js",
+        "node_modules\\safe-buffer\\test.js",
+        "node_modules\\sntp\\examples\\offset.js",
+        "node_modules\\sntp\\examples\\time.js",
+        "node_modules\\sntp\\index.js",
+        "node_modules\\sntp\\lib\\index.js",
+        "node_modules\\sshpk\\lib\\algs.js",
+        "node_modules\\sshpk\\lib\\certificate.js",
+        "node_modules\\sshpk\\lib\\dhe.js",
+        "node_modules\\sshpk\\lib\\ed-compat.js",
+        "node_modules\\sshpk\\lib\\errors.js",
+        "node_modules\\sshpk\\lib\\fingerprint.js",
+        "node_modules\\sshpk\\lib\\formats\\auto.js",
+        "node_modules\\sshpk\\lib\\formats\\openssh-cert.js",
+        "node_modules\\sshpk\\lib\\formats\\pem.js",
+        "node_modules\\sshpk\\lib\\formats\\pkcs1.js",
+        "node_modules\\sshpk\\lib\\formats\\pkcs8.js",
+        "node_modules\\sshpk\\lib\\formats\\rfc4253.js",
+        "node_modules\\sshpk\\lib\\formats\\ssh-private.js",
+        "node_modules\\sshpk\\lib\\formats\\ssh.js",
+        "node_modules\\sshpk\\lib\\formats\\x509-pem.js",
+        "node_modules\\sshpk\\lib\\formats\\x509.js",
+        "node_modules\\sshpk\\lib\\identity.js",
+        "node_modules\\sshpk\\lib\\index.js",
+        "node_modules\\sshpk\\lib\\key.js",
+        "node_modules\\sshpk\\lib\\private-key.js",
+        "node_modules\\sshpk\\lib\\signature.js",
+        "node_modules\\sshpk\\lib\\ssh-buffer.js",
+        "node_modules\\sshpk\\lib\\utils.js",
+        "node_modules\\sshpk\\node_modules\\assert-plus\\assert.js",
+        "node_modules\\stringstream\\example.js",
+        "node_modules\\stringstream\\stringstream.js",
+        "node_modules\\through\\index.js",
+        "node_modules\\tough-cookie\\lib\\cookie.js",
+        "node_modules\\tough-cookie\\lib\\memstore.js",
+        "node_modules\\tough-cookie\\lib\\pathMatch.js",
+        "node_modules\\tough-cookie\\lib\\permuteDomain.js",
+        "node_modules\\tough-cookie\\lib\\pubsuffix.js",
+        "node_modules\\tough-cookie\\lib\\store.js",
+        "node_modules\\tunnel-agent\\index.js",
+        "node_modules\\tweetnacl\\nacl-fast.js",
+        "node_modules\\tweetnacl\\nacl-fast.min.js",
+        "node_modules\\tweetnacl\\nacl.js",
+        "node_modules\\tweetnacl\\nacl.min.js",
+        "node_modules\\urllib\\index.js",
+        "node_modules\\urllib\\lib\\urllib.js",
+        "node_modules\\uuid\\index.js",
+        "node_modules\\uuid\\lib\\bytesToUuid.js",
+        "node_modules\\uuid\\lib\\rng-browser.js",
+        "node_modules\\uuid\\lib\\rng.js",
+        "node_modules\\uuid\\v1.js",
+        "node_modules\\uuid\\v4.js",
+        "node_modules\\verror\\examples\\levels-verror.js",
+        "node_modules\\verror\\examples\\levels-werror.js",
+        "node_modules\\verror\\examples\\varargs.js",
+        "node_modules\\verror\\examples\\verror.js",
+        "node_modules\\verror\\examples\\werror.js",
+        "node_modules\\verror\\lib\\verror.js"
+      ],
+      ".json": [
+        "node_modules\\ajv\\lib\\refs\\json-schema-draft-04.json",
+        "node_modules\\ajv\\lib\\refs\\json-schema-v5.json",
+        "node_modules\\ajv\\package.json",
+        "node_modules\\asn1\\package.json",
+        "node_modules\\assert-plus\\package.json",
+        "node_modules\\asynckit\\package.json",
+        "node_modules\\aws-sign2\\package.json",
+        "node_modules\\aws4\\package.json",
+        "node_modules\\bcrypt-pbkdf\\package.json",
+        "node_modules\\boom\\package.json",
+        "node_modules\\buffer-concat\\package.json",
+        "node_modules\\caseless\\package.json",
+        "node_modules\\co\\package.json",
+        "node_modules\\combined-stream\\package.json",
+        "node_modules\\crc32\\package.json",
+        "node_modules\\cryptiles\\package.json",
+        "node_modules\\dashdash\\node_modules\\assert-plus\\package.json",
+        "node_modules\\dashdash\\package.json",
+        "node_modules\\debug\\component.json",
+        "node_modules\\debug\\package.json",
+        "node_modules\\delayed-stream\\package.json",
+        "node_modules\\ecc-jsbn\\package.json",
+        "node_modules\\extend\\.jscs.json",
+        "node_modules\\extend\\component.json",
+        "node_modules\\extend\\package.json",
+        "node_modules\\extsprintf\\package.json",
+        "node_modules\\forever-agent\\package.json",
+        "node_modules\\form-data\\package.json",
+        "node_modules\\formstream\\package.json",
+        "node_modules\\getpass\\node_modules\\assert-plus\\package.json",
+        "node_modules\\getpass\\package.json",
+        "node_modules\\har-schema\\lib\\afterRequest.json",
+        "node_modules\\har-schema\\lib\\beforeRequest.json",
+        "node_modules\\har-schema\\lib\\browser.json",
+        "node_modules\\har-schema\\lib\\cache.json",
+        "node_modules\\har-schema\\lib\\content.json",
+        "node_modules\\har-schema\\lib\\cookie.json",
+        "node_modules\\har-schema\\lib\\creator.json",
+        "node_modules\\har-schema\\lib\\entry.json",
+        "node_modules\\har-schema\\lib\\har.json",
+        "node_modules\\har-schema\\lib\\header.json",
+        "node_modules\\har-schema\\lib\\log.json",
+        "node_modules\\har-schema\\lib\\page.json",
+        "node_modules\\har-schema\\lib\\pageTimings.json",
+        "node_modules\\har-schema\\lib\\postData.json",
+        "node_modules\\har-schema\\lib\\query.json",
+        "node_modules\\har-schema\\lib\\request.json",
+        "node_modules\\har-schema\\lib\\response.json",
+        "node_modules\\har-schema\\lib\\timings.json",
+        "node_modules\\har-schema\\package.json",
+        "node_modules\\har-validator\\package.json",
+        "node_modules\\hawk\\bower.json",
+        "node_modules\\hawk\\component.json",
+        "node_modules\\hawk\\package.json",
+        "node_modules\\hoek\\package.json",
+        "node_modules\\http-signature\\package.json",
+        "node_modules\\is-typedarray\\package.json",
+        "node_modules\\isstream\\package.json",
+        "node_modules\\jodid25519\\jsdoc.json",
+        "node_modules\\jodid25519\\package.json",
+        "node_modules\\jsbn\\package.json",
+        "node_modules\\json-schema\\package.json",
+        "node_modules\\json-stable-stringify\\package.json",
+        "node_modules\\json-stringify-safe\\package.json",
+        "node_modules\\jsonify\\package.json",
+        "node_modules\\jsprim\\node_modules\\assert-plus\\package.json",
+        "node_modules\\jsprim\\package.json",
+        "node_modules\\mime\\package.json",
+        "node_modules\\mime-db\\db.json",
+        "node_modules\\mime-db\\package.json",
+        "node_modules\\mime-types\\package.json",
+        "node_modules\\oauth-sign\\package.json",
+        "node_modules\\pause-stream\\package.json",
+        "node_modules\\performance-now\\package.json",
+        "node_modules\\punycode\\package.json",
+        "node_modules\\qiniu\\package.json",
+        "node_modules\\qs\\.jscs.json",
+        "node_modules\\qs\\package.json",
+        "node_modules\\request\\package.json",
+        "node_modules\\safe-buffer\\package.json",
+        "node_modules\\sntp\\package.json",
+        "node_modules\\sshpk\\node_modules\\assert-plus\\package.json",
+        "node_modules\\sshpk\\package.json",
+        "node_modules\\stringstream\\package.json",
+        "node_modules\\through\\package.json",
+        "node_modules\\tough-cookie\\package.json",
+        "node_modules\\tunnel-agent\\package.json",
+        "node_modules\\tweetnacl\\package.json",
+        "node_modules\\urllib\\package.json",
+        "node_modules\\uuid\\package.json",
+        "node_modules\\verror\\package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "keymaps",
+          "lib",
+          "menus",
+          ""
+        ],
+        "dependencies": {
+          "qiniu": "=6.1.11",
+          "request": "^2.55.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\ajv",
+          "node_modules\\ajv\\dist",
+          "node_modules\\ajv\\lib",
+          "node_modules\\ajv\\lib\\compile",
+          "node_modules\\ajv\\lib\\dotjs",
+          "node_modules\\ajv\\lib\\refs",
+          "node_modules\\ajv\\scripts"
+        ],
+        "dependencies": {
+          "co": "^4.6.0",
+          "json-stable-stringify": "^1.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\bcrypt-pbkdf"
+        ],
+        "dependencies": {
+          "tweetnacl": "^0.14.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\boom\\lib",
+          "node_modules\\boom",
+          "node_modules\\boom\\test"
+        ],
+        "dependencies": {
+          "hoek": "2.x.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\combined-stream\\lib",
+          "node_modules\\combined-stream"
+        ],
+        "dependencies": {
+          "delayed-stream": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\cryptiles\\lib",
+          "node_modules\\cryptiles",
+          "node_modules\\cryptiles\\test"
+        ],
+        "dependencies": {
+          "boom": "2.x.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\dashdash\\lib",
+          "node_modules\\dashdash"
+        ],
+        "dependencies": {
+          "assert-plus": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\ecc-jsbn",
+          "node_modules\\ecc-jsbn\\lib"
+        ],
+        "dependencies": {
+          "jsbn": "~0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\form-data\\lib",
+          "node_modules\\form-data"
+        ],
+        "dependencies": {
+          "asynckit": "^0.4.0",
+          "combined-stream": "^1.0.5",
+          "mime-types": "^2.1.12"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\formstream",
+          "node_modules\\formstream\\lib"
+        ],
+        "dependencies": {
+          "buffer-concat": "0.0.1",
+          "mime": "1.2.9",
+          "pause-stream": ">=0.0.10"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\getpass\\lib",
+          "node_modules\\getpass"
+        ],
+        "dependencies": {
+          "assert-plus": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\har-validator\\lib\\browser",
+          "node_modules\\har-validator\\lib\\node4",
+          "node_modules\\har-validator\\lib\\node6",
+          "node_modules\\har-validator\\lib\\node7",
+          "node_modules\\har-validator",
+          "node_modules\\har-validator\\src"
+        ],
+        "dependencies": {
+          "ajv": "^4.9.1",
+          "har-schema": "^1.0.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\hawk",
+          "node_modules\\hawk\\dist",
+          "node_modules\\hawk\\example",
+          "node_modules\\hawk\\lib",
+          "node_modules\\hawk\\test"
+        ],
+        "dependencies": {
+          "boom": "2.x.x",
+          "cryptiles": "2.x.x",
+          "hoek": "2.x.x",
+          "sntp": "1.x.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\http-signature\\lib",
+          "node_modules\\http-signature"
+        ],
+        "dependencies": {
+          "assert-plus": "^0.2.0",
+          "jsprim": "^1.2.2",
+          "sshpk": "^1.7.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\jodid25519",
+          "node_modules\\jodid25519\\lib"
+        ],
+        "dependencies": {
+          "jsbn": "~0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\json-stable-stringify\\example",
+          "node_modules\\json-stable-stringify",
+          "node_modules\\json-stable-stringify\\test"
+        ],
+        "dependencies": {
+          "jsonify": "~0.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\jsprim\\lib",
+          "node_modules\\jsprim"
+        ],
+        "dependencies": {
+          "assert-plus": "1.0.0",
+          "extsprintf": "1.0.2",
+          "json-schema": "0.2.3",
+          "verror": "1.3.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\mime-types"
+        ],
+        "dependencies": {
+          "mime-db": "~1.27.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\pause-stream",
+          "node_modules\\pause-stream\\test"
+        ],
+        "dependencies": {
+          "through": "~2.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\qiniu",
+          "node_modules\\qiniu\\qiniu\\auth",
+          "node_modules\\qiniu\\qiniu"
+        ],
+        "dependencies": {
+          "crc32": "0.2.2",
+          "formstream": "0.0.7",
+          "mime": "1.2.9",
+          "urllib": "0.5.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\request",
+          "node_modules\\request\\lib"
+        ],
+        "dependencies": {
+          "aws-sign2": "~0.6.0",
+          "aws4": "^1.2.1",
+          "caseless": "~0.12.0",
+          "combined-stream": "~1.0.5",
+          "extend": "~3.0.0",
+          "forever-agent": "~0.6.1",
+          "form-data": "~2.1.1",
+          "har-validator": "~4.2.1",
+          "hawk": "~3.1.3",
+          "http-signature": "~1.1.0",
+          "is-typedarray": "~1.0.0",
+          "isstream": "~0.1.2",
+          "json-stringify-safe": "~5.0.1",
+          "mime-types": "~2.1.7",
+          "oauth-sign": "~0.8.1",
+          "performance-now": "^0.2.0",
+          "qs": "~6.4.0",
+          "safe-buffer": "^5.0.1",
+          "stringstream": "~0.0.4",
+          "tough-cookie": "~2.3.0",
+          "tunnel-agent": "^0.6.0",
+          "uuid": "^3.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\sntp\\examples",
+          "node_modules\\sntp",
+          "node_modules\\sntp\\lib",
+          "node_modules\\sntp\\test"
+        ],
+        "dependencies": {
+          "hoek": "2.x.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\sshpk\\lib",
+          "node_modules\\sshpk\\lib\\formats",
+          "node_modules\\sshpk"
+        ],
+        "dependencies": {
+          "asn1": "~0.2.3",
+          "assert-plus": "^1.0.0",
+          "bcrypt-pbkdf": "^1.0.0",
+          "dashdash": "^1.12.0",
+          "ecc-jsbn": "~0.1.1",
+          "getpass": "^0.1.1",
+          "jodid25519": "^1.0.0",
+          "jsbn": "~0.1.0",
+          "tweetnacl": "~0.14.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\tough-cookie\\lib",
+          "node_modules\\tough-cookie"
+        ],
+        "dependencies": {
+          "punycode": "^1.4.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\tunnel-agent"
+        ],
+        "dependencies": {
+          "safe-buffer": "^5.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\urllib",
+          "node_modules\\urllib\\lib"
+        ],
+        "dependencies": {
+          "buffer-concat": "0.0.1",
+          "debug": "0.7.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\verror\\examples",
+          "node_modules\\verror\\lib",
+          "node_modules\\verror",
+          "node_modules\\verror\\tests"
+        ],
+        "dependencies": {
+          "extsprintf": "1.0.2"
+        }
+      }
+    ]
+  }
+}

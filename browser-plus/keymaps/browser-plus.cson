@@ -1,0 +1,33 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+'atom-workspace':
+  'ctrl-alt-o': 'browser-plus:open'
+
+# '.browser-plus':
+
+
+'.browser-plus webview':
+    'tab':   'native!'
+    'shift-tab': 'native!'
+    'click': 'native!'
+    # 'backspace': 'native!'
+    # 'left': 'native!'
+    # 'up': 'native!'
+    # 'down': 'native!'
+    # 'right': 'native!'
+    'pagedown': 'native!'
+    'pageup': 'native!'
+    # 'shift-left': 'native!'
+    # 'shift-right': 'native!'
+    # 'delete': 'native!'
+    'alt-left': 'browser-plus-view:goBack'
+    'alt-right': 'browser-plus-view:goForward'
+    'f12': 'browser-plus:openDevTool'
+    'f11': 'browser-plus-view:toggleURLBar'

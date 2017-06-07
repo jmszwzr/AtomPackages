@@ -1,0 +1,270 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "octicon-utf-codes";
+//@import "font-awesome.min.css";
+
+.browser-plus  #title{
+  width:100%;
+  background-color:lightblue;
+  color:green;
+  display:inline-block;
+  font-size:16px;
+  text-align: center;
+  font-weight:bolder;
+
+}
+.ui-helper-hidden-accessible {
+  display:none;
+}
+.browser-plus .hideURLBar{
+  display: none;
+}
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.ui-state-focus {
+background: none !important;
+border: none !important;
+color: #52c9ee;
+text-decoration: none;
+background-color: #37f276 !important;
+border-radius: 0px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+}
+
+
+
+.icon-browser-pluss {
+  font-family: "fontello-print";
+
+  text-decoration: inherit;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  font-weight: 900;
+  font-size: 1.7em;
+  display: inline-block;
+  padding-left: .2em;
+  padding-right: .2em;
+  color: #aaaaaa;
+  margin-left: 0.1em;
+  border: 1px solid transparent;
+
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-print:before { content: '\e800'; } /* '' */
+
+.browser-plus  #lbl-url{
+  color:green;
+  font-size:18px;
+  height:1.25ln;
+}
+.browser-plus  #url{
+  height:1.25ln;
+  font-size:18px;
+  color:green;
+}
+.browser-plus  .url{
+  width:100%;
+}
+.browser-plus .url input{
+  width:100%;
+}
+.browser-plus  .nav-btns{
+  overflow: hidden;
+}
+
+.browser-plus  .mega-octicon{
+  font-family: 'Octicons Regular';
+  font-weight: 900;
+  font-size: 1.7em;
+  display: inline-block;
+  padding-left: .2em;
+  padding-right: .2em;
+  color: #aaaaaa;
+  margin-left: 0.1em;
+  border: 1px solid transparent;
+}
+
+.browser-plus .octicon{
+  font-family: 'Octicons Regular';
+  display: inline-block;
+  padding-right: .2em;
+  color: #aaaaaa;
+  font-weight: 200;
+  font-size: 1.4em;
+}
+
+div.browser-plus webview {
+  height: 95%;
+  background-color: white;
+}
+webview::shadow{
+  height: 95%;
+}
+.browser-plus  span:hover{
+  background-color: lightyellow;
+}
+.browser-plus  .clicked{
+  color:green;
+}
+
+.browser-plus .octicon-file-pdf::before{
+  content: "\f014";
+}
+
+.browser-plus  .octicon-book::before{
+  content: "\f007";
+}
+
+.browser-plus  .octicon-arrow-left::before{
+  content: "\f040";
+}
+.browser-plus  .octicon-arrow-right::before{
+  content: "\f03e";
+}
+.browser-plus  .octicon-sync::before{
+  content: "\f087";
+}
+.browser-plus  .octicon-arrow-down::before{
+  content: "\f03f";
+}
+.browser-plus  .octicon-zap::before{
+  content: "\26A1";
+}
+.browser-plus  .octicon-tools::before{
+  content: "\f031";
+}
+.browser-plus  .octicon-star::before{
+  content: "\f02a";
+}
+
+.browser-plus  .octicon-book::before{
+  content: "\f007";
+}
+.browser-plus  .octicon-eye::before{
+  content: "\f04e";
+}
+
+.browser-plus  .octicon-thumbsup::before{
+  content: "\f000";
+}
+.browser-plus  .active{
+  color: green;
+}
+.browser-plus  #title{
+  background-color: lightblue;
+}
+
+.input-url {
+  overflow:hidden;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.fa-spinner {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.fa-custom {
+  display: none !important;
+}
+
+.fa:hover {
+  text-decoration: none !important;
+}
+
+.find {
+  width: 200px !important;
+  height: 25px;
+  position:absolute;
+  border-radius: 30px;
+  padding-left: 5px;
+}
+
+.find-hide {
+  display: none;
+}
+
+.nav-btns-left{
+  background-color: #21252b;
+  float:left;
+}
+
+.nav-btns-right{
+  background-color: #21252b;
+  float:right;
+}
+
+@font-face {
+  font-family: "fontello-print";
+  font-style: normal;
+  font-weight: normal;
+  src: url(atom://browser-plus/resources/fontello/font/fontello.woff) format('woff')
+}

@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-12116-151mxs1.9tz1ev1jor"
+    ]
+  ],
+  "_from": "..\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+  "_id": "minimap-cursorline@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/minimap-cursorline",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+  "_shasum": "e453900a4e932f1aa23b34a850b19d8cca186207",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-12116-axhmdp.9sw8my4x6r\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-12116-151mxs1.9tz1ev1jor",
+  "bugs": {
+    "url": "https://github.com/atom-minimap/minimap-cursorline/issues"
+  },
+  "consumedServices": {
+    "minimap": {
+      "versions": {
+        "1.0.0": "consumeMinimapServiceV1"
+      }
+    }
+  },
+  "dependencies": {},
+  "description": "Displays Atom cursorline in the minimap",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.184.0"
+  },
+  "homepage": "https://github.com/atom-minimap/minimap-cursorline#readme",
+  "keywords": [
+    "minimap",
+    "cursorline",
+    "cursor"
+  ],
+  "license": "MIT",
+  "main": "./lib/minimap-cursorline",
+  "name": "minimap-cursorline",
+  "optionalDependencies": {},
+  "readme": "# minimap-cursorline package [![Build Status](https://travis-ci.org/atom-minimap/minimap-cursorline.svg?branch=master)](https://travis-ci.org/atom-minimap/minimap-cursorline)\n\nDisplays Atom cursorline in the minimap.\n\n![Minimap cursorline Screenshot](https://github.com/atom-minimap/minimap-cursorline/blob/master/screenshot.gif?raw=true)\n\nCustomization\n\nIf you want to change the color of the minimap `cursorline` use the following\nCSS rules in your user stylesheet:\n\n```css\n.minimap .cursor-line {\n  background: green;\n}\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-minimap/minimap-cursorline.git"
+  },
+  "version": "0.2.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".js": [
+        "lib\\minimap-cursorline-binding.js",
+        "lib\\minimap-cursorline.js"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

@@ -19,7 +19,7 @@ ctrl + J                将下一行与当前行合并
 ctrl + L                选取一行，继续按会先去下一行
 ctrl + R                在方法之间跳转
 
-ctrl + click            增加新光标
+ctrl + click            增加新光标，可跳跃
 ctrl + up               选中行上移
 ctrl + down             选中行下移
 ctrl + shift + C        复制当前文件绝对路径
@@ -37,6 +37,7 @@ ctrl-K,ctrl-L           使当前字符小写
 
 alt + F2                keymap            匹配选定所有(和Snipaste快捷键冲突)
 shift + alt + D         keymap            删除当前光标所在行
+ctrl + shift + alt + L  keymap            选择多行，进行多行编辑，不可跳跃(功能类似 ctrl + click)
 
 alt + Z                 package           expose：打开关闭所有已经打开文件的缩略图
 alt + T                 package           git-time-machine：与文件的git提交历史记录进行比较
@@ -59,6 +60,10 @@ alt + ctrl + ]          展开
 alt + ctrl + shift + {  折叠全部
 alt + ctrl + shift + }  展开全部
 ```
+
+
+
+
 
 ## 定制编辑器
 
@@ -111,6 +116,7 @@ alt + ctrl + shift + }  展开全部
 
 #### Git
 - [git-time-machine](https://atom.io/themes/git-time-machine)，视图显示一个文件的提交历史
+- [merge-conflicts](https://atom.io/packages/merge-conflicts)，在Atom中解决git合并出现的冲突
 
 #### Markdown
 - [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利

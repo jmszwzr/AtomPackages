@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
-        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
         "type": "local"
       },
-      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11756-17776-bhmi8g.cevvmibe29"
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-7220-14gfff1.rmxgpsyvi"
     ]
   ],
-  "_from": "..\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
-  "_id": "language-markdown@0.22.0",
+  "_from": "..\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
+  "_id": "language-markdown@0.23.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/language-markdown",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
-    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:..\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
-  "_shasum": "73334d0cc78273e1d2e005811b2bbec1f3e8ef5a",
+  "_resolved": "file:..\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
+  "_shasum": "7f5c386ab8debf4858f6f14315054b3dda98f5c4",
   "_shrinkwrap": null,
-  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11756-17776-1f05q2n.drp5dk7qfr\\package.tgz",
-  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11756-17776-bhmi8g.cevvmibe29",
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-7220-6qb1u9.aqhwyd5cdi\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-7220-14gfff1.rmxgpsyvi",
   "bugs": {
     "url": "https://github.com/burodepeper/language-markdown/issues"
   },
@@ -78,7 +78,7 @@
     "type": "git",
     "url": "git+https://github.com/burodepeper/language-markdown.git"
   },
-  "version": "0.22.0",
+  "version": "0.23.0",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [

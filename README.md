@@ -198,7 +198,6 @@ Alt+G R 在GitHub上比较分支
 
 - 在Atom中，右击文件名 Reveal in Tree View 无效果
 - 快捷键问题：使用Atom自带的快捷键 ctrl-0 无效果
-- ask-stack问题：使用自定义快捷键打开 ask-stack 时，如何使用快捷键关闭
 
 
 
@@ -210,6 +209,7 @@ Alt+G R 在GitHub上比较分支
 - [Atom快速上手指南](https://zhuanlan.zhihu.com/p/26175781)
 - [Atom 编辑器 入门 快捷键 插件安利](http://www.jianshu.com/p/aa8f8a252ed9)
 - [Emmet使用](http://www.cnblogs.com/matchless/archive/2013/04/10/3010628.html)
+- [ATOM基础教程一使用前端插件emmet(16)](http://blog.csdn.net/zsl10/article/details/51956791)
 - [Atom编辑器配置](http://imweb.io/topic/56c12f7e5c49f9d377ed8f1e)
 - [优美的编辑器Github Atom](https://crazylxr.github.io/2016/10/10/2016-10-10-%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom/)
 - [磨刀不误砍柴工，配置你的前端开发环境：Atom](https://segmentfault.com/a/1190000007690359)

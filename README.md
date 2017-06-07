@@ -133,6 +133,7 @@ Alt+G R 在GitHub上比较分支
 
 #### 必备插件
 - [sync-settings](https://atom.io/packages/sync-settings)，同步Atom的settings, keymaps, user styles, init script, snippets and installed packages信息
+- [simplified-chinese-menu](https://atom.io/packages/simplified-chinese-menu)，Atom 的简体中文语言包，完整汉化，兼容所有已发布版本 Atom
 
 #### UI主题
 - [atom-material-ui](https://atom.io/themes/atom-material-ui) ，一个好用好看的MD风格的主题
@@ -167,12 +168,13 @@ Alt+G R 在GitHub上比较分支
 - [markdown-preview-enhanced](https://atom.io/packages/markdown-preview-enhanced)，非常强大markdown实时预览插件，强烈推荐
 
 #### 插件类
-- [activate-power-mode](https://atom.io/packages/activate-power-mode)，这个叼，不过慎用
+- [activate-power-mode](https://atom.io/packages/activate-power-mode)，输入时有震撼效果
 - [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
 - [split-diff](https://atom.io/packages/minimap-split-diff)，文本比较工具，可比较两个窗口里的文档内容
 - [project-manager](https://atom.io/packages/project-manager)，管理项目
 - [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
 - [jumpy](https://atom.io/packages/jumpy)，利用快捷键，在文件中跳转至任意位置
+- [browser-plus](https://atom.io/packages/browser-plus)，在Atom中打开浏览器
 
 
 ## Atom -- 常见问题解决
@@ -209,7 +211,6 @@ Alt+G R 在GitHub上比较分支
 - [Atom快速上手指南](https://zhuanlan.zhihu.com/p/26175781)
 - [Atom 编辑器 入门 快捷键 插件安利](http://www.jianshu.com/p/aa8f8a252ed9)
 - [Emmet使用](http://www.cnblogs.com/matchless/archive/2013/04/10/3010628.html)
-- [ATOM基础教程一使用前端插件emmet(16)](http://blog.csdn.net/zsl10/article/details/51956791)
 - [Atom编辑器配置](http://imweb.io/topic/56c12f7e5c49f9d377ed8f1e)
 - [优美的编辑器Github Atom](https://crazylxr.github.io/2016/10/10/2016-10-10-%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom/)
 - [磨刀不误砍柴工，配置你的前端开发环境：Atom](https://segmentfault.com/a/1190000007690359)
@@ -217,5 +218,9 @@ Alt+G R 在GitHub上比较分支
 - [ATOM编辑器快捷键大全](http://www.168seo.cn/tools/1279.html)
 - [推荐几款我喜欢的Atom插件](http://www.tuicool.com/articles/qmEVfy)
 - [前端我在使用的插件（可能有点多）](https://atom-china.org/t/topic/2650)
-
 - [CSDN-u010494080的专栏：Atom编辑器入门到精通](http://blog.csdn.net/u010494080/article/category/6277533)
+
+- [ATOM基础教程一ATOM插件推荐(4)](http://blog.csdn.net/zsl10/article/details/51822715)
+- [ATOM基础教程一ATOM快捷键(5)](http://blog.csdn.net/zsl10/article/details/51853435)
+- [ATOM基础教程一ATOM自定义代码片段(8)](http://blog.csdn.net/zsl10/article/details/51873564)
+- [ATOM基础教程一使用前端插件emmet(16)](http://blog.csdn.net/zsl10/article/details/51956791)

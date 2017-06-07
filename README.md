@@ -1,10 +1,37 @@
 # Atom packages
 >All packages in this directory will be automatically loaded
 
-## 常用快捷键
->类似 ctrl-K,ctrl-U 的执行顺序是，按住ctrl键不松开，然后先按 K 再按 U 即可
+## apm的使用
+>安装好Atom以后你可以通过在命令行中使用apm命令来安装管理插件
 ```
-ctrl-shift-p            打开控制面板
+# 显示使用帮助
+apm help                获得apm提供的所有子命令
+apm help install        显示apm命令的install子命令的使用帮助
+
+# 检查安装环境
+apm install --check                                 运行结果为：Checking for native build tools done 即可使用apm安装插件
+
+# 安装插件
+apm install <package_name>                          安装一个插件的最新版本
+apm install <package_name>@<package_version>        安装一个特定版本的插件
+apm install emmet@0.1.5                             比如要安装0.1.5版的Emmet
+
+# 搜索插件
+apm search coffee                                   搜索插件名包含coffee的插件
+
+# 显示插件详细信息
+apm view git-grep                                   显示git-grep插件的详细信息
+```
+
+## 常用快捷键
+>- 以下全部快捷键只在Windows7下测试通过使用
+>- 类似 ctrl-K,ctrl-U 的执行顺序是，按住ctrl键不松开，然后先按 K 再按 U 即可
+```
+ctrl-shift-p            命令面板
+
+alt + G + ↑             光标从当前文件的一块更改移到另一块更改的开始
+alt + G + ↓             光标从当前文件的一块更改移到另一块更改的开始
+
 
 ctrl + /                启用注释
 ctrl + \                展示隐藏目录树(或者用 ctrl-k,ctrl-b 组合键进行显示/隐藏目录树)
@@ -26,6 +53,7 @@ ctrl + shift + C        复制当前文件绝对路径
 ctrl + shift + D        复制当前行到下一行
 ctrl + shift + F        在整个工程中查找
 ctrl + shift + G        Styleguide
+ctrl + shift + I        呼出开发工具
 ctrl + shift + K        快速删除当前行(与搜狗输入法冲突)
 ctrl + shift + L        选择文本类型
 ctrl + shift + U        调出切换编码选项
@@ -38,7 +66,7 @@ ctrl-K,ctrl-L           使当前字符小写
 alt + F2                keymap            匹配选定所有(和Snipaste快捷键冲突)
 shift + alt + D         keymap            删除当前光标所在行
 ctrl + shift + alt + L  keymap            选择多行，进行多行编辑，不可跳跃(功能类似 ctrl + click)
-ctrl + shift + alt + O  keymap            activate-power-mode:toggle：让插件activate-power-mode的雪花效果生效/失效
+ctrl + shift + alt + O  keymap            让插件activate-power-mode的雪花效果生效/失效
 
 
 alt + Z                 package           expose：打开关闭所有已经打开文件的缩略图
@@ -48,13 +76,14 @@ ctrl + alt + G          package           git-control：打开关闭git-control
 ctrl + alt + O          package           open-in-browers：在浏览器中打开当前文件
 ctrl + shift + M        package           markdown-preview-plus：Markdown预览(不用自带的)
 shift + alt + A         package           ask-stack：打开搜索strackoverflow
-
+shift + enter           package           jumpy：打开或关闭此插件引用，从此在文件内编辑告别鼠标的神器
 
 # 目录树操作
 ctrl-0  焦点切换到目录树(再按一次或者Esc退出目录树)[貌似我的电脑这个功能用不了，郁闷]
 a   添加文件
 d   将当前文件另存为
 i   显示(隐藏)版本控制忽略的文件
+delete  删除文件
 
 # 折叠
 alt + ctrl + [          折叠
@@ -68,14 +97,22 @@ ctrl + alt + F2         打上/取消所在行的书签
 ctrl + shift + F2       清除所有书签
 F2                      调到下一个书签
 shift + F2              调到上一个书签
+
+# 查找文件 | 显示状态
+Ctrl + T / Ctrl + P     搜索目录中的文件 | 列出所有项目中的文件
+Ctrl + B                搜索一个当前打开的文件 | 列出所有当前打开的文件
+Ctrl + Shift + B        搜索一个新建的或更改过的文件 | 列出所有未跟踪或是更改过的文件
+
+# GitHub支持，以下方式打开速度要快，不然不能被Atom正确识别
+Alt+G O 在GitHub上打开当前文件
+Alt+G B 在GitHub上用Blame方式打开当前文件
+Alt+G H 在GitHub上用History方式打开当前文件
+Alt+G C 将当前文件在GitHub上的URL复制到剪切板
+Alt+G R 在GitHub上比较分支
 ```
 
 
-
-
-
 ## 定制编辑器
-
 - Tab Length： 改成 4，意思是一个 Tab 键占用 4 个空格，默认是 2 个
 - Scroll Past End： 选中，意思是你可以将代码的最后一行显示在屏幕的最上方
 - Show Indent Guide： 选中，可以清晰地标记同一层次的代码，当代码嵌套层次比较复杂时尤其有用
@@ -83,12 +120,10 @@ shift + F2              调到上一个书签
 ## 便捷的操作
 下面列举一些我常用的快捷操作，这些操作很大程度上帮助我提升了效率。部分内容会与上面的 Atom 特色重复。
 
-- 打开serttings的基重方式
-    - ctrl-shift-p  svo
-    - ctrl-,    需要修改搜狗输入法中输入法管理器的搜狗平阴快捷键
-- 拖动一个文件夹到 Atom 窗口或者 Atom 应用图标，便能在 Atom 中打开这个文件夹
-- 拖动一个文件到 Atom 窗口或者 Atom 应用图标，便在 Atom 中打开这个文件所在的文件夹
-- ctrl + P / ctrl + T： 全局关键词快速模糊搜索
+- 三种方式打开settings设置窗口
+    1. 主菜单Edit->Preferences
+    2. 在命令面板中输入命令Settings View:Open. 因为命令窗口支持模糊查询, 因此只需要输入svo, 就可以了
+    3. 使用快捷键 `ctrl-,`    需要修改搜狗输入法中输入法管理器的搜狗平阴快捷键
 - 选中项目根目录，右键，选择 “Search in Directory”，可以全局准确搜索关键字
 - ctrl + F： 文件中关键词搜索及替换
 - 选择多项：按住 ctrl / ctrl，用鼠标点击另外一处你想选择的地方，这样，你就可以看到多个一起闪动的光标
@@ -97,12 +132,12 @@ shift + F2              调到上一个书签
 ## 常用插件
 
 #### 必备插件
--[sync-settings](https://atom.io/packages/sync-settings)
+- [sync-settings](https://atom.io/packages/sync-settings)，同步Atom的settings, keymaps, user styles, init script, snippets and installed packages信息
 
 #### UI主题
 - [atom-material-ui](https://atom.io/themes/atom-material-ui) ，一个好用好看的MD风格的主题
 - [atom-material-syntax](https://atom.io/themes/atom-material-syntax)，用于语法高亮，配合Atom Material UI主题使用会更加完美
-- [seti-ui](https://atom.io/themes/seti-ui)
+- [seti-ui](https://atom.io/themes/seti-ui)，暂未使用，不予评价
 - [seti-syntax](https://atom.io/themes/seti-syntax)，和上面配套，亮点在文件的 icons
 
 #### 代码美化
@@ -182,3 +217,5 @@ shift + F2              调到上一个书签
 - [ATOM编辑器快捷键大全](http://www.168seo.cn/tools/1279.html)
 - [推荐几款我喜欢的Atom插件](http://www.tuicool.com/articles/qmEVfy)
 - [前端我在使用的插件（可能有点多）](https://atom-china.org/t/topic/2650)
+
+- [CSDN-u010494080的专栏：Atom编辑器入门到精通](http://blog.csdn.net/u010494080/article/category/6277533)

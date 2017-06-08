@@ -1,0 +1,26 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Insert or Update MD ToC'
+      'command': 'atom-mdtoc:insert'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'MD ToC'
+      'submenu': [
+        {
+          'label': 'Insert or Update'
+          'command': 'atom-mdtoc:insert'
+        }
+        {
+          'label': 'Delete'
+          'command': 'atom-mdtoc:delete'
+        }
+      ]
+    ]
+  }
+]

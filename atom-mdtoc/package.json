@@ -1,0 +1,926 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11758-14924-il2j7t.mn6x6tuik9"
+    ]
+  ],
+  "_from": "..\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+  "_id": "atom-mdtoc@0.8.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-mdtoc",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+  "_shasum": "93909015d4a2d92e064a578224222aa6276e2610",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11758-14924-h1d4jj.yva4hadcxr\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11758-14924-il2j7t.mn6x6tuik9",
+  "activationCommands": {
+    "atom-workspace": [
+      "atom-mdtoc:insert",
+      "atom-mdtoc:delete"
+    ]
+  },
+  "author": {
+    "name": "mcpride",
+    "url": "Marco Stolze"
+  },
+  "bugs": {
+    "url": "https://github.com/mcpride/atom-mdtoc/issues"
+  },
+  "dependencies": {
+    "markdown-toc": "^0.12.11"
+  },
+  "description": "Generate a markdown TOC (table of contents) in atom editor using Markdown-TOC and Remarkable from Jon Schlinkert.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mcpride/atom-mdtoc#readme",
+  "keywords": [
+    "markdown",
+    "toc",
+    "atom"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-mdtoc",
+  "name": "atom-mdtoc",
+  "optionalDependencies": {},
+  "readme": "# atom-mdtoc: A Markdown TOC package for Atom\n\nGenerate a markdown TOC (table of contents) in [atom editor](https://atom.io/) using [Markdown-TOC](https://github.com/jonschlinkert/markdown-toc) and [Remarkable](https://github.com/jonschlinkert/remarkable).\n\n![screenshot](https://raw.githubusercontent.com/mcpride/atom-mdtoc/master/screenshot.gif)\n\n# Table Of Contents\n\n<!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:0 -->\n\n1. [Installation](#installation)   \n2. [Features](#features)   \n&emsp;2.1. [Example (this Table Of Contents)](#example-this-table-of-contents)   \n3. [Contributing](#contributing)   \n4. [Author](#author)   \n5. [License](#license)   \n6. [Repeated heading example](#repeated-heading-example)   \n&emsp;6.1. [Heading](#heading)   \n&emsp;&emsp;6.1.1. [Sub-heading](#sub-heading)   \n&emsp;&emsp;&emsp;6.1.1.1. [Sub-sub-heading](#sub-sub-heading)   \n&emsp;6.2. [Heading](#heading-1)   \n&emsp;&emsp;6.2.1. [Sub-heading](#sub-heading-1)   \n&emsp;&emsp;&emsp;6.2.1.1. [Sub-sub-heading](#sub-sub-heading-1)   \n&emsp;6.3. [Heading](#heading-2)   \n&emsp;&emsp;6.3.1. [Sub-heading](#sub-heading-2)   \n&emsp;&emsp;&emsp;6.3.1.1. [Sub-sub-heading](#sub-sub-heading-2)   \n\n<!-- /MDTOC -->\n\n## Installation\n\n```\napm install atom-mdtoc\n```\n\n## Features\n\n* Auto linking via anchor tags\n* Depth control e.g. `maxDepth:6`\n* Refresh list on save with `updateOnSave:1` (disable with `updateOnSave:0`)\n* Exclude the first h1-level heading in a file with `firsth1:0` (include with `firsth1:1`)\n* Use spaces instead of bullets with `bullets:0` (use bullets with `bullets:1`)\n* Use a flatten list instead of a tree  with `flatten:1` (use tree with `flatten:0`)\n* Header numbering with `numbering:1` (disable with `numbering:0`)\n* Works with [repeated headings](#repeated-heading-example) (see also this [Table Of Contents](#table-of-contents))\n\n### Example (this Table Of Contents)\n\n```\n  <!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:1 updateOnSave:0 -->\n\n  - 1. [Installation](#installation)   \n  - 2. [Features](#features)   \n     - 2.1. [Example (this Table Of Contents)](#example-this-table-of-contents)   \n  - 3. [Contributing](#contributing)   \n  - 4. [Author](#author)   \n  - 5. [License](#license)   \n  - 6. [Repeated heading example](#repeated-heading-example)   \n     - 6.1. [Heading](#heading)   \n        - 6.1.1. [Sub-heading](#sub-heading)   \n           - 6.1.1.1. [Sub-sub-heading](#sub-sub-heading)   \n     - 6.2. [Heading](#heading-1)   \n        - 6.2.1. [Sub-heading](#sub-heading-1)   \n           - 6.2.1.1. [Sub-sub-heading](#sub-sub-heading-1)   \n     - 6.3. [Heading](#heading-2)   \n        - 6.3.1. [Sub-heading](#sub-heading-2)   \n           - 6.3.1.1. [Sub-sub-heading](#sub-sub-heading-2)   \n\n  <!-- /MDTOC -->\n```\n\n## Contributing\n\nPull requests and stars are always welcome. For bugs and feature requests, please create an issue.\n\n## Author\n\n**Marco Stolze**\n\n* [github/mcpride](https://github.com/mcpride)\n\n## License\n\nCopyright © 2016 [Marco Stolze](https://github.com/mcpride). Released under the [MIT license](LICENSE.md).\n\n## Repeated heading example\n\n### Heading\n\nThis is a heading\n\n#### Sub-heading\n\nThis is an sub heading\n\n##### Sub-sub-heading\n\nThis is a sub sub heading\n\n### Heading\n\nThis is a heading\n\n#### Sub-heading\n\nThis is a sub heading\n\n##### Sub-sub-heading\n\nThis is a sub sub heading\n\n### Heading\n\nThis is a heading\n\n#### Sub-heading\n\nThis is a sub heading\n\n##### Sub-sub-heading\n\nThis is a sub sub heading\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcpride/atom-mdtoc.git"
+  },
+  "version": "0.8.3",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "ansi-red",
+        "version": "0.1.1",
+        "path": "node_modules\\ansi-red\\index.js"
+      },
+      {
+        "name": "ansi-wrap",
+        "version": "0.1.0",
+        "path": "node_modules\\ansi-wrap\\index.js"
+      },
+      {
+        "name": "argparse",
+        "version": "1.0.9",
+        "path": "node_modules\\argparse\\index.js"
+      },
+      {
+        "name": "autolinker",
+        "version": "0.15.3",
+        "path": "node_modules\\autolinker\\dist\\Autolinker.js"
+      },
+      {
+        "name": "coffee-script",
+        "version": "1.12.6",
+        "path": "node_modules\\coffee-script\\lib\\coffee-script\\coffee-script.js"
+      },
+      {
+        "name": "concat-stream",
+        "version": "1.6.0",
+        "path": "node_modules\\concat-stream\\index.js"
+      },
+      {
+        "name": "core-util-is",
+        "version": "1.0.2",
+        "path": "node_modules\\core-util-is\\lib\\util.js"
+      },
+      {
+        "name": "esprima",
+        "version": "3.1.3",
+        "path": "node_modules\\esprima\\dist\\esprima.js"
+      },
+      {
+        "name": "expand-range",
+        "version": "1.8.2",
+        "path": "node_modules\\expand-range\\index.js"
+      },
+      {
+        "name": "extend-shallow",
+        "version": "2.0.1",
+        "path": "node_modules\\extend-shallow\\index.js"
+      },
+      {
+        "name": "fill-range",
+        "version": "2.2.3",
+        "path": "node_modules\\fill-range\\index.js"
+      },
+      {
+        "name": "for-in",
+        "version": "1.0.2",
+        "path": "node_modules\\for-in\\index.js"
+      },
+      {
+        "name": "gray-matter",
+        "version": "2.1.1",
+        "path": "node_modules\\gray-matter\\index.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.3",
+        "path": "node_modules\\inherits\\inherits.js"
+      },
+      {
+        "name": "is-buffer",
+        "version": "1.1.5",
+        "path": "node_modules\\is-buffer\\index.js"
+      },
+      {
+        "name": "is-extendable",
+        "version": "0.1.1",
+        "path": "node_modules\\is-extendable\\index.js"
+      },
+      {
+        "name": "is-number",
+        "version": "2.1.0",
+        "path": "node_modules\\is-number\\index.js"
+      },
+      {
+        "name": "isarray",
+        "version": "1.0.0",
+        "path": "node_modules\\isarray\\index.js"
+      },
+      {
+        "name": "isobject",
+        "version": "2.1.0",
+        "path": "node_modules\\isobject\\index.js"
+      },
+      {
+        "name": "js-yaml",
+        "version": "3.8.4",
+        "path": "node_modules\\js-yaml\\index.js"
+      },
+      {
+        "name": "kind-of",
+        "version": "3.2.2",
+        "path": "node_modules\\kind-of\\index.js"
+      },
+      {
+        "name": "lazy-cache",
+        "version": "2.0.2",
+        "path": "node_modules\\lazy-cache\\index.js"
+      },
+      {
+        "name": "list-item",
+        "version": "1.1.1",
+        "path": "node_modules\\list-item\\index.js"
+      },
+      {
+        "name": "markdown-link",
+        "version": "0.1.1",
+        "path": "node_modules\\markdown-link\\index.js"
+      },
+      {
+        "name": "markdown-toc",
+        "version": "0.12.16",
+        "path": "node_modules\\markdown-toc\\index.js"
+      },
+      {
+        "name": "minimist",
+        "version": "1.2.0",
+        "path": "node_modules\\minimist\\index.js"
+      },
+      {
+        "name": "mixin-deep",
+        "version": "1.2.0",
+        "path": "node_modules\\mixin-deep\\index.js"
+      },
+      {
+        "name": "object.pick",
+        "version": "1.2.0",
+        "path": "node_modules\\object.pick\\index.js"
+      },
+      {
+        "name": "process-nextick-args",
+        "version": "1.0.7",
+        "path": "node_modules\\process-nextick-args\\index.js"
+      },
+      {
+        "name": "randomatic",
+        "version": "1.1.6",
+        "path": "node_modules\\randomatic\\index.js"
+      },
+      {
+        "name": "readable-stream",
+        "version": "2.2.11",
+        "path": "node_modules\\readable-stream\\readable.js"
+      },
+      {
+        "name": "remarkable",
+        "version": "1.7.1",
+        "path": "node_modules\\remarkable\\index.js"
+      },
+      {
+        "name": "argparse",
+        "version": "0.1.16",
+        "path": "node_modules\\remarkable\\node_modules\\argparse\\index.js"
+      },
+      {
+        "name": "repeat-element",
+        "version": "1.1.2",
+        "path": "node_modules\\repeat-element\\index.js"
+      },
+      {
+        "name": "repeat-string",
+        "version": "1.6.1",
+        "path": "node_modules\\repeat-string\\index.js"
+      },
+      {
+        "name": "safe-buffer",
+        "version": "5.0.1",
+        "path": "node_modules\\safe-buffer\\index.js"
+      },
+      {
+        "name": "set-getter",
+        "version": "0.1.0",
+        "path": "node_modules\\set-getter\\index.js"
+      },
+      {
+        "name": "sprintf-js",
+        "version": "1.0.3",
+        "path": "node_modules\\sprintf-js\\src\\sprintf.js"
+      },
+      {
+        "name": "string_decoder",
+        "version": "1.0.2",
+        "path": "node_modules\\string_decoder\\lib\\string_decoder.js"
+      },
+      {
+        "name": "strip-color",
+        "version": "0.1.0",
+        "path": "node_modules\\strip-color\\index.js"
+      },
+      {
+        "name": "to-object-path",
+        "version": "0.3.0",
+        "path": "node_modules\\to-object-path\\index.js"
+      },
+      {
+        "name": "toml",
+        "version": "2.3.2",
+        "path": "node_modules\\toml\\index.js"
+      },
+      {
+        "name": "typedarray",
+        "version": "0.0.6",
+        "path": "node_modules\\typedarray\\index.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.7.0",
+        "path": "node_modules\\underscore\\underscore.js"
+      },
+      {
+        "name": "underscore.string",
+        "version": "2.4.0",
+        "path": "node_modules\\underscore.string\\lib\\underscore.string.js"
+      },
+      {
+        "name": "util-deprecate",
+        "version": "1.0.2",
+        "path": "node_modules\\util-deprecate\\node.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib\\atom-mdtoc.coffee",
+        "lib\\toc-view.coffee"
+      ],
+      ".js": [
+        "node_modules\\ansi-red\\index.js",
+        "node_modules\\ansi-wrap\\index.js",
+        "node_modules\\argparse\\index.js",
+        "node_modules\\argparse\\lib\\action\\append\\constant.js",
+        "node_modules\\argparse\\lib\\action\\append.js",
+        "node_modules\\argparse\\lib\\action\\count.js",
+        "node_modules\\argparse\\lib\\action\\help.js",
+        "node_modules\\argparse\\lib\\action\\store\\constant.js",
+        "node_modules\\argparse\\lib\\action\\store\\false.js",
+        "node_modules\\argparse\\lib\\action\\store\\true.js",
+        "node_modules\\argparse\\lib\\action\\store.js",
+        "node_modules\\argparse\\lib\\action\\subparsers.js",
+        "node_modules\\argparse\\lib\\action\\version.js",
+        "node_modules\\argparse\\lib\\action.js",
+        "node_modules\\argparse\\lib\\action_container.js",
+        "node_modules\\argparse\\lib\\argparse.js",
+        "node_modules\\argparse\\lib\\argument\\error.js",
+        "node_modules\\argparse\\lib\\argument\\exclusive.js",
+        "node_modules\\argparse\\lib\\argument\\group.js",
+        "node_modules\\argparse\\lib\\argument_parser.js",
+        "node_modules\\argparse\\lib\\const.js",
+        "node_modules\\argparse\\lib\\help\\added_formatters.js",
+        "node_modules\\argparse\\lib\\help\\formatter.js",
+        "node_modules\\argparse\\lib\\namespace.js",
+        "node_modules\\argparse\\lib\\utils.js",
+        "node_modules\\autolinker\\dist\\Autolinker.js",
+        "node_modules\\autolinker\\dist\\Autolinker.min.js",
+        "node_modules\\autolinker\\Gruntfile.js",
+        "node_modules\\autolinker\\src\\AnchorTagBuilder.js",
+        "node_modules\\autolinker\\src\\Autolinker.js",
+        "node_modules\\autolinker\\src\\htmlParser\\ElementNode.js",
+        "node_modules\\autolinker\\src\\htmlParser\\EntityNode.js",
+        "node_modules\\autolinker\\src\\htmlParser\\HtmlNode.js",
+        "node_modules\\autolinker\\src\\htmlParser\\HtmlParser.js",
+        "node_modules\\autolinker\\src\\htmlParser\\TextNode.js",
+        "node_modules\\autolinker\\src\\HtmlTag.js",
+        "node_modules\\autolinker\\src\\match\\Email.js",
+        "node_modules\\autolinker\\src\\match\\Match.js",
+        "node_modules\\autolinker\\src\\match\\Twitter.js",
+        "node_modules\\autolinker\\src\\match\\Url.js",
+        "node_modules\\autolinker\\src\\matchParser\\MatchParser.js",
+        "node_modules\\autolinker\\src\\matchParser\\MatchValidator.js",
+        "node_modules\\autolinker\\src\\Util.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\browser.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\cake.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\coffee-script.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\command.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\grammar.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\helpers.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\index.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\lexer.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\nodes.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\optparse.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\parser.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\register.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\repl.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\rewriter.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\scope.js",
+        "node_modules\\coffee-script\\lib\\coffee-script\\sourcemap.js",
+        "node_modules\\coffee-script\\register.js",
+        "node_modules\\coffee-script\\repl.js",
+        "node_modules\\concat-stream\\index.js",
+        "node_modules\\core-util-is\\lib\\util.js",
+        "node_modules\\core-util-is\\test.js",
+        "node_modules\\esprima\\bin\\esparse.js",
+        "node_modules\\esprima\\bin\\esvalidate.js",
+        "node_modules\\esprima\\dist\\esprima.js",
+        "node_modules\\expand-range\\index.js",
+        "node_modules\\extend-shallow\\index.js",
+        "node_modules\\fill-range\\index.js",
+        "node_modules\\for-in\\index.js",
+        "node_modules\\gray-matter\\index.js",
+        "node_modules\\gray-matter\\lib\\parsers.js",
+        "node_modules\\inherits\\inherits.js",
+        "node_modules\\inherits\\inherits_browser.js",
+        "node_modules\\is-buffer\\index.js",
+        "node_modules\\is-extendable\\index.js",
+        "node_modules\\is-number\\index.js",
+        "node_modules\\isarray\\index.js",
+        "node_modules\\isarray\\test.js",
+        "node_modules\\isobject\\index.js",
+        "node_modules\\js-yaml\\bin\\js-yaml.js",
+        "node_modules\\js-yaml\\dist\\js-yaml.js",
+        "node_modules\\js-yaml\\dist\\js-yaml.min.js",
+        "node_modules\\js-yaml\\index.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\common.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\dumper.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\exception.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\loader.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\mark.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\schema\\core.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\schema\\default_full.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\schema\\default_safe.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\schema\\failsafe.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\schema\\json.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\schema.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\binary.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\bool.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\float.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\int.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\js\\function.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\js\\regexp.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\js\\undefined.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\map.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\merge.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\null.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\omap.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\pairs.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\seq.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\set.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\str.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type\\timestamp.js",
+        "node_modules\\js-yaml\\lib\\js-yaml\\type.js",
+        "node_modules\\js-yaml\\lib\\js-yaml.js",
+        "node_modules\\kind-of\\index.js",
+        "node_modules\\lazy-cache\\index.js",
+        "node_modules\\list-item\\index.js",
+        "node_modules\\markdown-link\\index.js",
+        "node_modules\\markdown-toc\\cli.js",
+        "node_modules\\markdown-toc\\index.js",
+        "node_modules\\markdown-toc\\lib\\insert.js",
+        "node_modules\\markdown-toc\\lib\\utils.js",
+        "node_modules\\minimist\\example\\parse.js",
+        "node_modules\\minimist\\index.js",
+        "node_modules\\mixin-deep\\index.js",
+        "node_modules\\object.pick\\index.js",
+        "node_modules\\process-nextick-args\\index.js",
+        "node_modules\\process-nextick-args\\test.js",
+        "node_modules\\randomatic\\index.js",
+        "node_modules\\readable-stream\\duplex-browser.js",
+        "node_modules\\readable-stream\\duplex.js",
+        "node_modules\\readable-stream\\lib\\internal\\streams\\BufferList.js",
+        "node_modules\\readable-stream\\lib\\internal\\streams\\stream-browser.js",
+        "node_modules\\readable-stream\\lib\\internal\\streams\\stream.js",
+        "node_modules\\readable-stream\\lib\\_stream_duplex.js",
+        "node_modules\\readable-stream\\lib\\_stream_passthrough.js",
+        "node_modules\\readable-stream\\lib\\_stream_readable.js",
+        "node_modules\\readable-stream\\lib\\_stream_transform.js",
+        "node_modules\\readable-stream\\lib\\_stream_writable.js",
+        "node_modules\\readable-stream\\passthrough.js",
+        "node_modules\\readable-stream\\readable-browser.js",
+        "node_modules\\readable-stream\\readable.js",
+        "node_modules\\readable-stream\\transform.js",
+        "node_modules\\readable-stream\\writable-browser.js",
+        "node_modules\\readable-stream\\writable.js",
+        "node_modules\\remarkable\\benchmark\\implementations\\commonmark-reference\\index.js",
+        "node_modules\\remarkable\\benchmark\\implementations\\current\\index.js",
+        "node_modules\\remarkable\\benchmark\\implementations\\current-commonmark\\index.js",
+        "node_modules\\remarkable\\benchmark\\implementations\\marked-0.3.2\\index.js",
+        "node_modules\\remarkable\\benchmark\\index.js",
+        "node_modules\\remarkable\\benchmark\\profile.js",
+        "node_modules\\remarkable\\bin\\remarkable.js",
+        "node_modules\\remarkable\\demo\\assets\\index.js",
+        "node_modules\\remarkable\\demo\\example.js",
+        "node_modules\\remarkable\\dist\\remarkable.js",
+        "node_modules\\remarkable\\dist\\remarkable.min.js",
+        "node_modules\\remarkable\\index.js",
+        "node_modules\\remarkable\\lib\\common\\entities.js",
+        "node_modules\\remarkable\\lib\\common\\html_blocks.js",
+        "node_modules\\remarkable\\lib\\common\\html_re.js",
+        "node_modules\\remarkable\\lib\\common\\url_schemas.js",
+        "node_modules\\remarkable\\lib\\common\\utils.js",
+        "node_modules\\remarkable\\lib\\configs\\commonmark.js",
+        "node_modules\\remarkable\\lib\\configs\\default.js",
+        "node_modules\\remarkable\\lib\\configs\\full.js",
+        "node_modules\\remarkable\\lib\\helpers\\normalize_link.js",
+        "node_modules\\remarkable\\lib\\helpers\\normalize_reference.js",
+        "node_modules\\remarkable\\lib\\helpers\\parse_link_destination.js",
+        "node_modules\\remarkable\\lib\\helpers\\parse_link_label.js",
+        "node_modules\\remarkable\\lib\\helpers\\parse_link_title.js",
+        "node_modules\\remarkable\\lib\\index.js",
+        "node_modules\\remarkable\\lib\\parser_block.js",
+        "node_modules\\remarkable\\lib\\parser_core.js",
+        "node_modules\\remarkable\\lib\\parser_inline.js",
+        "node_modules\\remarkable\\lib\\renderer.js",
+        "node_modules\\remarkable\\lib\\ruler.js",
+        "node_modules\\remarkable\\lib\\rules.js",
+        "node_modules\\remarkable\\lib\\rules_block\\blockquote.js",
+        "node_modules\\remarkable\\lib\\rules_block\\code.js",
+        "node_modules\\remarkable\\lib\\rules_block\\deflist.js",
+        "node_modules\\remarkable\\lib\\rules_block\\fences.js",
+        "node_modules\\remarkable\\lib\\rules_block\\footnote.js",
+        "node_modules\\remarkable\\lib\\rules_block\\heading.js",
+        "node_modules\\remarkable\\lib\\rules_block\\hr.js",
+        "node_modules\\remarkable\\lib\\rules_block\\htmlblock.js",
+        "node_modules\\remarkable\\lib\\rules_block\\lheading.js",
+        "node_modules\\remarkable\\lib\\rules_block\\list.js",
+        "node_modules\\remarkable\\lib\\rules_block\\paragraph.js",
+        "node_modules\\remarkable\\lib\\rules_block\\state_block.js",
+        "node_modules\\remarkable\\lib\\rules_block\\table.js",
+        "node_modules\\remarkable\\lib\\rules_core\\abbr.js",
+        "node_modules\\remarkable\\lib\\rules_core\\abbr2.js",
+        "node_modules\\remarkable\\lib\\rules_core\\block.js",
+        "node_modules\\remarkable\\lib\\rules_core\\footnote_tail.js",
+        "node_modules\\remarkable\\lib\\rules_core\\inline.js",
+        "node_modules\\remarkable\\lib\\rules_core\\linkify.js",
+        "node_modules\\remarkable\\lib\\rules_core\\references.js",
+        "node_modules\\remarkable\\lib\\rules_core\\replacements.js",
+        "node_modules\\remarkable\\lib\\rules_core\\smartquotes.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\autolink.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\backticks.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\del.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\emphasis.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\entity.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\escape.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\footnote_inline.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\footnote_ref.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\htmltag.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\ins.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\links.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\mark.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\newline.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\state_inline.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\sub.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\sup.js",
+        "node_modules\\remarkable\\lib\\rules_inline\\text.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\arguments.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\choice.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\constants.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\help.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\nargs.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\parents.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\prefix_chars.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\sub_commands.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\sum.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\examples\\testformatters.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\index.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\append\\constant.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\append.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\count.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\help.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\store\\constant.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\store\\false.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\store\\true.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\store.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\subparsers.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\version.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\action_container.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\argparse.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\argument\\error.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\argument\\exclusive.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\argument\\group.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\argument_parser.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\const.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\help\\added_formatters.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\help\\formatter.js",
+        "node_modules\\remarkable\\node_modules\\argparse\\lib\\namespace.js",
+        "node_modules\\remarkable\\support\\demodata.js",
+        "node_modules\\remarkable\\support\\entities.js",
+        "node_modules\\remarkable\\support\\specsplit.js",
+        "node_modules\\repeat-element\\index.js",
+        "node_modules\\repeat-string\\index.js",
+        "node_modules\\safe-buffer\\browser.js",
+        "node_modules\\safe-buffer\\index.js",
+        "node_modules\\safe-buffer\\test.js",
+        "node_modules\\set-getter\\index.js",
+        "node_modules\\sprintf-js\\dist\\angular-sprintf.min.js",
+        "node_modules\\sprintf-js\\dist\\sprintf.min.js",
+        "node_modules\\sprintf-js\\gruntfile.js",
+        "node_modules\\sprintf-js\\src\\angular-sprintf.js",
+        "node_modules\\sprintf-js\\src\\sprintf.js",
+        "node_modules\\string_decoder\\lib\\string_decoder.js",
+        "node_modules\\strip-color\\index.js",
+        "node_modules\\to-object-path\\index.js",
+        "node_modules\\toml\\benchmark.js",
+        "node_modules\\toml\\index.js",
+        "node_modules\\toml\\lib\\compiler.js",
+        "node_modules\\toml\\lib\\parser.js",
+        "node_modules\\typedarray\\example\\tarray.js",
+        "node_modules\\typedarray\\index.js",
+        "node_modules\\underscore\\underscore-min.js",
+        "node_modules\\underscore\\underscore.js",
+        "node_modules\\underscore.string\\foo.js",
+        "node_modules\\underscore.string\\gulpfile.js",
+        "node_modules\\underscore.string\\lib\\underscore.string.js",
+        "node_modules\\util-deprecate\\browser.js",
+        "node_modules\\util-deprecate\\node.js"
+      ],
+      ".json": [
+        "node_modules\\ansi-red\\package.json",
+        "node_modules\\ansi-wrap\\package.json",
+        "node_modules\\argparse\\package.json",
+        "node_modules\\autolinker\\bower.json",
+        "node_modules\\autolinker\\package.json",
+        "node_modules\\coffee-script\\package.json",
+        "node_modules\\concat-stream\\package.json",
+        "node_modules\\core-util-is\\package.json",
+        "node_modules\\esprima\\package.json",
+        "node_modules\\expand-range\\package.json",
+        "node_modules\\extend-shallow\\package.json",
+        "node_modules\\fill-range\\package.json",
+        "node_modules\\for-in\\package.json",
+        "node_modules\\gray-matter\\package.json",
+        "node_modules\\inherits\\package.json",
+        "node_modules\\is-buffer\\package.json",
+        "node_modules\\is-extendable\\package.json",
+        "node_modules\\is-number\\package.json",
+        "node_modules\\isarray\\component.json",
+        "node_modules\\isarray\\package.json",
+        "node_modules\\isobject\\package.json",
+        "node_modules\\js-yaml\\package.json",
+        "node_modules\\kind-of\\package.json",
+        "node_modules\\lazy-cache\\package.json",
+        "node_modules\\list-item\\package.json",
+        "node_modules\\markdown-link\\package.json",
+        "node_modules\\markdown-toc\\package.json",
+        "node_modules\\minimist\\package.json",
+        "node_modules\\mixin-deep\\package.json",
+        "node_modules\\object.pick\\package.json",
+        "node_modules\\process-nextick-args\\package.json",
+        "node_modules\\randomatic\\package.json",
+        "node_modules\\readable-stream\\package.json",
+        "node_modules\\remarkable\\.eslintrc.json",
+        "node_modules\\remarkable\\bower.json",
+        "node_modules\\remarkable\\node_modules\\argparse\\package.json",
+        "node_modules\\remarkable\\package.json",
+        "node_modules\\repeat-element\\package.json",
+        "node_modules\\repeat-string\\package.json",
+        "node_modules\\safe-buffer\\package.json",
+        "node_modules\\set-getter\\package.json",
+        "node_modules\\sprintf-js\\bower.json",
+        "node_modules\\sprintf-js\\package.json",
+        "node_modules\\string_decoder\\package.json",
+        "node_modules\\strip-color\\package.json",
+        "node_modules\\to-object-path\\package.json",
+        "node_modules\\toml\\package.json",
+        "node_modules\\typedarray\\package.json",
+        "node_modules\\underscore\\package.json",
+        "node_modules\\underscore.string\\bower.json",
+        "node_modules\\underscore.string\\component.json",
+        "node_modules\\underscore.string\\package.json",
+        "node_modules\\util-deprecate\\package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "markdown-toc": "^0.12.11"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\ansi-red"
+        ],
+        "dependencies": {
+          "ansi-wrap": "0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\argparse",
+          "node_modules\\argparse\\lib\\action\\append",
+          "node_modules\\argparse\\lib\\action",
+          "node_modules\\argparse\\lib\\action\\store",
+          "node_modules\\argparse\\lib",
+          "node_modules\\argparse\\lib\\argument",
+          "node_modules\\argparse\\lib\\help"
+        ],
+        "dependencies": {
+          "sprintf-js": "~1.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\concat-stream"
+        ],
+        "dependencies": {
+          "inherits": "^2.0.3",
+          "readable-stream": "^2.2.2",
+          "typedarray": "^0.0.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\expand-range"
+        ],
+        "dependencies": {
+          "fill-range": "^2.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\extend-shallow"
+        ],
+        "dependencies": {
+          "is-extendable": "^0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\fill-range"
+        ],
+        "dependencies": {
+          "is-number": "^2.1.0",
+          "isobject": "^2.0.0",
+          "randomatic": "^1.1.3",
+          "repeat-element": "^1.1.2",
+          "repeat-string": "^1.5.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\gray-matter",
+          "node_modules\\gray-matter\\lib"
+        ],
+        "dependencies": {
+          "ansi-red": "^0.1.1",
+          "coffee-script": "^1.12.4",
+          "extend-shallow": "^2.0.1",
+          "js-yaml": "^3.8.1",
+          "toml": "^2.3.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\is-number"
+        ],
+        "dependencies": {
+          "kind-of": "^3.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\isobject"
+        ],
+        "dependencies": {
+          "isarray": "1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\js-yaml\\bin",
+          "node_modules\\js-yaml\\dist",
+          "node_modules\\js-yaml",
+          "node_modules\\js-yaml\\lib\\js-yaml",
+          "node_modules\\js-yaml\\lib\\js-yaml\\schema",
+          "node_modules\\js-yaml\\lib\\js-yaml\\type",
+          "node_modules\\js-yaml\\lib\\js-yaml\\type\\js",
+          "node_modules\\js-yaml\\lib"
+        ],
+        "dependencies": {
+          "argparse": "^1.0.7",
+          "esprima": "^3.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\kind-of"
+        ],
+        "dependencies": {
+          "is-buffer": "^1.1.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\lazy-cache"
+        ],
+        "dependencies": {
+          "set-getter": "^0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\list-item"
+        ],
+        "dependencies": {
+          "expand-range": "^1.8.1",
+          "extend-shallow": "^2.0.1",
+          "is-number": "^2.1.0",
+          "repeat-string": "^1.5.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\markdown-toc",
+          "node_modules\\markdown-toc\\lib"
+        ],
+        "dependencies": {
+          "concat-stream": "^1.5.1",
+          "gray-matter": "^2.0.2",
+          "lazy-cache": "^2.0.1",
+          "list-item": "^1.1.1",
+          "markdown-link": "^0.1.1",
+          "minimist": "^1.2.0",
+          "mixin-deep": "^1.1.3",
+          "object.pick": "^1.1.2",
+          "remarkable": "^1.6.2",
+          "repeat-string": "^1.5.4",
+          "strip-color": "^0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\mixin-deep"
+        ],
+        "dependencies": {
+          "for-in": "^1.0.2",
+          "is-extendable": "^0.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\object.pick"
+        ],
+        "dependencies": {
+          "isobject": "^2.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\randomatic"
+        ],
+        "dependencies": {
+          "is-number": "^2.0.2",
+          "kind-of": "^3.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\readable-stream",
+          "node_modules\\readable-stream\\lib\\internal\\streams",
+          "node_modules\\readable-stream\\lib"
+        ],
+        "dependencies": {
+          "core-util-is": "~1.0.0",
+          "inherits": "~2.0.1",
+          "isarray": "~1.0.0",
+          "process-nextick-args": "~1.0.6",
+          "safe-buffer": "~5.0.1",
+          "string_decoder": "~1.0.0",
+          "util-deprecate": "~1.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\remarkable",
+          "node_modules\\remarkable\\benchmark\\implementations\\commonmark-reference",
+          "node_modules\\remarkable\\benchmark\\implementations\\current",
+          "node_modules\\remarkable\\benchmark\\implementations\\current-commonmark",
+          "node_modules\\remarkable\\benchmark\\implementations\\marked-0.3.2",
+          "node_modules\\remarkable\\benchmark",
+          "node_modules\\remarkable\\bin",
+          "node_modules\\remarkable\\demo\\assets",
+          "node_modules\\remarkable\\demo",
+          "node_modules\\remarkable\\dist",
+          "node_modules\\remarkable\\lib\\common",
+          "node_modules\\remarkable\\lib\\configs",
+          "node_modules\\remarkable\\lib\\helpers",
+          "node_modules\\remarkable\\lib",
+          "node_modules\\remarkable\\lib\\rules_block",
+          "node_modules\\remarkable\\lib\\rules_core",
+          "node_modules\\remarkable\\lib\\rules_inline",
+          "node_modules\\remarkable\\support",
+          "node_modules\\remarkable\\test"
+        ],
+        "dependencies": {
+          "argparse": "~0.1.15",
+          "autolinker": "~0.15.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\remarkable\\node_modules\\argparse\\examples",
+          "node_modules\\remarkable\\node_modules\\argparse",
+          "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\append",
+          "node_modules\\remarkable\\node_modules\\argparse\\lib\\action",
+          "node_modules\\remarkable\\node_modules\\argparse\\lib\\action\\store",
+          "node_modules\\remarkable\\node_modules\\argparse\\lib",
+          "node_modules\\remarkable\\node_modules\\argparse\\lib\\argument",
+          "node_modules\\remarkable\\node_modules\\argparse\\lib\\help"
+        ],
+        "dependencies": {
+          "underscore": "~1.7.0",
+          "underscore.string": "~2.4.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\set-getter"
+        ],
+        "dependencies": {
+          "to-object-path": "^0.3.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\string_decoder\\lib",
+          "node_modules\\string_decoder"
+        ],
+        "dependencies": {
+          "safe-buffer": "~5.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules\\to-object-path"
+        ],
+        "dependencies": {
+          "kind-of": "^3.0.2"
+        }
+      }
+    ]
+  }
+}

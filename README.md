@@ -1,25 +1,54 @@
 # Atom packages
 >All packages in this directory will be automatically loaded
 
+
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Atom packages](#atom-packages)   
+   - [apm的使用](#apm的使用)   
+   - [常用快捷键](#常用快捷键)   
+   - [定制编辑器](#定制编辑器)   
+   - [便捷的操作](#便捷的操作)   
+   - [常用插件](#常用插件)   
+      - [必备插件](#必备插件)   
+      - [UI主题](#ui主题)   
+      - [代码美化](#代码美化)   
+      - [前端利器](#前端利器)   
+         - [自动路径补全](#自动路径补全)   
+         - [语法检查](#语法检查)   
+      - [Git](#git)   
+      - [Markdown](#markdown)   
+      - [插件类](#插件类)   
+   - [Atom -- 常见问题解决](#atom-常见问题解决)   
+      - [**快捷键冲突**](#快捷键冲突)   
+      - [**markdown-scroll-sync报错**](#markdown-scroll-sync报错)   
+   - [Atom -- 不常见问题（欢迎大家建言献策）](#atom-不常见问题（欢迎大家建言献策）)   
+   - [资料来源](#资料来源)   
+      - [ATOM基础教程](#atom基础教程)   
+      - [Atom编辑器折腾记](#atom编辑器折腾记)   
+      - [Atom教程](#atom教程)   
+
+<!-- /MDTOC -->
+
 ## apm的使用
 >安装好Atom以后你可以通过在命令行中使用apm命令来安装管理插件
 ```
-# 显示使用帮助
+// 显示使用帮助
 apm help                获得apm提供的所有子命令
 apm help install        显示apm命令的install子命令的使用帮助
 
-# 检查安装环境
+// 检查安装环境
 apm install --check                                 运行结果为：Checking for native build tools done 即可使用apm安装插件
 
-# 安装插件
+// 安装插件
 apm install <package_name>                          安装一个插件的最新版本
 apm install <package_name>@<package_version>        安装一个特定版本的插件
 apm install emmet@0.1.5                             比如要安装0.1.5版的Emmet
 
-# 搜索插件
+// 搜索插件
 apm search coffee                                   搜索插件名包含coffee的插件
 
-# 显示插件详细信息
+// 显示插件详细信息
 apm view git-grep                                   显示git-grep插件的详细信息
 ```
 
@@ -77,33 +106,35 @@ ctrl + alt + O          package           open-in-browers：在浏览器中打�
 ctrl + shift + M        package           markdown-preview-plus：Markdown预览(不用自带的)
 shift + alt + A         package           ask-stack：打开搜索strackoverflow
 shift + enter           package           jumpy：打开或关闭此插件引用，从此在文件内编辑告别鼠标的神器
+ctrl + alt + t i        package           atom-mdtoc：在Markdown生成TOC
+ctrl + alt + t d        package           atom-mdtoc：在Markdown删除TOC
 
-# 目录树操作
+// 目录树操作
 ctrl-0  焦点切换到目录树(再按一次或者Esc退出目录树)[貌似我的电脑这个功能用不了，郁闷]
 a   添加文件
 d   将当前文件另存为
 i   显示(隐藏)版本控制忽略的文件
 delete  删除文件
 
-# 折叠
+// 折叠
 alt + ctrl + [          折叠
 alt + ctrl + ]          展开
 alt + ctrl + shift + {  折叠全部
 alt + ctrl + shift + }  展开全部
 
-# 书签
+// 书签
 ctrl + F2               显示所有书签
 ctrl + alt + F2         打上/取消所在行的书签
 ctrl + shift + F2       清除所有书签
 F2                      调到下一个书签
 shift + F2              调到上一个书签
 
-# 查找文件 | 显示状态
+// 查找文件 | 显示状态
 Ctrl + T / Ctrl + P     搜索目录中的文件 | 列出所有项目中的文件
 Ctrl + B                搜索一个当前打开的文件 | 列出所有当前打开的文件
 Ctrl + Shift + B        搜索一个新建的或更改过的文件 | 列出所有未跟踪或是更改过的文件
 
-# GitHub支持，以下方式打开速度要快，不然不能被Atom正确识别
+// GitHub支持，以下方式打开速度要快，不然不能被Atom正确识别
 Alt+G O 在GitHub上打开当前文件
 Alt+G B 在GitHub上用Blame方式打开当前文件
 Alt+G H 在GitHub上用History方式打开当前文件
@@ -156,14 +187,14 @@ Alt+G R 在GitHub上比较分支
 - [atom-ternjs](https://atom.io/packages/atom-ternjs)，JS只能提示
 - [regex-railroad-diagram](https://atom.io/packages/regex-railroad-diagram)，正则表达式图形化
 
-##### 自动路径补全
+#### 自动路径补全
 - [autocomplete-plus](https://atom.io/packages/autocomplete-plus)，完善自带autocomplete,有二度设置,接下来列出的一些有二度设置
     - [autocomplete-paths](https://atom.io/packages/autocomplete-paths)，路径不全
     - [autocomplete-python](https://atom.io/packages/autocomplete-python)，Python补全
     - [autocomplete-html](https://atom.io/packages/autocomplete-html)，html路径不全
     - [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)，如名字
     - [autocomplete-css](https://atom.io/packages/autocomplete-css)，css路径不全
-##### 语法检查
+#### 语法检查
 - [linter](https://atom.io/packages/linter)，linter是一语法检查插件，它可以识别大部分语法，并对你的语法错误进行纠正。linter只是一个框架，针对不同语言的有不同具体插件
     - [linter-jshint](https://atom.io/packages/linter-jshint), for JavaScript and JSON, using jshint
     - [linter-coffeelint](https://atom.io/packages/linter-coffeelint), for CoffeeScript, using coffeelint
@@ -183,6 +214,7 @@ Alt+G R 在GitHub上比较分支
 ### Markdown
 - [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
 - [markdown-preview-enhanced](https://atom.io/packages/markdown-preview-enhanced)，非常强大markdown实时预览插件，强烈推荐
+- [atom-mdtoc](https://atom.io/packages/atom-mdtoc)，在Markdown中生成TOC，不建议安装markdown-toc
 
 ### 插件类
 - [activate-power-mode](https://atom.io/packages/activate-power-mode)，输入时有震撼效果

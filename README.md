@@ -2,31 +2,30 @@
 >All packages in this directory will be automatically loaded
 
 
-<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+<!-- MDTOC maxdepth:6 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Atom packages](#atom-packages)   
-   - [apm的使用](#apm的使用)   
-   - [常用快捷键](#常用快捷键)   
-   - [定制编辑器](#定制编辑器)   
-   - [便捷的操作](#便捷的操作)   
-   - [常用插件](#常用插件)   
-      - [必备插件](#必备插件)   
-      - [UI主题](#ui主题)   
-      - [代码美化](#代码美化)   
-      - [前端利器](#前端利器)   
-         - [自动路径补全](#自动路径补全)   
-         - [语法检查](#语法检查)   
-      - [Git](#git)   
-      - [Markdown](#markdown)   
-      - [插件类](#插件类)   
-   - [Atom -- 常见问题解决](#atom-常见问题解决)   
-      - [**快捷键冲突**](#快捷键冲突)   
-      - [**markdown-scroll-sync报错**](#markdown-scroll-sync报错)   
-   - [Atom -- 不常见问题（欢迎大家建言献策）](#atom-不常见问题（欢迎大家建言献策）)   
-   - [资料来源](#资料来源)   
-      - [ATOM基础教程](#atom基础教程)   
-      - [Atom编辑器折腾记](#atom编辑器折腾记)   
-      - [Atom教程](#atom教程)   
+- [apm的使用](#apm的使用)   
+- [常用快捷键](#常用快捷键)   
+- [定制编辑器](#定制编辑器)   
+- [便捷的操作](#便捷的操作)   
+- [常用插件](#常用插件)   
+   - [必备插件](#必备插件)   
+   - [UI主题](#ui主题)   
+   - [代码美化](#代码美化)   
+   - [前端利器](#前端利器)   
+      - [自动路径补全](#自动路径补全)   
+      - [语法检查](#语法检查)   
+   - [Git](#git)   
+   - [Markdown](#markdown)   
+   - [插件类](#插件类)   
+- [Atom --> 常见问题解决](#atom-常见问题解决)   
+   - [**快捷键冲突**](#快捷键冲突)   
+   - [**markdown-scroll-sync报错**](#markdown-scroll-sync报错)   
+- [Atom --> 不常见问题（欢迎大家建言献策）](#atom-不常见问题（欢迎大家建言献策）)   
+- [资料来源](#资料来源)   
+   - [ATOM基础教程](#atom基础教程)   
+   - [Atom编辑器折腾记](#atom编辑器折腾记)   
+   - [Atom教程](#atom教程)   
 
 <!-- /MDTOC -->
 
@@ -227,7 +226,7 @@ Alt+G R 在GitHub上比较分支
 - [script](https://atom.io/packages/script)，在Atom下运行脚本，支持多种开发语言
 
 
-## Atom -- 常见问题解决
+## Atom --> 常见问题解决
 
 ### **快捷键冲突**
 
@@ -246,7 +245,7 @@ Alt+G R 在GitHub上比较分支
 >- 5.重启Atom编辑器，如果有Markdown文件的预览被打开了，关掉Markdown预览，重新打开即可生效
 
 
-## Atom -- 不常见问题（欢迎大家建言献策）
+## Atom --> 不常见问题（欢迎大家建言献策）
 
 - 在Atom中，右击文件名 Reveal in Tree View 无效果
 - 快捷键问题：使用Atom自带的快捷键 ctrl-0 无效果

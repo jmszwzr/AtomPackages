@@ -247,3 +247,8 @@ Alt+G R 在GitHub上比较分支
 ### Atom编辑器折腾记
 - [Atom编辑器折腾记_(3)插件主题推荐](http://blog.csdn.net/crper/article/details/45687621)
 - [Atom编辑器折腾记_(7)Emmet实例教程](http://blog.csdn.net/crper/article/details/45786335)
+- [Atom编辑器折腾记_(22)二次翻译快捷键【追加1.8新版本新增快捷键】](http://blog.csdn.net/crper/article/details/51420731)
+### Atom教程
+- [Atom Flight Manual(官网)](http://flight-manual.atom.io/)
+- [Atom Flight Manual(翻译自官网，到二章)](http://mazhuang.org/atom-flight-manual/)
+- [Atom飞行手册翻译(翻译自官网，到二章)](http://mazhuang.org/atom-flight-manual/)

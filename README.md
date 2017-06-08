@@ -4,28 +4,28 @@
 
 <!-- MDTOC maxdepth:6 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [apm的使用](#apm的使用)   
-- [常用快捷键](#常用快捷键)   
-- [定制编辑器](#定制编辑器)   
-- [便捷的操作](#便捷的操作)   
-- [常用插件](#常用插件)   
-   - [必备插件](#必备插件)   
-   - [UI主题](#ui主题)   
-   - [代码美化](#代码美化)   
-   - [前端利器](#前端利器)   
-      - [自动路径补全](#自动路径补全)   
-      - [语法检查](#语法检查)   
-   - [Git](#git)   
-   - [Markdown](#markdown)   
-   - [插件类](#插件类)   
-- [Atom-常见问题解决](#atom-常见问题解决)   
-   - [**快捷键冲突**](#快捷键冲突)   
-   - [**markdown-scroll-sync报错**](#markdown-scroll-sync报错)   
-- [Atom-不常见问题（欢迎大家建言献策）](#atom-不常见问题（欢迎大家建言献策）)   
-- [资料来源](#资料来源)   
-   - [ATOM基础教程](#atom基础教程)   
-   - [Atom编辑器折腾记](#atom编辑器折腾记)   
-   - [Atom教程](#atom教程)   
+- [apm的使用](#apm的使用)
+- [常用快捷键](#常用快捷键)
+- [定制编辑器](#定制编辑器)
+- [便捷的操作](#便捷的操作)
+- [常用插件](#常用插件)
+   - [必备插件](#必备插件)
+   - [UI主题](#ui主题)
+   - [代码美化](#代码美化)
+   - [前端利器](#前端利器)
+      - [自动路径补全](#自动路径补全)
+      - [语法检查](#语法检查)
+   - [Git](#git)
+   - [Markdown](#markdown)
+   - [插件类](#插件类)
+- [Atom-常见问题解决](#atom-常见问题解决)
+   - [**快捷键冲突**](#快捷键冲突)
+   - [**markdown-scroll-sync报错**](#markdown-scroll-sync报错)
+- [Atom-不常见问题（欢迎大家建言献策）](#atom-不常见问题（欢迎大家建言献策）)
+- [资料来源](#资料来源)
+   - [ATOM基础教程](#atom基础教程)
+   - [Atom编辑器折腾记](#atom编辑器折腾记)
+   - [Atom教程](#atom教程)
 
 <!-- /MDTOC -->
 
@@ -214,6 +214,8 @@ Alt+G R 在GitHub上比较分支
 - [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
 - [markdown-preview-enhanced](https://atom.io/packages/markdown-preview-enhanced)，非常强大markdown实时预览插件，强烈推荐
 - [atom-mdtoc](https://atom.io/packages/atom-mdtoc)，在Markdown中生成TOC，不建议安装markdown-toc
+    - 要点1：标题命令最好不出现 ` -- ` `：`(中文冒号)等
+    - 要点2：生成的TOC中，修改firsth1:1 为2，不将首标题作为目录结构
 
 ### 插件类
 - [activate-power-mode](https://atom.io/packages/activate-power-mode)，输入时有震撼效果

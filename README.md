@@ -131,43 +131,60 @@ Alt+G R 在GitHub上比较分支
 
 ## 常用插件
 
-#### 必备插件
+### 必备插件
 - [sync-settings](https://atom.io/packages/sync-settings)，同步Atom的settings, keymaps, user styles, init script, snippets and installed packages信息
 - [simplified-chinese-menu](https://atom.io/packages/simplified-chinese-menu)，Atom 的简体中文语言包，完整汉化，兼容所有已发布版本 Atom
 
-#### UI主题
+### UI主题
 - [atom-material-ui](https://atom.io/themes/atom-material-ui) ，一个好用好看的MD风格的主题
 - [atom-material-syntax](https://atom.io/themes/atom-material-syntax)，用于语法高亮，配合Atom Material UI主题使用会更加完美
 - [seti-ui](https://atom.io/themes/seti-ui)，暂未使用，不予评价
 - [seti-syntax](https://atom.io/themes/seti-syntax)，和上面配套，亮点在文件的 icons
 
-#### 代码美化
+### 代码美化
 - [file-icons](https://atom.io/packages/file-icons)，在Atom中显示文件类型对应的图标
-- [atom-beautify](https://atom.io/packages/atom-beautify)，一个可以快速美化代码排版本的神器，支持HTML, CSS, JavaScript, PHP, Python, Ruby, Java, C, C++, C#, Objective-C,SQL等语言svo
+- [filecolor](https://atom.io/packages/filecolor)，不同的文件显示不同的颜色
+- [atom-beautify](https://atom.io/packages/atom-beautify)，一个可以快速美化代码排版本的神器，支持HTML, CSS, JavaScript, PHP, Python, Ruby, Java, C, C++, C#, Objective-C,SQL等语言
 - [minimap](https://atom.io/packages/minimap)，代码预览图
 - [highlight-selected](https://atom.io/packages/highlight-selected)，高亮显示所有和选中文本一样的文本，很适用的插件
 
-#### 代码提示
+### 前端利器
 - [emmet](https://atom.io/packages/emmet)，超有名的前端工具
 - [pigments](https://atom.io/packages/pigments)，颜色提示
 - [docblockr](https://atom.io/packages/docblockr)，代码注释，可惜不支持Python
 - [ask-stack](https://atom.io/packages/ask-stack)，Ask Stack Overflow for Atom
-- [atom-ternjs](https://atom.io/packages/atom-ternjs)，补全 JS
-- [autocomplete-paths](https://atom.io/packages/autocomplete-paths)，补全路径，有用！
-- [autocomplete-python](https://atom.io/packages/autocomplete-python)，Python补全
+- [atom-ternjs](https://atom.io/packages/atom-ternjs)，JS只能提示
+- [regex-railroad-diagram](https://atom.io/packages/regex-railroad-diagram)，正则表达式图形化
 
-#### 语法检查
+##### 自动路径补全
+- [autocomplete-plus](https://atom.io/packages/autocomplete-plus)，完善自带autocomplete,有二度设置,接下来列出的一些有二度设置
+    - [autocomplete-paths](https://atom.io/packages/autocomplete-paths)，路径不全
+    - [autocomplete-python](https://atom.io/packages/autocomplete-python)，Python补全
+    - [autocomplete-html](https://atom.io/packages/autocomplete-html)，html路径不全
+    - [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)，如名字
+    - [autocomplete-css](https://atom.io/packages/autocomplete-css)，css路径不全
+##### 语法检查
 - [linter](https://atom.io/packages/linter)，linter是一语法检查插件，它可以识别大部分语法，并对你的语法错误进行纠正。linter只是一个框架，针对不同语言的有不同具体插件
+    - [linter-jshint](https://atom.io/packages/linter-jshint), for JavaScript and JSON, using jshint
+    - [linter-coffeelint](https://atom.io/packages/linter-coffeelint), for CoffeeScript, using coffeelint
+    - [linter-tslint](https://atom.io/packages/linter-tslint), for Typescript, using tslint
+    - [linter-php](https://atom.io/packages/linter-php), for PHP using php -l
+    - [linter-pylint](https://atom.io/packages/linter-pylint), for Python, using pylint
+    - [linter-scss-lint](https://atom.io/packages/linter-scss-lint), for SASS/SCSS, using scss-lint
+    - [linter-less](https://atom.io/packages/linter-less), for LESS, using less
+    - [linter-csslint](https://atom.io/packages/linter-csslint), for CSS, using csslint
+    - [linter-stylint](https://atom.io/packages/linter-stylint), for Stylus, using stylint
+    - [linter-stylus](https://atom.io/packages/linter-stylus), for Stylus, using stylus
 
-#### Git
+### Git
 - [git-time-machine](https://atom.io/themes/git-time-machine)，视图显示一个文件的提交历史
 - [merge-conflicts](https://atom.io/packages/merge-conflicts)，在Atom中解决git合并出现的冲突
 
-#### Markdown
+### Markdown
 - [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
 - [markdown-preview-enhanced](https://atom.io/packages/markdown-preview-enhanced)，非常强大markdown实时预览插件，强烈推荐
 
-#### 插件类
+### 插件类
 - [activate-power-mode](https://atom.io/packages/activate-power-mode)，输入时有震撼效果
 - [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
 - [split-diff](https://atom.io/packages/minimap-split-diff)，文本比较工具，可比较两个窗口里的文档内容
@@ -175,6 +192,7 @@ Alt+G R 在GitHub上比较分支
 - [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
 - [jumpy](https://atom.io/packages/jumpy)，利用快捷键，在文件中跳转至任意位置
 - [browser-plus](https://atom.io/packages/browser-plus)，在Atom中打开浏览器
+- [script](https://atom.io/packages/script)，在Atom下运行脚本，支持多种开发语言
 
 
 ## Atom -- 常见问题解决
@@ -200,6 +218,7 @@ Alt+G R 在GitHub上比较分支
 
 - 在Atom中，右击文件名 Reveal in Tree View 无效果
 - 快捷键问题：使用Atom自带的快捷键 ctrl-0 无效果
+- browser-plus 编辑器内置浏览器打开markdown时出现乱码
 
 
 
@@ -220,7 +239,11 @@ Alt+G R 在GitHub上比较分支
 - [前端我在使用的插件（可能有点多）](https://atom-china.org/t/topic/2650)
 - [CSDN-u010494080的专栏：Atom编辑器入门到精通](http://blog.csdn.net/u010494080/article/category/6277533)
 
+### ATOM基础教程
 - [ATOM基础教程一ATOM插件推荐(4)](http://blog.csdn.net/zsl10/article/details/51822715)
 - [ATOM基础教程一ATOM快捷键(5)](http://blog.csdn.net/zsl10/article/details/51853435)
 - [ATOM基础教程一ATOM自定义代码片段(8)](http://blog.csdn.net/zsl10/article/details/51873564)
 - [ATOM基础教程一使用前端插件emmet(16)](http://blog.csdn.net/zsl10/article/details/51956791)
+### Atom编辑器折腾记
+- [Atom编辑器折腾记_(3)插件主题推荐](http://blog.csdn.net/crper/article/details/45687621)
+- [Atom编辑器折腾记_(7)Emmet实例教程](http://blog.csdn.net/crper/article/details/45786335)

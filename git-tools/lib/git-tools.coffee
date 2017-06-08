@@ -25,6 +25,12 @@ module.exports = GitTools =
 
     @blameCursorNotification = atom.config.get('git-tools.blameCursorNotification')
 
+    # Subscribe to the event when the args for gitk is modified
+    @subscriptions.add atom.config.onDidChange 'git-tools.gitkArgs', =>
+      @gitkArgs = atom.config.get('git-tools.gitkArgs')
+
+    @gitkArgs = atom.config.get('git-tools.gitkArgs')
+
   dir: ->
     editor = atom.workspace.getActivePaneItem()
     if editor == undefined
@@ -76,12 +82,12 @@ module.exports = GitTools =
   git_k: ->
     dir = @dir()
     return if @isUndefined(dir, "Gitk")
-    exec @platform_cmd() + ' ' + dir + ' && gitk'
+    exec @platform_cmd() + ' ' + dir + ' && gitk ' + @gitkArgs
 
   git_k_cf: ->
     file = @file()
     return if @isUndefined(file, "Gitk Current File")
-    exec @platform_cmd() + ' ' + @dir() + ' && gitk ' + file
+    exec @platform_cmd() + ' ' + @dir() + ' && gitk ' + @gitkArgs + ' ' + file
 
   git_gui: ->
     dir = @dir()

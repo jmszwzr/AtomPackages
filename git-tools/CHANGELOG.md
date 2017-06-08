@@ -1,3 +1,7 @@
+## 0.5.0 - New feature
+
+*   Added: "Gitk args to settings"
+
 ## 0.4.1 - Fix
 
 *   Fixed windows calls

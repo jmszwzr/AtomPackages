@@ -213,6 +213,7 @@ Alt+G R 在GitHub上比较分支
 ### Markdown
 - [markdown-writer](https://atom.io/packages/markdown-writer)，markdown工具，便利
 - [markdown-preview-enhanced](https://atom.io/packages/markdown-preview-enhanced)，非常强大markdown实时预览插件，强烈推荐
+    - [markdown-preview-enhanced 使用教程(中文)](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)
 - [atom-mdtoc](https://atom.io/packages/atom-mdtoc)，在Markdown中生成TOC，不建议安装markdown-toc
     - 要点1：标题命令最好不出现 ` -- ` `：`(中文冒号)等
     - 要点2：生成的TOC中，修改firsth1:1 为2，不将首标题作为目录结构

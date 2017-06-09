@@ -25,62 +25,90 @@ module.exports = OpenInBrowsers =
       title: 'IE'
       type: 'boolean'
       default: true
+
     Edge:
       title: 'Edge'
       type: 'boolean'
       default: false
+
     Chrome:
       title: 'Chrome'
       type: 'boolean'
       default: true
-    ChromePortable:
-      title: 'Chrome Portable'
-      type: 'boolean'
-      default: false
-    ChromePortablePath:
-      title: 'Chrome Portable Path'
-      type: 'string'
-      default: ''
+
     Firefox:
       title: 'Firefox'
       type: 'boolean'
       default: true
-    FirefoxPortable:
-      title: 'Firefox Portable'
-      type: 'boolean'
-      default: false
-    FirefoxPortablePath:
-      title: 'Firefox Portable Path'
-      type: 'string'
-      default: ''
+
     Opera:
       title: 'Opera'
       type: 'boolean'
       default: true
+
     Safari:
       title: 'Safari'
       type: 'boolean'
       default: true
-    SafariPortable:
-      title: 'Safari Portable'
-      type: 'boolean'
-      default: false
-    SafariPortable:
-      title: 'Safari Portable Path'
-      type: 'string'
-      default: ''
+
     BrowserPlus:
       title: 'Browser Plus'
       type: 'boolean'
       default: true
+
+    ChromePortable:
+      title: 'Chrome Portable'
+      type: 'object'
+      properties:
+        path:
+          type: 'string'
+          default: ''
+          description: 'eg. C:\\Users\\Admin\\AppData\\Local\\Google\\"Chrome SxS"\\Application\\chrome.exe'
+        tooltip:
+          type: 'string'
+          default : 'Chrome Canary'
+        color:
+          type: 'color'
+          default: 'red'
+
+    FirefoxPortable:
+      title: 'Firefox Portable'
+      type: 'object'
+      properties:
+        path:
+          type: 'string'
+          default: ''
+        tooltip:
+          type: 'string'
+          default : 'Firefox Developer'
+        color:
+          type: 'color'
+          default: 'blue'
+
+    SafariPortable:
+      title: 'Safari Portable'
+      type: 'object'
+      properties:
+        path:
+          type: 'string'
+          default: ''
+        tooltip:
+          type: 'string'
+          default : 'Safari Portable'
+        color:
+          type: 'color'
+          default: 'green'
+
     LocalHost:
       title: 'Switch to LocalHost'
       type: 'boolean'
       default: false
+
     LocalHostURL:
       title: 'LocalHost URL'
       type: 'string'
       default: 'http://localhost:3000'
+
     project:
       title: 'Project/Local Host Combination Config File'
       type: 'string'
@@ -187,18 +215,22 @@ module.exports = OpenInBrowsers =
     @subscriptions = new CompositeDisposable
     submenu = []
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'open-in-browsers:addBrowser': (target)=>
+    # @subscriptions.add atom.commands.add 'atom-workspace', 'open-in-browsers:addBrowser': (target)=>
       # open input view for browser name/command/default
 
     @subscriptions.add atom.commands.add 'atom-workspace', 'open-in-browsers:toggle': (target)=>
       @openInBrowsersView.openBrowser(null,target)
     browsers = atom.config.get('open-in-browsers.browsers')
+    pkgs = atom.packages.getAvailablePackageNames()
     for browser in browsers
       if atom.config.get("open-in-browsers.#{browser}")
-        atom.commands.add 'atom-workspace', "open-in-browsers:#{browser}", do(browser) =>
-          return ({target}) =>
-            @openInBrowsersView.openBrowser(null,target,browser)
-        submenu.push {label: "Open in #{browser}", command:  "open-in-browsers:#{browser}"}
+          unless (typeof atom.config.get("open-in-browsers.#{browser}") is "object" and atom.config.get("open-in-browsers.#{browser}.path").trim() is '')
+            continue if browser is 'BrowserPlus' and pkgs.indexOf('browser-plus') is -1
+            atom.commands.add 'atom-workspace', "open-in-browsers:#{browser}", do(browser) =>
+              return ({target}) =>
+                @openInBrowsersView.openBrowser(null,target,browser)
+            title = atom.config.get("open-in-browsers.#{browser}").tooltip or browser
+            submenu.push {label: "Open in #{title}", command:  "open-in-browsers:#{browser}"}
 
     for fileType in atom.config.get('open-in-browsers.fileTypes')
       sel = {}
@@ -232,7 +264,7 @@ module.exports = OpenInBrowsers =
   updateStatusBar: (editor = atom.workspace.getActivePaneItem())->
     path = require 'path'
     filePath = editor?.buffer?.file?.path
-    if filePath and path.extname(filePath).substr(1) in atom.config.get('open-in-browsers').fileTypes
+    if filePath and path.extname(filePath).substr(1) in atom.config.get('open-in-browsers.fileTypes')
       @browserBar = @statusBar.addLeftTile item: @openInBrowsersView, priority:100
     else
       @browserBar?.destroy()

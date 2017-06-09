@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
+        "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
-        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
+        "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
+        "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
         "type": "local"
       },
-      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-6976-18az7xz.4qgvkuik9"
+      "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11759-8780-1rcax1q.f1qb29y66r"
     ]
   ],
-  "_from": "..\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
-  "_id": "open-in-browsers@0.0.19",
+  "_from": "..\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
+  "_id": "open-in-browsers@0.0.22",
   "_inCache": true,
   "_installable": true,
   "_location": "/open-in-browsers",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
+    "raw": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
-    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
+    "rawSpec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
+    "spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:..\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
-  "_shasum": "3dc0f22b427448ccf5dae5cb195a5ab92625ab10",
+  "_resolved": "file:..\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
+  "_shasum": "ab2b002a22701d19cf2d65bd5f915771a9da502d",
   "_shrinkwrap": null,
-  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11757-6976-tvfo5j.fh70v8to6r\\package.tgz",
-  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11757-6976-18az7xz.4qgvkuik9",
+  "_spec": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\d-11759-8780-bs0lkq.mm0yop3nmi\\package.tgz",
+  "_where": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\apm-install-dir-11759-8780-1rcax1q.f1qb29y66r",
   "bugs": {
     "url": "https://github.com/skandasoft/open-in-browsers/issues"
   },
@@ -72,13 +72,13 @@
   "main": "./lib/open-in-browsers",
   "name": "open-in-browsers",
   "optionalDependencies": {},
-  "readme": "# open-in-browsers package\n\nSimple Package to Open Current File in Different Browsers - IE,Chrome,Firefox,Opera,BrowserPlus -- With Support for localhost(enable it using settings)\n\nOpening Browsers are available in the status bar/context menu\n\n![open-in-browsers](https://raw.github.com/skandasoft/open-in-browsers/master/open-in-browsers.PNG)\n\nBrowser List in context menu\n![open-in-browsers](https://raw.github.com/skandasoft/open-in-browsers/master/Context-Menu.PNG)\n\nUpdate: Ability to New Browsers\n  command open-in-browsers:addBrowser\n",
+  "readme": "# open-in-browsers package\n\nSimple Package to Open Current File in Different Browsers - IE,Chrome,Firefox,Opera,BrowserPlus -- With Support for localhost(enable it using settings)\n\nOpening Browsers are available in the status bar/context menu\n\n![open-in-browsers](https://raw.github.com/skandasoft/open-in-browsers/master/open-in-browsers.PNG)\n\nBrowser List in context menu\n![open-in-browsers](https://raw.github.com/skandasoft/open-in-browsers/master/Context-Menu.PNG)\n\nUpdate: Ability to add New Browsers\n  command open-in-browsers:addBrowser\n\n\nUpdate: 05/25/2017  \nopen-in-browsers:addBrowser - removed the command. as it makes the package complicated.\n\nAdding new browsers can be done by PR(Pull Request).\nCheck the lib/config.coffee and send the cmd needed for opening the browser. I can also add if you send me the details of browsers/cmd\n\nmicrosoft-edge doesn't yet allow opening file system files..Once then allow it will start to work automatically.\n\nPossible to use Google Chrome portable if file  path for the exe is maintain with quotes around the path #34 in the config\nfor eg. C:\\\\\"Program Files\\\\Mozilla Firefox\"\\\\firefox.exe\n\n__ABILITY TO ADD CUSTOM BROWSERS__\n\nuse the filler browser - ChromePortable/FirefoxPortable/SafariPortable to define your own browser in setting. fill the tooltip/color to differentiate the icons from chrome/Firefox/safari\n",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skandasoft/open-in-browsers.git"
   },
-  "version": "0.0.19",
+  "version": "0.0.22",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [

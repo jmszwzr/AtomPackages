@@ -57,8 +57,8 @@ apm view git-grep                                   显示git-grep插件的详�
 ```
 ctrl-shift-p            命令面板
 
-alt + G + ↑             光标从当前文件的一块更改移到另一块更改的开始
-alt + G + ↓             光标从当前文件的一块更改移到另一块更改的开始
+alt + G + ↑             光标从当前文件的一块更改移到上一块更改的开始
+alt + G + ↓             光标从当前文件的一块更改移到下一块更改的开始
 
 
 ctrl + /                启用注释
@@ -153,7 +153,7 @@ Alt+G R 在GitHub上比较分支
 - 三种方式打开settings设置窗口
     1. 主菜单Edit->Preferences
     2. 在命令面板中输入命令Settings View:Open. 因为命令窗口支持模糊查询, 因此只需要输入svo, 就可以了
-    3. 使用快捷键 `ctrl-,`    需要修改搜狗输入法中输入法管理器的搜狗平阴快捷键
+    3. 使用快捷键 `ctrl-,`    需要修改搜狗输入法中输入法管理器的搜狗拼音快捷键
 - 选中项目根目录，右键，选择 “Search in Directory”，可以全局准确搜索关键字
 - ctrl + F： 文件中关键词搜索及替换
 - 选择多项：按住 ctrl / ctrl，用鼠标点击另外一处你想选择的地方，这样，你就可以看到多个一起闪动的光标
@@ -183,7 +183,7 @@ Alt+G R 在GitHub上比较分支
 - [pigments](https://atom.io/packages/pigments)，颜色提示
 - [docblockr](https://atom.io/packages/docblockr)，代码注释，可惜不支持Python
 - [ask-stack](https://atom.io/packages/ask-stack)，Ask Stack Overflow for Atom
-- [atom-ternjs](https://atom.io/packages/atom-ternjs)，JS只能提示
+- [atom-ternjs](https://atom.io/packages/atom-ternjs)，JS智能提示
 - [regex-railroad-diagram](https://atom.io/packages/regex-railroad-diagram)，正则表达式图形化
 
 #### 自动路径补全
@@ -220,7 +220,7 @@ Alt+G R 在GitHub上比较分支
 
 ### 插件类
 - [activate-power-mode](https://atom.io/packages/activate-power-mode)，输入时有震撼效果
-- [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim，哈哈哈
+- [vim-mode](https://atom.io/packages/vim-mode)，官方出品，在 Atom 上使用 Vim
 - [split-diff](https://atom.io/packages/minimap-split-diff)，文本比较工具，可比较两个窗口里的文档内容
 - [project-manager](https://atom.io/packages/project-manager)，管理项目
 - [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)，Atom 中集成终端，使用太顺畅了
